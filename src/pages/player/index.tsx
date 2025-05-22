@@ -1,5 +1,5 @@
 import {RefObject, useEffect, useRef} from 'react'
-import {createGamePlayer, FileLoaders, GamePlayerInstance} from "@reksioengine/reksioengine";
+import {createGamePlayer, FileLoaders, GamePlayerInstance} from "reksioengine";
 import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
