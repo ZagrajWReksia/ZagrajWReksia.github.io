@@ -1,12 +1,12 @@
 @font-face {
   font-family: "BowlbyOneSC";
-  src: url("/public/fonts/BowlbyOneSC-Regular.ttf");
+  src: url("/fonts/BowlbyOneSC-Regular.ttf");
   font-weight: 200 900;
 }
 
 @font-face {
   font-family: "Figtree";
-  src: url("/public/fonts/Figtree-VariableFont_wght.ttf");
+  src: url("/fonts/Figtree-VariableFont_wght.ttf");
   font-weight: 200 900;
 }
 
@@ -33,7 +33,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  background: url("/public/bg2.jpg") #000;
+  background: url("/bg2.jpg") #000;
   background-size: cover;
   background-position: top;
 

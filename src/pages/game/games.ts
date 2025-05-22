@@ -24,7 +24,7 @@ const games: Record<string, Index> = {
     "skarbpiratow": {
         title: "reksioAndPirates",
         description: "reksioAndPiratesDescription",
-        coverImage: "/public/covers/reksioiskarbpiratow.jpg",
+        coverImage: "/covers/reksioiskarbpiratow.jpg",
         year: 2002,
         languages: [
             {
@@ -83,7 +83,7 @@ const games: Record<string, Index> = {
     "ufo": {
         title: "reksioAndUFO",
         description: "reksioAndUFODescription",
-        coverImage: "/public/covers/reksioiufo.jpg",
+        coverImage: "/covers/reksioiufo.jpg",
         year: 2003,
         languages: [
             {
@@ -124,7 +124,7 @@ const games: Record<string, Index> = {
     "czarodzieje": {
         title: "reksioAndWizards",
         description: "reksioAndWizardsDescription",
-        coverImage: "/public/covers/reksioiczarodzieje.jpg",
+        coverImage: "/covers/reksioiczarodzieje.jpg",
         year: 2004,
         languages: [
             {
@@ -155,7 +155,7 @@ const games: Record<string, Index> = {
     "wehikul": {
         title: "reksioAndTimeMachine",
         description: "reksioAndTimeMachineDescription",
-        coverImage: "/public/covers/reksioiwehikulczasu.jpg",
+        coverImage: "/covers/reksioiwehikulczasu.jpg",
         year: 2004,
         languages: [
             {
@@ -186,7 +186,7 @@ const games: Record<string, Index> = {
     "nemo": {
         title: "reksioAndCaptainNemo",
         description: "reksioAndCaptainNemoDescription",
-        coverImage: "/public/covers/reksioikapitannemo.jpg",
+        coverImage: "/covers/reksioikapitannemo.jpg",
         year: 2006,
         languages: [
             {
@@ -217,7 +217,7 @@ const games: Record<string, Index> = {
     "inaction": {
         title: "reksioAndKretesInAction",
         description: "reksioAndKretesInActionDescription",
-        coverImage: "/public/covers/reksioikreteswakcji.jpg",
+        coverImage: "/covers/reksioikreteswakcji.jpg",
         year: 2007,
         languages: [
             {
@@ -248,7 +248,7 @@ const games: Record<string, Index> = {
     "thirddimension": {
         title: "reksioAndKretesInAction",
         description: "reksioAndKretesInActionDescription",
-        coverImage: "/public/covers/reksioikreteswakcji.jpg",
+        coverImage: "/covers/reksioikreteswakcji.jpg",
         year: 2007,
         languages: [
             {

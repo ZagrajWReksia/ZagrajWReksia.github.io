@@ -152,32 +152,32 @@ function App() {
                 subtitle={t('mainSeries')}
             >
                 <Link to="/game/skarbpiratow">
-                    <Cover src="/public/covers/reksioiskarbpiratow.jpg">
+                    <Cover src="/covers/reksioiskarbpiratow.jpg">
                         {t('reksioAndPirates')}<br/>
                         🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*<br/>
                         {t('playInBrowser')}
                     </Cover>
                 </Link>
                 <Link to="/game/ufo">
-                    <Cover src="/public/covers/reksioiufo.jpg">
+                    <Cover src="/covers/reksioiufo.jpg">
                         {t('reksioAndUFO')}<br/>
                         🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺
                     </Cover>
                 </Link>
                 <Link to="/game/czarodzieje">
-                    <Cover src="/public/covers/reksioiczarodzieje.jpg">
+                    <Cover src="/covers/reksioiczarodzieje.jpg">
                         {t('reksioAndWizards')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
                 </Link>
                 <Link to="/game/wehikul">
-                    <Cover src="/public/covers/reksioiwehikulczasu.jpg">
+                    <Cover src="/covers/reksioiwehikulczasu.jpg">
                         {t('reksioAndTimeMachine')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
                 </Link>
                 <Link to="/game/nemo">
-                    <Cover src="/public/covers/reksioikapitannemo.jpg">
+                    <Cover src="/covers/reksioikapitannemo.jpg">
                         {t('reksioAndCaptainNemo')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
@@ -190,13 +190,13 @@ function App() {
                 style={{ marginTop: '30px' }}
             >
                 <Link to="/game/inaction">
-                    <Cover src="/public/covers/reksioikreteswakcji.jpg">
+                    <Cover src="/covers/reksioikreteswakcji.jpg">
                         {t('reksioAndKretesInAction')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
                 </Link>
                 <Link to="/game/thirddimension">
-                    <Cover src="/public/covers/reksioikretestajemnicatrzeciegowymiaru.jpg">
+                    <Cover src="/covers/reksioikretestajemnicatrzeciegowymiaru.jpg">
                         {t('reksioAndKretesTheSecret')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
@@ -208,7 +208,7 @@ function App() {
                 subtitle={t('forVerySmallPlayers')}
                 style={{ marginTop: '100px', paddingBottom: '200px' }}
             >
-                <Cover src="/public/covers/abczreksiem.jpg">
+                <Cover src="/covers/abczreksiem.jpg">
                     ABC z Reksiem<br/>
                     🇵🇱
                 </Cover>
