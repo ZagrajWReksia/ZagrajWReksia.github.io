@@ -246,9 +246,9 @@ const games: Record<string, Index> = {
         ],
     },
     "thirddimension": {
-        title: "reksioAndKretesInAction",
-        description: "reksioAndKretesInActionDescription",
-        coverImage: "/covers/reksioikreteswakcji.jpg",
+        title: "reksioAndKretesTheSecret",
+        description: "reksioAndKretesTheSecretDescription",
+        coverImage: "/covers/reksioikretestajemnicatrzeciegowymiaru.jpg",
         year: 2007,
         languages: [
             {
