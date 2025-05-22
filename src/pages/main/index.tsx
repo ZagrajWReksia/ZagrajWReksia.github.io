@@ -208,10 +208,14 @@ function App() {
                 subtitle={t('forVerySmallPlayers')}
                 style={{ marginTop: '100px', paddingBottom: '200px' }}
             >
-                <Cover src="/covers/abczreksiem.jpg">
-                    ABC z Reksiem<br/>
-                    🇵🇱
-                </Cover>
+                <div>
+                    <div style={{textAlign: 'center', marginBottom: '30px', fontWeight: 'bold'}}>
+                        Work in progress
+                    </div>
+                    <div>
+                        <img src="/cones.png" alt="cones"/>
+                    </div>
+                </div>
             </GameSection>
 
             <Footer/>
