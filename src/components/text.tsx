@@ -9,6 +9,7 @@ const FancyHeadingText = styled.span<{ text: string, size: string }>`
     font-size: ${props => props.size == 'big' ? '2.5em' : props.size == 'medium' ? '1.5em' : '0.5em'};
     -webkit-text-stroke: .12rem #e91a1d;
     z-index: 10;
+    text-align: center;
 
     // &:before {
     //     content: "${props => props.text || ''}";
