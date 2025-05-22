@@ -18,7 +18,7 @@ const resources = {
             "playInBrowser": "🌐 Play in the browser",
             "extras": "Extras",
             "englishVersionIsFanMade": "The English version is fan made and uses AI for dubbing.",
-            "mainAboutHello": "Welcome to zagrajwreksia.pl - a website created to archive all available games from Adventures of Reksio series (including their versions), so you can download them and even  play some of them directly in your browser (via ReksioEngine).",
+            "mainAboutHello": "Welcome to zagrajwreksia.pl - a website created to archive all available games from Adventures of Reksio series (including their versions), so you can download them and even play some of them directly in your browser (via ReksioEngine).",
             "mainAboutReadMore": "Read more about the project",
             "mainAboutBoombit": "The studio BoomBit (Aidem Media) has had its license to use the character Reksio expire, making them unable to sell their games featuring it anymore, and do not have issues with people downloading the games.",
             "mainAboutMoreAboutGames": "You can find more information about the games from the the Adventures of Reksio series at:",
