@@ -11,6 +11,7 @@ const resources = {
             "lang_hu": "Hungarian",
             "lang_en": "English",
             "viewInOtherLanguages": "View this website in other languages:",
+            "adventuresOfReksio": "Adventures of Reksio",
             "mainSeries": "Main series",
             "educationalGames": "Educational games",
             "forVerySmallPlayers": "For the littlest players",
