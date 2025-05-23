@@ -117,7 +117,7 @@ const GameSection = ({ title, subtitle, children, note, style }: GameSectionProp
         <CoverContainer>
             {children}
         </CoverContainer>
-        {note && <div style={{ marginTop: '30px' }}>{note}</div>}
+        {note && <div style={{ marginTop: '30px', textAlign: 'center' }}>{note}</div>}
     </GameSectionContainer>
 );
 
