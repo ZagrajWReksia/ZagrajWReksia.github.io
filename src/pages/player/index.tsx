@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
 import {Footer} from "../../components/footer.tsx";
+import {useNavigate} from "react-router";
 
 const Container = styled.div`
     display: flex;
@@ -20,6 +21,7 @@ const Controls = styled.div`
 `
 
 function Index() {
+    const navigate = useNavigate();
     const gameRef = useRef(null)
     const playerRef: RefObject<GamePlayerInstance | null> = useRef(null)
 
@@ -45,7 +47,12 @@ function Index() {
     }, [])
 
     return <Container>
-        <a href="/"><Button style={{'marginBottom': '10px', textDecoration: 'none'}}>Powrót</Button></a>
+        <Button
+            onClick={() => {navigate(-1)}}
+            style={{marginBottom: '10px'}}
+        >
+            Powrót
+        </Button>
 
         <div ref={gameRef}></div>
         <Controls>

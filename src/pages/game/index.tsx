@@ -140,9 +140,9 @@ export function GameDetailsPage() {
                             {selectedLanguage.downloads.map((download, index) => (
                                 <DownloadOption key={index}>
                                     <div>
-                                        <a href={download.url}>
+                                        <Link to={download.url}>
                                             <span>{download.name}</span>
-                                        </a>
+                                        </Link>
                                         {download.size && (
                                             <span>&nbsp;({download.size})</span>
                                         )}
