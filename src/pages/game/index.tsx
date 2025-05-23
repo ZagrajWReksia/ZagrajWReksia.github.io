@@ -73,6 +73,11 @@ const LanguageSelector = styled.div`
 
 const LanguageOption = styled.button<{ active: boolean }>`
     border: 2px solid ${props => props.active ? 'rgba(254,227,77,0.44)' : 'rgba(0,0,0,0)'};
+    
+    &:disabled {
+        opacity: 0.8;
+        filter: grayscale(1);
+    }
 `;
 
 const DownloadOption = styled.div`
@@ -124,7 +129,7 @@ export function GameDetailsPage() {
 
                     <FancyHeading size="medium" text={t('chooseLanguageVersion')}/>
                     <LanguageSelector style={{marginTop: '10px'}}>
-                        {game.languages.map((lang: Language) => (
+                        {game.languages.filter(language => language.downloads.length > 0).map((lang: Language) => (
                             <LanguageOption
                                 key={lang.langCode}
                                 active={selectedLanguage?.langCode === lang.langCode}
@@ -141,15 +146,25 @@ export function GameDetailsPage() {
                                 <DownloadOption key={index}>
                                     <div>
                                         <Link to={download.url}>
-                                            <span>{download.name}</span>
+                                            <span>{t(download.name)}</span>
                                         </Link>
                                         {download.size && (
                                             <span>&nbsp;({download.size})</span>
                                         )}
                                     </div>
                                     <div>
-                                        <small>{download.description}</small>
+                                        <small style={{whiteSpace: 'preserve-breaks'}}>{t(download.description)}</small>
                                     </div>
+                                    {download.mirrors && (
+                                        <small>
+                                            {t('mirrors')}:&nbsp;
+                                            {download.mirrors.map((mirror, idx) => (
+                                                <span>
+                                                    <a href={mirror.url}>{mirror.name}</a>{idx != download!.mirrors!.length - 1 && ', '}
+                                                </span>
+                                            ))}
+                                        </small>
+                                    )}
                                     {download.source && (
                                         <div>
                                             <small style={{color: "rgb(186, 186, 186)"}}>

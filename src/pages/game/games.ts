@@ -1,7 +1,13 @@
+export interface Mirror {
+    name: string;
+    url: string;
+}
+
 export interface Download {
     name: string;
     description: string;
     url: string;
+    mirrors?: Mirror[];
     size?: string;
     source: string;
 }
@@ -32,22 +38,28 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "🌐 Zagraj w przeglądarce",
-                        description: "Bez pobierania gry",
+                        name: "playInBrowser",
+                        description: "withoutGameDownloading",
                         url: "/play/reksioiskarbpiratow",
                         source: "zagrajwreksia.pl"
                     },
+                    // {
+                    //     name: "Wersja poprawiona z łatkami",
+                    //     description: "Wszystkie oficjalne łatki + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
+                    //     url: "#",
+                    //     size: "123 MB",
+                    //     source: "zagrajwreksia.pl"
+                    // },
                     {
-                        name: "Wersja poprawiona z łatkami",
-                        description: "Wszystkie oficjalne łatki + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
-                        url: "#",
-                        size: "123 MB",
-                        source: "zagrajwreksia.pl"
-                    },
-                    {
-                        name: "Oryginalna wersja z płyty",
-                        description: "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
-                        url: "#",
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Skarb%20Piratow.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/1.-reksio-i-skarb-piratow/1.%20Reksio%20i%20Skarb%20Pirat%C3%B3w.iso"
+                            }
+                        ],
                         size: "611 MB",
                         source: "archive.org"
                     }
@@ -56,7 +68,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ro",
                 langIcon: "🇷🇴",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-comoara-piratilor/Reksio%20si%20Comoara%20Piratilor.iso",
+                        size: "363 MB",
+                        source: "archive.org"
+                    }
+                ]
             },
             {
                 langCode: "ru",
@@ -76,7 +96,21 @@ const games: Record<string, Index> = {
             {
                 langCode: "en",
                 langIcon: "🇬🇧",
-                downloads: []
+                downloads: [
+                    {
+                        name: "📦 ZIP Archive",
+                        description: "Includes patches for modern operating systems. This is a fan made translation.",
+                        url: "https://iso.zagrajwreksia.pl/Reksio%20and%20the%20Pirate%20Treasure.zip",
+                        mirrors: [
+                            {
+                                name: "mega.nz",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/0jthAKDC"
+                            }
+                        ],
+                        size: "401 MB",
+                        source: "Serena Pancu"
+                    }
+                ]
             }
         ],
     },
@@ -91,10 +125,16 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "Oryginalna wersja z płyty",
-                        description: "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
-                        url: "#",
-                        size: "611 MB",
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Ufo.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-i-ufo/2.%20Reksio%20i%20Ufo.iso"
+                            }
+                        ],
+                        size: "470 MB",
                         source: "archive.org"
                     }
                 ]
@@ -102,7 +142,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ro",
                 langIcon: "🇷🇴",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-ozn-ul/Reksio%20si%20OZN-ul.iso",
+                        size: "535 MB",
+                        source: "archive.org"
+                    }
+                ]
             },
             {
                 langCode: "ru",
@@ -119,6 +167,25 @@ const games: Record<string, Index> = {
                 langIcon: "🇭🇺",
                 downloads: []
             },
+            {
+                langCode: "en",
+                langIcon: "🇬🇧",
+                downloads: [
+                    {
+                        name: "📦 ZIP Archive",
+                        description: "Includes patches for modern operating systems. This is a fan made translation.",
+                        url: "https://iso.zagrajwreksia.pl/Reksio%20and%20the%20UFO.zip",
+                        mirrors: [
+                            {
+                                name: "mega.nz",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/lmtHnKLA"
+                            }
+                        ],
+                        size: "468 MB",
+                        source: "Serena Pancu (mega.nz)"
+                    }
+                ]
+            }
         ],
     },
     "czarodzieje": {
@@ -132,10 +199,16 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "Oryginalna wersja z płyty",
-                        description: "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
-                        url: "#",
-                        size: "611 MB",
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Czarodzieje.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/3.-reksio-i-czarodzieje/3.%20Reksio%20i%20Czarodzieje.iso"
+                            }
+                        ],
+                        size: "677 MB",
                         source: "archive.org"
                     }
                 ]
@@ -143,7 +216,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ro",
                 langIcon: "🇷🇴",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-magicienii/Reksio%20si%20Magicienii.iso",
+                        size: "655 MB",
+                        source: "archive.org"
+                    }
+                ]
             },
             {
                 langCode: "ru",
@@ -163,10 +244,16 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "Oryginalna wersja z płyty",
-                        description: "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
-                        url: "#",
-                        size: "611 MB",
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Wehikul%20Czasu.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/4.-reksio-i-wehikul-czasu/4.%20Reksio%20i%20Wehiku%C5%82%20Czasu.iso"
+                            }
+                        ],
+                        size: "675 MB",
                         source: "archive.org"
                     }
                 ]
@@ -174,7 +261,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ro",
                 langIcon: "🇷🇴",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-masina-timpului/Reksio%20si%20Masina%20Timpului.iso",
+                        size: "688 MB",
+                        source: "archive.org"
+                    }
+                ]
             },
             {
                 langCode: "ru",
@@ -194,10 +289,16 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "Oryginalna wersja z płyty",
-                        description: "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
-                        url: "#",
-                        size: "611 MB",
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Kapitan%20Nemo.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-i-kapitan-nemo/5.%20Reksio%20i%20Kapitan%20Nemo.iso"
+                            }
+                        ],
+                        size: "533 MB",
                         source: "archive.org"
                     }
                 ]
@@ -205,7 +306,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ro",
                 langIcon: "🇷🇴",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-capitanul-nemo/Reksio%20si%20Capitanul%20Nemo.iso",
+                        size: "526 MB",
+                        source: "archive.org"
+                    }
+                ]
             },
             {
                 langCode: "ru",
@@ -225,10 +334,10 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "Oryginalna wersja z płyty",
-                        description: "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
-                        url: "#",
-                        size: "611 MB",
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-i-kretes-w-akcji/Reksio%20i%20Kretes%20w%20Akcji.iso",
+                        size: "640 MB",
                         source: "archive.org"
                     }
                 ]
@@ -236,7 +345,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ro",
                 langIcon: "🇷🇴",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-kretes-in-actiune/Reksio%20si%20Kretes%20in%20Actiune.ISO",
+                        size: "385 MB",
+                        source: "archive.org"
+                    }
+                ]
             },
             {
                 langCode: "ru",
@@ -256,10 +373,10 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "Oryginalna wersja z płyty",
-                        description: "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
-                        url: "#",
-                        size: "611 MB",
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-i-kretes-tajemnica-trzeciego-wymiaru/Reksio%20i%20Kretes%20Tajemnica%20Trzeciego%20Wymiaru.iso",
+                        size: "365 MB",
                         source: "archive.org"
                     }
                 ]
@@ -267,7 +384,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ro",
                 langIcon: "🇷🇴",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-kretes-misterul-celei-de-a-treia-dimensiuni/Reksio%20si%20Kretes_%20Misterul%20celei%20de%20a%20treia%20dimensiuni.ISO",
+                        size: "267 MB",
+                        source: "archive.org"
+                    }
+                ]
             },
             {
                 langCode: "ru",

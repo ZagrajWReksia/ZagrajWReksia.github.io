@@ -161,7 +161,7 @@ function App() {
                 <Link to="/game/ufo">
                     <Cover src="/covers/reksioiufo.jpg">
                         {t('reksioAndUFO')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺
+                        🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*
                     </Cover>
                 </Link>
                 <Link to="/game/czarodzieje">
@@ -213,7 +213,7 @@ function App() {
                         Work in progress
                     </div>
                     <div>
-                        <img src="/cones.png" alt="cones"/>
+                        <img src="/cones.png" alt="cones" style={{maxWidth: '100%'}}/>
                     </div>
                 </div>
             </GameSection>
