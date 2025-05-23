@@ -14,6 +14,14 @@ export const Footer = () => {
                 Created and managed by <a href="https://adikso.net/about">Adikso</a>
             </Trans>
             <div>
+                {t('creditsTranslations')}:&nbsp;
+                <a href="https://linktr.ee/serena.pancu">Serena</a> (🇷🇴/🇬🇧),&nbsp;
+                <a href="https://adikso.net/about">Adikso</a> (🇵🇱/🇬🇧)
+            </div>
+            <div>
+                {t('creditsBackground')}
+            </div>
+            <div>
                 <a href="#">
                     {t('sourceCode')}
                 </a>
