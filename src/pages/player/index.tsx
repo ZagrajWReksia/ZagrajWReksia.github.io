@@ -1,9 +1,10 @@
 import {RefObject, useEffect, useRef} from 'react'
 import {createGamePlayer, FileLoaders, GamePlayerInstance} from "reksioengine";
 import styled from "styled-components";
-import {FileDown, FileUp, Fullscreen} from "lucide-react";
+import {Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
 import {useNavigate} from "react-router";
+import {useTranslation} from "react-i18next";
 
 const Container = styled.div`
     display: flex;
@@ -11,6 +12,13 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
+`
+
+const GameContainer = styled.div`
+    &:fullscreen {
+        display: flex;
+        justify-content: center;
+    }
 `
 
 const Controls = styled.div`
@@ -25,6 +33,7 @@ const Footer = styled.footer`
 `
 
 function Index() {
+    const { t } = useTranslation();
     const navigate = useNavigate();
     const gameRef = useRef(null)
     const playerRef: RefObject<GamePlayerInstance | null> = useRef(null)
@@ -35,7 +44,8 @@ function Index() {
         }
 
         const instance = createGamePlayer(gameRef.current, {
-            fileLoader: new FileLoaders.ListingJSONUrlFileLoader('https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json')
+            fileLoader: new FileLoaders.ListingJSONUrlFileLoader('https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json'),
+            onExit: () => document.exitFullscreen()
         })
 
         if (instance !== null) {
@@ -50,19 +60,26 @@ function Index() {
         }
     }, [])
 
+    const enterFullscreen = () => {
+        if (!gameRef.current) {
+            return
+        }
+        (gameRef.current as Element).requestFullscreen()
+    }
+
     return <Container>
         <Button
             onClick={() => {navigate(-1)}}
             style={{marginBottom: '10px'}}
         >
-            Powrót
+            {t('goBack')}
         </Button>
 
-        <div ref={gameRef}></div>
+        <GameContainer ref={gameRef}></GameContainer>
         <Controls>
-            <Button><Fullscreen size={15}/> Fullscreen</Button>
-            <Button><FileDown size={15} /> Download save file</Button>
-            <Button><FileUp size={15} /> Load save file</Button>
+            <Button onClick={enterFullscreen}><Fullscreen size={15}/> Fullscreen</Button>
+            {/*<Button><FileDown size={15} /> Download save file</Button>*/}
+            {/*<Button><FileUp size={15} /> Load save file</Button>*/}
         </Controls>
 
         <Footer>
