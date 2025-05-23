@@ -11,136 +11,136 @@ const resources = {
             "lang_hu": "Hungarian",
             "lang_en": "English",
             "viewInOtherLanguages": "View this website in other languages:",
-            "adventuresOfRex": "Adventures of Rex",
+            "adventuresOfReksio": "Adventures of Reksio",
             "mainSeries": "Main series",
             "educationalGames": "Educational games",
-            "forVerySmallPlayers": "For the very young players",
+            "forVerySmallPlayers": "For the littlest players",
             "playInBrowser": "🌐 Play in the browser",
             "extras": "Extras",
             "englishVersionIsFanMade": "The English version is fan made and uses AI for dubbing.",
-            "mainAboutHello": "Welcome to zagrajwreksia.pl - a website aimed at archiving all available games from Adventures of Rex series (and their versions), and letting you download them and play some of them directly in your browser (ReksioEngine).",
+            "mainAboutHello": "Welcome to zagrajwreksia.pl - a website created to archive all available games from Adventures of Reksio series (including their versions), so you can download them and even play some of them directly in your browser (via ReksioEngine).",
             "mainAboutReadMore": "Read more about the project",
-            "mainAboutBoombit": "BoomBit (AidemMedia) has had its license to use the character of Reksio run out, making them unable to sell it anymore, and they don't mind downloading the games.",
-            "mainAboutMoreAboutGames": "You can find more information about the games from the The Adventures of Rex series at:",
+            "mainAboutBoombit": "The studio BoomBit (Aidem Media) has had its license to use the character Reksio expire, making them unable to sell their games featuring it anymore, and do not have issues with people downloading the games.",
+            "mainAboutMoreAboutGames": "You can find more information about the games from the the Adventures of Reksio series at:",
             "mainAboutLinkAndLink": "<0>Przygody Reksia HUB</0> (🇵🇱/🇬🇧) and <2>Reksiopedia</2> (🇵🇱)",
             "chooseLanguageVersion": "Select a language version",
             "releaseDate": "Release date",
             "goBack": "Go back",
-            "reksioAndPirates": "Reksio and Pirate Treasure",
-            "reksioAndUFO": "Reksio and UFO",
-            "reksioAndWizards": "Reksio and Wizards",
-            "reksioAndTimeMachine": "Reksio and Time Machine",
+            "reksioAndPirates": "Reksio and the Pirate Treasure",
+            "reksioAndUFO": "Reksio and the UFO",
+            "reksioAndWizards": "Reksio and the Wizards",
+            "reksioAndTimeMachine": "Reksio and the Time Machine",
             "reksioAndCaptainNemo": "Reksio and Captain Nemo",
             "reksioAndKretesInAction": "Reksio and Kretes in Action",
-            "reksioAndKretesTheSecret": "Reksio and Kretes The Secret of the Third Dimension",
+            "reksioAndKretesTheSecret": "Reksio and Kretes: The Secret of the Third Dimension",
             "source": "Source",
             "createdAndManagedBy": "Created and managed by <1>Adikso</1>",
             "sourceCode": "Source code",
-            "reksioAndPiratesDescription": `Somewhere on the Restless Ocean, under mysterious circumstances, the pirate commander Captain O'Gryzek disappears. Along with him vanishes the only map leading to the legendary treasure...
+            "reksioAndPiratesDescription": `Somewhere in the Non-Pacific Ocean, under mysterious circumstances, the pirate Captain O'Verboard disappears. Along with him vanishes the only map leading to the legendary treasure...
 
-                    Meanwhile, Reksio, windsurfing across the sea, is caught in a raging storm. Amid flashes of lightning and the roar of the waves, Reksio crashes onto the shores of a mysterious island. Soon after, he finds a bottle washed up by the ocean, containing an enigmatic message:
+                    Meanwhile, Reksio, windsurfing across the sea, is caught in a raging storm. Amid flashes of lightning and the roar of the waves, Reksio crashes into the shores of a mysterious island. Soon after, he finds a bottle washed up on the beach, containing an enigmatic message:
                     RIKWA29
                     
                     And so, together with the player, he becomes entangled in a grand pirate adventure.
                     
-                    What really happened to Captain O'Gryzek?
+                    What really happened to Captain O'Verboard?
                     
-                    What is the lost tribe of the Black Hens guarding so closely?
+                    What is the lost tribe of the island chickens guarding so closely?
                     
                     What secrets lie beneath the volcano?
                     
-                    Where is the Pirates’ Treasure hidden?
+                    Where is the Pirate Treasure hidden?
                     
-                    How did Kretes behave on the Island?
+                    What was Kretes doing on the island?
                     
                     You’ll find out everything by joining Reksio on this danger-filled and thrilling adventure.
             `,
-            "reksioAndUFODescription": `Somewhere in a distant galaxy... on a planet where a mole says goodnight... a mysterious Curator is building a powerful egg, with which he plans to conquer the entire universe...
+            "reksioAndUFODescription": `Somewhere in galaxy not so far away... in a system where the egg is no surprise... on a planet where a the rooster crows "good night"... a mysterious Henperor is building a powerful weapon, with which he plans to conquer the entire universe...
 
-                    Meanwhile, Reksio, having uncovered the secret of the Pirates’ Treasure, returns home... There, he learns that the hens from his yard have been abducted by a UFO... Reksio decides to rescue the hens and sets off in pursuit of the cosmic kidnappers.
+                    Meanwhile, Reksio, having uncovered the secret of the Pirates Treasure, returns home... There, he learns that the hens from his yard have been abducted by UFOs... Reksio decides to rescue the hens and sets off in pursuit of the cosmic kidnappers.
                     
                     Why were the hens abducted?
                     
-                    Who is the mysterious Curator really?
+                    Who actually is the mysterious Henperor?
                     
-                    What is the lebiodka from the planet Kurakis used for?
+                    What is the orache from the planet Henakis used for?
                     
-                    Can love be enough to tear down walls?
+                    Can love be strong enough to tear down walls?
                     
                     You’ll find out everything by joining Reksio on another surprise-filled and thrilling adventure...
             `,
-            "reksioAndWizardsDescription": `Somewhere in the crumbling Land of Wonders, the Burektor of the University of Magic studies an ancient prophecy. It reveals that only a mysterious Chosen One possesses the power to unmask *He Who So Horribly Muddles* and stop his wicked schemes.
+            "reksioAndWizardsDescription": `Somewhere in the crumbling Wonderland, the Barkchancellor of the University of Magic studies an ancient prophecy. It reveals that only a mysterious Chosen One possesses the power to unmask "He Who Shall Not Be Guesed" and stop his twisted machinations.
 
-                    The sound of shattering glass interrupts the wizard’s frantic pondering—as a monstrously large mole bursts into his study, shouting: “I don’t believe this!” Hot on his heels, the brave dog Reksio enters the Land of Wonders...
+                    The sound of shattering glass interrupts the wizard’s frantic pondering — as a monstrously large mole bursts into his study, shouting: "Inconceivable!"... Hot on his heels, the brave dog Reksio enters Wonderland...
                     
                     Is Reksio the Chosen One foretold in the prophecy?
                     
-                    Which of the seven Wizards is *He Who So Horribly Muddles*?
+                    Which of the seven wizards is "He Who Shall Not Be Guesed"?
                     
-                    Can the Land of Wonders be saved from destruction with the help of a perpetually disgruntled mole, a chatty stone, and a handful of magical items?
+                    Can Wonderland be saved from destruction with the help of a perpetually disgruntled mole, a loquacious stone, and a handful of magical doohickeys?
                     
                     How can you tell if you’re just an ordinary frog or an enchanted princess?
                     
                     And how do you master powerful spells over a single weekend?
                     
-                    You’ll find out everything by joining Reksio on yet another adventure full of surprises and thrilling escapades…
+                    You’ll find out everything by joining Reksio on yet another adventure full of surprises and thrilling escapades...
             `,
-            "reksioAndTimeMachineDescription": `"Having defeated the evil Wizard, Reksio and Kretes hoped to finally rest. But that was not to be. Captured by the Order of the Ricepaddians, they spent the rest of their lives in the dungeons. Reksio never had another adventure, and Kretes never returned to his Molly…"
+            "reksioAndTimeMachineDescription": `Having defeated the evil wizard, Reksio and Kretes hoped to finally rest. But that was not to be. Captured by the Order of the Rosy Tail, they spent the rest of their lives in the dungeons. Reksio never had another adventure, and Kretes never returned to his Molly..."
 
-                    If you don’t want the story to end this way, help Reksio rebuild an old sofa into a time machine and… go back with him to the distant past. For only there lives the one person who knows how to fix the Clock of History, alter the course of events, and straighten the twists of time.
-                    That person is the mysterious **Nostradamus**...
+                    If you don’t want the story to end this way, help Reksio jury-rig an old sofa into a time machine and... go so fa back in time to the distant past. For only there lives the one person who knows how to alter the course of history and straighten the twists of time.
+                    That person is the mysterious Nostradamus...
                     
                     Who is Nostradamus, and why is he so mysterious?
                     
-                    Where did the Time Funnels and Time Mounds come from—and how do they work?
+                    Where did the Time Funnels and Time Mounds come from — and how do they work?
                     
-                    Did the dinosaurs really go extinct? Or did they just go… somewhere?
+                    Did the dinosaurs really go extinct? Or did they just go... somewhere else?
                     
                     Who are the guardians of the secret mantra that holds the key to passing the Snake Rift in the Pyramid of Fear?
                     
-                    How do you win a knight’s tournament—when you’re a dog?
+                    How do you win a knight’s tournament when you’re a dog?
                     
                     What is the real story behind Mona Lisa’s smile?
                     
                     And which numbers are worth betting on in the lottery?
                     
-                    You’ll discover most of the answers by joining Reksio and Kretes on their fourth, action-packed and surprise-filled adventure...
+                    You’ll find out *most* of the answers by joining Reksio and Kretes on their fourth, action-packed and surprise-filled adventure...
             `,
-            "reksioAndCaptainNemoDescription": `After the time machine is destroyed at the turn of the 19th and 20th centuries, Reksio and Kretes are forced to find another way back to their own time. Their best hope lies with the famous detective **Shlafrock Holmes**. Unfortunately, their plans to find this legendary figure are thwarted by the mysterious **Captain Nemo**, commander of the submarine *Nautilus*.
+            "reksioAndCaptainNemoDescription": `After the time machine is destroyed at the turn of the 20th century, Reksio and Kretes are forced to find another way back to their own time. Their best hope lies with the famous detective Shellock Holmes. Unfortunately, their plans to find this legendary figure are thwarted by the mysterious Nemo, captain of the submarine Nautilus.
 
-                    Will the great journey around the world end in success—or will it ever end at all?
+                    Will the great journey around the world end in success — or rather, will it ever end at all?
                     
-                    Will **Willy Frogg** fool everyone and make them look like fools?
+                    Will Willy Frogg prove everyone wrong and make them look like fools?
                     
-                    Where is the cradle of the ancient **Kreton** civilization buried—and is that where the *real* mystery lies?
+                    Where is the cradle of the ancient Molon civilization buried — and is that where the *real* mystery lies?
                     
-                    Will Reksio win the heart of **Kari Mata Hari**?
+                    Will Reksio win the heart of Kari Mata Hari?
                     
-                    Can **Chuck Nornik** really dig tunnels with a spinning kick?
+                    Can Woodchuck Norris really dig tunnels with a roundhouse kick?
                     
                     You'll find out everything by joining Reksio and Kretes on yet another breathtaking and unforgettable adventure...
             `,
-            "reksioAndKretesInActionDescription": `"**"An independent arcade-style addition to the *Adventures of Reksio* series. It does not require installation of other games from the series, nor any prior knowledge of Reksio's previous adventures—just focus and nimble fingers."**
+            "reksioAndKretesInActionDescription": `A standalone arcade-style addition to the Adventures of Reksio series. It does not require playing any of the games from the series, nor any prior knowledge of Reksio's previous adventures — just focus and nimble fingers.
 
                     Several months have passed since Reksio and Kretes's grand adventure came to an end. The heroes are now enjoying some well-deserved peace and quiet.
                     
-                    But the calm is interrupted by the arrival of a package from America—an exclusive set of arcade games based on the adventures of Reksio and Kretes. The heroes sit down in front of the console, invented by the ever-creative Rooster Inventor, and start to play.
+                    But the calm is interrupted by the arrival of a package from America — an exclusive set of arcade games based on the adventures of Reksio and Kretes. The heroes sit down in front of the Claystation, invented by the ever-creative Rooster Inventor, and start to play.
                     
-                    In doing so, they begin to uncover a number of strange inconsistencies…
+                    In doing so, they begin to uncover a number of strange inconsistencies...
             `,
             "reksioAndKretesTheSecretDescription": `A mysterious hum in the middle of the night jolts Reksio, Kretes, and the Rooster Inventor out of bed. Without hesitation and despite the danger, the friends set out to investigate.
 
-                    Soon, they discover that a massive **Black Monolith** has appeared in a forest clearing. Kretes touches its surface—and in an instant, all three heroes are pulled into the depths of the third dimension.
+                    Soon, they discover that a massive Black Monolith has appeared in a forest clearing. Kretes touches its surface — and in an instant, all three heroes are pulled into the depths of the third dimension.
                     
-                    Someone has kidnapped the friends and abandoned them at the foot of the **Dark Tower**.
+                    Someone has kidnapped the friends and left them stranded at the foot of the Dark Tower.
                     
                     Someone has torn them from the safety of their flat, 2D world and cast them into a hostile, three-dimensional space.
                     
-                    Someone has built **54 labyrinths** to put their friendship to the ultimate test.
+                    Someone has built 54 labyrinths to put their friendship to the ultimate test.
                     
                     Someone ruthless.
                     
-                    Someone… familiar.
+                    Someone... familiar.
             `,
         }
     },
@@ -153,7 +153,7 @@ const resources = {
             "lang_hu": "Węgierski",
             "lang_en": "Angielski",
             "viewInOtherLanguages": "Zobacz tą stronę w innym języku:",
-            "adventuresOfRex": "Przygody Reksia",
+            "adventuresOfReksio": "Przygody Reksia",
             "mainSeries": "Główna seria",
             "educationalGames": "Gry edukacyjne",
             "forVerySmallPlayers": "Dla bardzo małych graczy",
@@ -275,6 +275,146 @@ const resources = {
                     Ktoś pozbawiony skrupułów
                     
                     Ktoś znajomy... 
+            `,
+        }
+    },
+    ro: {
+        translation: {
+            "lang_pl": "Poloneză",
+            "lang_ro": "Română",
+            "lang_ru": "Rusă",
+            "lang_cz": "Cehă",
+            "lang_hu": "Maghiară",
+            "lang_en": "Engleză",
+            "viewInOtherLanguages": "Vezi acest site în alte limbi:",
+            "adventuresOfReksio": "Aventurile lui Reksio",
+            "mainSeries": "Seria principală",
+            "educationalGames": "Jocuri educaționale",
+            "forVerySmallPlayers": "Pentru cei mai mici jucători",
+            "playInBrowser": "🌐 Joacă în browser",
+            "extras": "Jocuri extra",
+            "englishVersionIsFanMade": "Versiunea în engleză este făcută de fani și folosești AI pentru dublaj.",
+            "mainAboutHello": "Bine ai venit pe zagrajwreksia.pl - un site făcut pentru a arhiva toate jocurile disponibile din seria Aventurile lui Reksio (cu toate versiunile lor), și pentru a permite descărcarea lor și chiar jucarea unora direct în browser (prin ReksioEngine).",
+            "mainAboutReadMore": "Citește mai multe despre acest proiect",
+            "mainAboutBoombit": "Studioului BoomBit (Aidem Media) i-a expirat licența de utilizat personajul Reksio, astfel că aceștia nu își mai pot vinde jocurile cu el, și nu au probleme cu ideea ca lumea să le descarce.",
+            "mainAboutMoreAboutGames": "Puteți afla mai multe informații despre jocurile din seria Aventurile lui Reksio pe:",
+            "mainAboutLinkAndLink": "<0>Przygody Reksia HUB</0> (🇵🇱/🇬🇧) și <2>Reksiopedia</2> (🇵🇱)",
+            "chooseLanguageVersion": "Alege limba versiunii",
+            "releaseDate": "Data apariției",
+            "goBack": "Înapoi",
+            "reksioAndPirates": "Reksio și Comoara Piraților",
+            "reksioAndUFO": "Reksio și OZN-ul",
+            "reksioAndWizards": "Reksio și Magicienii",
+            "reksioAndTimeMachine": "Reksio și Mașina Timpului",
+            "reksioAndCaptainNemo": "Reksio și Căpitanul Nemo",
+            "reksioAndKretesInAction": "Reksio și Kretes în Acțiune",
+            "reksioAndKretesTheSecret": "Reksio și Kretes: Misterul celei de a Treia Dimensiuni",
+            "source": "Sursă",
+            "createdAndManagedBy": "Create și gestionat de <1>Adikso</1>",
+            "sourceCode": "Cod sursă",
+            "reksioAndPiratesDescription": `Undeva, în Oceanul Non-Pacific, căpitanul piraților, pe nume Vântură-Ape, dispare in condiții misterioase. Singura hartă ce duce la o legendară comoară dispare o data cu el.
+
+                    Între timp, surferul Reksio este prins de o furtună pe mare. Tunete, fulgere... Valurile imense îl arunca pe țărmul unei insule tropicale. Aici găsește o sticlă care conține un bilețel enigmatic.
+                    
+                    Astfel Reksio împreună cu tine, dragule jucător, va participa la marea aventură a piraților.
+                    
+                    Ce s-a întamplat in realitate cu Vântură-Ape?
+                    
+                    Ce păzesc cu atâta sfințenie membrii Tribului Puilor?
+                    
+                    Ce mister se ascunde sub vulcan?
+                    
+                    Unde se află comoara piraților?
+                    
+                    Ce făcea Kretes pe insulă?
+                    
+                    Poți gasi raspunsurile la toate aceste întrebări însoțindu-l pe Reksio în această aventură plină de neprevăzut.
+            `,
+            "reksioAndUFODescription": `Undeva într-o galaxie îndepărtată... într-un sistem unde oul nu este o surpriză... pe o planetă unde cocoșul îți urează noapte bună... un misterios Kurator construiește o armă imensă, pe care vrea s-o folosească pentru cucerirea Universului...
+
+                    Între timp, Reksio, după ce a rezolvat misterul comorii piraților se intoarce acasă... Aici el află despre răpirea găinilor din ograda sa. Reksio se hotărăște să le salveze și pornește in urmărirea răpitorilor extratereștri.
+                    
+                    De ce au fost răpite găinile?
+                    
+                    Cine este de fapt misteriosul Kurator?
+                    
+                    Ce rol are loboda de pe planeta Kurakis?
+                    
+                    Este dragostea suficient de puternică incat sa dărame zidurile?
+                    
+                    Răspunsurile la aceste întrebări le vei afla însoțindu-l pe Reksio în noua sa expediție...
+            `,
+            "reksioAndWizardsDescription": `Undeva într-o Țară a Vrăjilor ce se destramă, Burektorul Universității de Magie studiază o profeție antică. Aceasta dezvăluie că doar un misterios Babole are puterea să îl demaște pe „Cel Ce Atât de Groaznic Se Înfurie” și să îi oprească planurile malefice.
+
+                    Cugetarea neliniștită a vrăjitorului e întreruptă de sunetul unei oglinde cum se sparge — și o cârtiță monstruos de mare pătrunde în biroul său, strigând: „Nu cred!”... Pe urmele sale, curajosul câine Reksio pășește în Țara Vrăjilor...
+                    
+                    Este Reksio acest Babole pe care îl prevestește profeția?
+                    
+                    Care dintre cei șapte vrăjitori este „Cel Care Atât de Groaznic Se Înfurie”?
+                    
+                    Poate Țara Vrăjilor să fie salvată de distrugere cu ajutorul unei cârtițe mereu posomorâte, o piatră vorbăreață, și o mână de obiecte magice?
+                    
+                    Cum îți poți da seama dacă ești doar o broască obișnuită sau o prințesă fermecată?
+                    
+                    Și cum stăpânești vrăji puternice într-un singur weekend?
+                    
+                    Toate acestea le vei afla alăturându-te lui Reksio într-o altă aventură plină de surprize și escapade palpitante...
+            `,
+            "reksioAndTimeMachineDescription": `După ce au învins vrăjitorul cel rău, Reksio și Kretes sperau să se poată odihni în sfârșit. Dar nu a fost să fie. Prinși de Ordinul Pernelo Băgăcioase, aceștia și-au petrecut restul vieților întemnițați. Reksio nu a mai avut parte de aventuri, iar Kretes nu s-a mai întors niciodată la Molly..."
+
+                    Daca vreți ca prezicerea să nu se adeverească, ajutați-i să transforme o canapea veche într-o mașină a timpului și să se întoarcă în trecut, acolo unde îl pot găsi pe Nostradamus, singura persoană care știe cum poate fi schimbat destinul...
+                    
+                    Cine e Nostradamus și de ce atâta mister?
+                    
+                    Unde se găsește galeria timpului și cum se poate ajunge la ea?
+                    
+                    Chiar au dispărut dinozaurii? Sau s-au mutat și locuiesc pe altă planetă?
+                    
+                    Ce ascund piramidele din Egipt?
+                    
+                    Cum poți câștiga un turnir cavaleresc daca ești caine?
+                    
+                    Care este adevărul din spatele zâmbetului Mona Lisei?
+                    
+                    Pe ce numere ar trebui să pariezi la loterie?
+                    
+                    Răspunsuri la *aproape* toate aceste întrebări le veți afla însoțindu-i pe Reksio și Kretes in noua lor aventură...
+            `,
+            "reksioAndCaptainNemoDescription": `După ce mașina timpului este distrusă la finele secolului al XIX-lea, Reksio and Kretes sunt nevoiți să găsească un alt mod să se întoarcă în vremurile lor. Cea mai bună speranță a lor este faimosul detectiv Șvarloc Holmes. Din păcate, planurile lor de a găsi această peronalitate legendară sunt împiedicate de misteriosul Nemo, căpitanul submarinului Nautilius.
+
+                    Se va termina această mare aventură în jurul lumii cu succes - sau mai bine spus se va termina aceasta vreodată?
+                    
+                    Va reuși Willy Frogg să le arate tuturor că se înșeală?
+                    
+                    Unde este ascuns leagănul civilizației Kretonilor antici — și oare acolo se află *adevăratul* mister?
+                    
+                    Va reuși Reksio să câștige inima lui Kari Mata Kari?
+                    
+                    Chiar poate Chuck Norvik să sape tunele doar cu o lovitură prin semirotație?
+                    
+                    Vei descoperi toate aceste răspunsuri alăturându-te lui Reksio și Kretes la încă o aventură incredibilă și de neuitat...
+            `,
+            "reksioAndKretesInActionDescription": `Un supliment de sine stătător stil arcade la seria Aventurile lui Reksio. Nu necesită jucarea niciunui alt joc din serie, și nici cunoștințe existente despre aventurile anterioare ale lui Reksio — doar concentrare și degete dibace.
+
+                    Iaca au trecut câteva luni de când a luat final marea aventură a lui Reksio și Kretes. Eroii noștri se bucură acum de niște bine-meritată pace și liniște.
+                    
+                    Dar acest calm este întrerupt de venirea unui pachet din America — un set exclusivit de jocuri stil arcade bazate pe aventurile lui Reksio și Kretes. Eroii noștrii se așează în fața consolei lor inventate de ingeniosul Cocoș Inventator, și se pun pe joacă.
+                    
+                    Și astfel, ei încep să descopere un număr de inconsistențe dubioase...
+            `,
+            "reksioAndKretesTheSecretDescription": `Un zumzet misterios în mijlocul nopții îi scoală din pat pe Reksio, Kretes, și Cocoșul Inventator. Fără ezitare și în ciuda pericolului, eroii noștri ies în recunoaștere.
+
+                    Curând, ei descoperă un un masiv Monolit Negru a apărut într-o poiană. Kretes atinge suprafața acesteia - și într-o clipă, toți trei eroi sunt trași în adâncurile celei de a treia dimensiuni.
+                    
+                    Cineva i-a răpit pe eroii noștri și i-a lăsat blocați la baza Turnului Întunecat.
+                    
+                    Cineva i-a rupt din siguranța lumii lor plate, bidimensionale, și i-a aruncat într-un spațiu ostil, tridimensional.
+                    
+                    Cineva a construit 54 de labirinturi pentru a le pune camaraderia prin testul suprem.
+                    
+                    Cineva necruțător.
+                    
+                    Cineva... familiar.
             `,
         }
     }

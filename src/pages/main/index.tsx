@@ -148,7 +148,7 @@ function App() {
             </Message>
 
             <GameSection
-                title={t('adventuresOfRex')}
+                title={t('adventuresOfReksio')}
                 subtitle={t('mainSeries')}
             >
                 <Link to="/game/skarbpiratow">
