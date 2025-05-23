@@ -437,6 +437,16 @@ const resources = {
     }
 };
 
+// Keys fallback to English
+const englishKeys = Object.keys(resources.en.translation)
+for (const details of Object.values(resources)) {
+    const langKeys = Object.keys(details.translation)
+    const diff = englishKeys.filter(x => !langKeys.includes(x));
+    for (const langKey of diff) {
+        (details.translation as Record<string, string>)[langKey] = (resources.en.translation as Record<string, string>)[langKey]
+    }
+}
+
 i18n
     .use(initReactI18next)
     .init({
