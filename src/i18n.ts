@@ -42,6 +42,8 @@ const resources = {
             "source": "Source",
             "createdAndManagedBy": "Created and managed by <1>Adikso</1>",
             "sourceCode": "Source code",
+            "playerEnterFullscreen": "Full screen",
+            "playerPressHereToStart": "Press here to start",
             "reksioAndPiratesDescription": `Somewhere in the Non-Pacific Ocean, under mysterious circumstances, the pirate Captain O'Verboard disappears. Along with him vanishes the only map leading to the legendary treasure...
 
                     Meanwhile, Reksio, windsurfing across the sea, is caught in a raging storm. Amid flashes of lightning and the roar of the waves, Reksio crashes into the shores of a mysterious island. Soon after, he finds a bottle washed up on the beach, containing an enigmatic message:
@@ -190,6 +192,8 @@ const resources = {
             "source": "Źródło",
             "createdAndManagedBy": "Stworzone i zarządzane przez <1>Adikso</1>",
             "sourceCode": "Kod źródłowy",
+            "playerEnterFullscreen": "Pełny ekran",
+            "playerPressHereToStart": "Kliknij tutaj aby uruchomić grę",
             "reksioAndPiratesDescription": `Gdzieś na Oceanie Niespokojnym w tajemniczych okolicznościach znika dowódca piratów Kapitan O'Gryzek. Razem z nim ginie jedyna mapa prowadząca do legendarnego skarbu...
                     
                     Tymczasem pływający na desce windsurfingowej Reksio zostaje porwany przez szalejący sztorm. Wśród błysków piorunów i ryku fal Reksio rozbija się u wybrzeży tajemniczej wyspy. Wkrótce znajduje wyrzuconą przez ocean butelkę z zagadkową zawartością.
@@ -322,8 +326,6 @@ const resources = {
             "reksioAndCaptainNemo": "Reksio și Căpitanul Nemo",
             "reksioAndKretesInAction": "Reksio și Kretes în Acțiune",
             "reksioAndKretesTheSecret": "Reksio și Kretes: Misterul celei de a Treia Dimensiuni",
-            "originalCDVersionName": "💿 Original CD version (ISO)",
-            "originalCDVersionDescription": "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
             "source": "Sursă",
             "createdAndManagedBy": "Create și gestionat de <1>Adikso</1>",
             "sourceCode": "Cod sursă",

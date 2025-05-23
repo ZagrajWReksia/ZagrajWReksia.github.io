@@ -1,4 +1,4 @@
-import {RefObject, useEffect, useRef} from 'react'
+import {RefObject, useEffect, useRef, useState} from 'react'
 import {createGamePlayer, FileLoaders, GamePlayerInstance} from "reksioengine";
 import styled from "styled-components";
 import {Fullscreen} from "lucide-react";
@@ -15,10 +15,24 @@ const Container = styled.div`
 `
 
 const GameContainer = styled.div`
+    width: 800px;
+    height: 600px;
+    margin-bottom: 10px;
+    
     &:fullscreen {
         display: flex;
         justify-content: center;
+        align-items: normal;
     }
+
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    font-family: sans-serif;
+    font-size: 24px;
 `
 
 const Controls = styled.div`
@@ -37,9 +51,17 @@ function Index() {
     const navigate = useNavigate();
     const gameRef = useRef(null)
     const playerRef: RefObject<GamePlayerInstance | null> = useRef(null)
+    const [ready, setReady] = useState<boolean>(false)
+
+    const onReady = async () => {
+        if (gameRef.current === null || playerRef.current !== null) {
+            return
+        }
+        setReady(true)
+    }
 
     useEffect(() => {
-        if (gameRef.current === null) {
+        if (!ready) {
             return
         }
 
@@ -58,7 +80,7 @@ function Index() {
                 playerRef.current = null
             }
         }
-    }, [])
+    }, [ready])
 
     const enterFullscreen = () => {
         if (!gameRef.current) {
@@ -75,9 +97,11 @@ function Index() {
             {t('goBack')}
         </Button>
 
-        <GameContainer ref={gameRef}></GameContainer>
+        <GameContainer ref={gameRef} onClick={onReady}>
+            {!ready && <div>{t('playerPressHereToStart')}</div>}
+        </GameContainer>
         <Controls>
-            <Button onClick={enterFullscreen}><Fullscreen size={15}/> Fullscreen</Button>
+            <Button onClick={enterFullscreen}><Fullscreen size={15}/> {t('playerEnterFullscreen')}</Button>
             {/*<Button><FileDown size={15} /> Download save file</Button>*/}
             {/*<Button><FileUp size={15} /> Load save file</Button>*/}
         </Controls>
