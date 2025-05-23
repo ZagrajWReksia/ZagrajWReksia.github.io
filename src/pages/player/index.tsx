@@ -3,7 +3,6 @@ import {createGamePlayer, FileLoaders, GamePlayerInstance} from "reksioengine";
 import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
-import {Footer} from "../../components/footer.tsx";
 import {useNavigate} from "react-router";
 
 const Container = styled.div`
@@ -18,6 +17,11 @@ const Controls = styled.div`
     border-radius: 10px;
     display: flex;
     gap: 10px;
+`
+
+const Footer = styled.footer`
+    text-align: center;
+    padding: 20px;
 `
 
 function Index() {
@@ -61,7 +65,9 @@ function Index() {
             <Button><FileUp size={15} /> Load save file</Button>
         </Controls>
 
-        <Footer/>
+        <Footer>
+            Powered by <a href="https://github.com/ReksioEngine/ReksioEngine">ReksioEngine</a>
+        </Footer>
     </Container>
 }
 
