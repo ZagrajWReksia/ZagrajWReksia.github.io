@@ -9,7 +9,7 @@ import games, { Language } from "./games.ts"
 import i18next from "i18next";
 
 const Wrapper = styled.div`
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 20px;
     }
 
@@ -42,7 +42,7 @@ const CoverSection = styled.div`
     max-width: 400px;
     margin: 0 auto;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         position: static;
         max-width: 100%;
     }
