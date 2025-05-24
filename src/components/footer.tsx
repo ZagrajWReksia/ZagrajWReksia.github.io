@@ -22,7 +22,7 @@ export const Footer = () => {
                 {t('creditsBackground')}
             </div>
             <div>
-                <a href="#">
+                <a href="https://github.com/ZagrajWReksia/ZagrajWReksia.github.io">
                     {t('sourceCode')}
                 </a>
             </div>
