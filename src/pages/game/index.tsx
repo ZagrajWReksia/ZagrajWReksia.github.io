@@ -64,6 +64,11 @@ const DetailsSection = styled.div`
     max-width: 700px;
 `;
 
+const DetailsSectionDescription = styled.div`
+    margin-bottom: 30px;
+    margin-top: 10px;
+    white-space: preserve-breaks;
+`
 
 const LanguageSelector = styled.div`
     display: flex;
@@ -91,7 +96,6 @@ const DownloadOption = styled.div`
         text-decoration: none;
     }
 `
-
 
 export function GameDetailsPage() {
     const { t } = useTranslation();
@@ -122,10 +126,12 @@ export function GameDetailsPage() {
                 <DetailsSection>
                     <FancyHeading text={t(game.title)}/>
 
-                    <div style={{marginBottom: '30px', marginTop: '10px', whiteSpace: 'preserve-breaks'}}>
-                        <div style={{marginBottom: '20px'}}>{t(game.description)}</div>
+                    <DetailsSectionDescription>
+                        <div style={{marginBottom: '20px'}}>
+                            {t(game.description)}
+                        </div>
                         <strong>{t('releaseDate')}:</strong> {game.year}<br/>
-                    </div>
+                    </DetailsSectionDescription>
 
                     <FancyHeading size="medium" text={t('chooseLanguageVersion')}/>
                     <LanguageSelector style={{marginTop: '10px'}}>
@@ -153,7 +159,9 @@ export function GameDetailsPage() {
                                         )}
                                     </div>
                                     <div>
-                                        <small style={{whiteSpace: 'preserve-breaks'}}>{t(download.description)}</small>
+                                        <small style={{whiteSpace: 'preserve-breaks'}}>
+                                            {t(download.description)}
+                                        </small>
                                     </div>
                                     {download.mirrors && (
                                         <small>

@@ -32,13 +32,8 @@ const CoverWrapper = styled.div`
     width: 200px;
 
     transition: scale ease-in-out 100ms;
-    &:not(.disabled):hover {
+    &:hover {
         scale: 1.1;
-    }
-
-    &.disabled {
-        opacity: 0.5;
-        filter: grayscale(0.5);
     }
 `;
 
