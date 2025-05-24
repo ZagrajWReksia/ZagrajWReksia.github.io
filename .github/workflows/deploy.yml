@@ -39,6 +39,8 @@ jobs:
         run: yarn install
       - name: Build
         run: yarn run build
+      - name: Fix 404
+        run: cp ./dist/index.html ./dist/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
