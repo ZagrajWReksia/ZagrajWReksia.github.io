@@ -171,7 +171,7 @@ const resources = {
             "playInBrowser": "🌐 Graj w przeglądarce",
             "withoutGameDownloading": "Bez pobierania gry",
             "mirrors": "Mirrory",
-            "extras": "Dodatki",
+            "extras": "Dodatki do serii",
             "englishVersionIsFanMade": "Wersja w języku angielskim jest wersją fanowską i używa AI do dubbingu.",
             "mainAboutHello": "Witaj na zagrajwreksia.pl – stronie poświęconej archiwizacji wszelkich możliwych gier o reksiu (oraz ich wersji), umożliwiającej ich pobranie, a także grę w niektóre z nich bezpośrednio w przeglądarce (dzięki ReksioEngine).",
             "mainAboutReadMore": "Przeczytaj więcej o projekcie",

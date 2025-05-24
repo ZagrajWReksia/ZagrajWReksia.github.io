@@ -99,7 +99,7 @@ const games: Record<string, Index> = {
                 downloads: [
                     {
                         name: "📦 ZIP Archive",
-                        description: "Includes patches for modern operating systems. This is a fan made translation.",
+                        description: "This is a fan-made translation. Includes patches for modern operating systems. ",
                         url: "https://iso.zagrajwreksia.pl/Reksio%20and%20the%20Pirate%20Treasure.zip",
                         mirrors: [
                             {
@@ -173,7 +173,7 @@ const games: Record<string, Index> = {
                 downloads: [
                     {
                         name: "📦 ZIP Archive",
-                        description: "Includes patches for modern operating systems. This is a fan made translation.",
+                        description: "This is a fan made translation. Includes patches for modern operating systems.",
                         url: "https://iso.zagrajwreksia.pl/Reksio%20and%20the%20UFO.zip",
                         mirrors: [
                             {
@@ -182,7 +182,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "468 MB",
-                        source: "Serena Pancu (mega.nz)"
+                        source: "Serena Pancu"
                     }
                 ]
             }
