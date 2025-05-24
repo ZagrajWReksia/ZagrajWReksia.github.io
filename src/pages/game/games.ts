@@ -27,7 +27,7 @@ export interface Index {
 }
 
 const games: Record<string, Index> = {
-    "skarbpiratow": {
+    "piratetreasure": {
         title: "reksioAndPirates",
         description: "reksioAndPiratesDescription",
         coverImage: "/covers/reksioiskarbpiratow.jpg",
@@ -188,7 +188,7 @@ const games: Record<string, Index> = {
             }
         ],
     },
-    "czarodzieje": {
+    "wizards": {
         title: "reksioAndWizards",
         description: "reksioAndWizardsDescription",
         coverImage: "/covers/reksioiczarodzieje.jpg",
@@ -233,7 +233,7 @@ const games: Record<string, Index> = {
             },
         ],
     },
-    "wehikul": {
+    "timemachine": {
         title: "reksioAndTimeMachine",
         description: "reksioAndTimeMachineDescription",
         coverImage: "/covers/reksioiwehikulczasu.jpg",

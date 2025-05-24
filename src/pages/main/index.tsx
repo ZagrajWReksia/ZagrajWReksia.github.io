@@ -151,7 +151,7 @@ function App() {
                 title={t('adventuresOfReksio')}
                 subtitle={t('mainSeries')}
             >
-                <Link to="/game/skarbpiratow">
+                <Link to="/game/piratetreasure">
                     <Cover src="/covers/reksioiskarbpiratow.jpg">
                         {t('reksioAndPirates')}<br/>
                         🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*<br/>
@@ -164,13 +164,13 @@ function App() {
                         🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*
                     </Cover>
                 </Link>
-                <Link to="/game/czarodzieje">
+                <Link to="/game/wizards">
                     <Cover src="/covers/reksioiczarodzieje.jpg">
                         {t('reksioAndWizards')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
                 </Link>
-                <Link to="/game/wehikul">
+                <Link to="/game/timemachine">
                     <Cover src="/covers/reksioiwehikulczasu.jpg">
                         {t('reksioAndTimeMachine')}<br/>
                         🇵🇱 🇷🇴 🇷🇺

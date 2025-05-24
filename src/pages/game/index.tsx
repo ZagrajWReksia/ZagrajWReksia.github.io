@@ -99,7 +99,7 @@ export function GameDetailsPage() {
     const gameId = params.gameId;
 
     const game = games[gameId];
-    const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(game.languages.find(lang => lang.langCode === i18next.resolvedLanguage) ?? null);
+    const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(game?.languages?.find(lang => lang.langCode === i18next.resolvedLanguage) ?? null);
 
     if (!game) {
         return <div>Game not found</div>;
