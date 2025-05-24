@@ -7,20 +7,26 @@ const FlagLink = styled.a`
 
 export const LanguageSelector = () => {
     const { t, i18n } = useTranslation();
+
+    const getFlagEmoji = (countryCode: string) => {
+        if (countryCode === 'en') {
+            countryCode = 'gb'
+        }
+
+        const codePoints = countryCode.toUpperCase().split("").map((char) => 127397 + char.charCodeAt(0));
+        return String.fromCodePoint(...codePoints);
+    }
+
     return (
         <div style={{textAlign: 'center'}}>
             <b>{t('viewInOtherLanguages')}</b>
             <br/>
-            <FlagLink href="#" onClick={() => i18n.changeLanguage('pl')}>
-                🇵🇱
-            </FlagLink>
-            <FlagLink href="#" onClick={() => i18n.changeLanguage('ro')}>🇷🇴</FlagLink>
-            <FlagLink href="#" onClick={() => i18n.changeLanguage('cz')}>🇨🇿</FlagLink>
-            <FlagLink href="#" onClick={() => i18n.changeLanguage('hu')}>🇭🇺</FlagLink>
-            <FlagLink href="#" onClick={() => i18n.changeLanguage('ru')}>🇷🇺</FlagLink>
-            <FlagLink href="#" onClick={() => i18n.changeLanguage('en')}>
-                🇬🇧
-            </FlagLink>
+
+            {Object.keys(i18n.options.resources!).map(code => (
+                <FlagLink key={code} href="#" onClick={() => i18n.changeLanguage(code)}>
+                    {getFlagEmoji(code)}&nbsp;
+                </FlagLink>
+            ))}
         </div>
     );
 }

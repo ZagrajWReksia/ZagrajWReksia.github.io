@@ -78,7 +78,7 @@ const LanguageSelector = styled.div`
 `;
 
 const LanguageOption = styled.button<{ active: boolean }>`
-    border: 2px solid ${props => props.active ? 'rgba(254,227,77,0.44)' : 'rgba(0,0,0,0)'};
+    border: 2px solid ${props => props.active ? 'rgb(254,227,77)' : 'rgba(0,0,0,0)'};
     
     &:disabled {
         opacity: 0.8;
