@@ -6,6 +6,7 @@ import {Button} from "../../components/button.tsx";
 import {Footer} from "../../components/footer.tsx";
 import {useTranslation} from "react-i18next";
 import games, { Language } from "./games.ts"
+import i18next from "i18next";
 
 const Wrapper = styled.div`
     @media (max-width: 768px) {
@@ -97,13 +98,12 @@ export function GameDetailsPage() {
     const params = useParams() as { gameId: string };
     const gameId = params.gameId;
 
-    const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(null);
+    const game = games[gameId];
+    const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(game.languages.find(lang => lang.langCode === i18next.resolvedLanguage) ?? null);
 
-    if (!gameId || !games[gameId]) {
+    if (!game) {
         return <div>Game not found</div>;
     }
-
-    const game = games[gameId];
 
     return (
         <Wrapper>
