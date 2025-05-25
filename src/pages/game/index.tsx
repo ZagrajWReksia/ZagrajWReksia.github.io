@@ -4,9 +4,10 @@ import {useState} from "react";
 import {FancyHeading} from "../../components/text.tsx";
 import {Button} from "../../components/button.tsx";
 import {Footer} from "../../components/footer.tsx";
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
 import games, { Language } from "./games.ts"
 import i18next from "i18next";
+import {Alert} from "../../components/box.tsx";
 
 const Wrapper = styled.div`
     @media (max-width: 767px) {
@@ -65,7 +66,7 @@ const DetailsSection = styled.div`
 `;
 
 const DetailsSectionDescription = styled.div`
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 10px;
     white-space: preserve-breaks;
 `
@@ -136,6 +137,12 @@ export function GameDetailsPage() {
                         </div>
                         <strong>{t('releaseDate')}:</strong> {game.year}<br/>
                     </DetailsSectionDescription>
+
+                    <Alert style={{marginBottom: '20px'}}>
+                        <Trans i18nKey="visitReksioDiscordForHelp">
+                            Need help with the game or installation? Join Reksio community on <a href="https://discord.gg/przygody-reksia">Discord</a>
+                        </Trans>
+                    </Alert>
 
                     <FancyHeading size="medium" text={t('chooseLanguageVersion')}/>
                     <LanguageSelector style={{marginTop: '10px'}}>

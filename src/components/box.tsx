@@ -6,3 +6,7 @@ export const Box = styled.div`
     border-radius: 10px;
     backdrop-filter: blur(10px);
 `;
+
+export const Alert = styled(Box)`
+    --container-background: rgba(221, 40, 40, 0.2);
+`
