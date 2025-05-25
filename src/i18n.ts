@@ -195,7 +195,7 @@ const resources = {
             "originalCDVersionDescription": "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
             "improvedVersionName": "🔧 Wersja poprawiona z łatkami",
             "improvedVersionDescription": "Łatka No-CD + łatki dla współczesnnych systemów operacyjnych",
-            "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na Discorda społeczności <1>Discord</1>.",
+            "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na <1>Discorda</1> społeczności.",
             "source": "Źródło",
             "createdAndManagedBy": "Stworzone i zarządzane przez <1>Adikso</1>",
             "sourceCode": "Kod źródłowy",
