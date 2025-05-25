@@ -146,32 +146,32 @@ function App() {
                 title={t('adventuresOfReksio')}
                 subtitle={t('mainSeries')}
             >
-                <Link to="/game/piratetreasure">
+                <Link to="/game/risp">
                     <Cover src="/covers/reksioiskarbpiratow.jpg">
                         {t('reksioAndPirates')}<br/>
                         🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*<br/>
                         {t('playInBrowser')}
                     </Cover>
                 </Link>
-                <Link to="/game/ufo">
+                <Link to="/game/riu">
                     <Cover src="/covers/reksioiufo.jpg">
                         {t('reksioAndUFO')}<br/>
                         🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*
                     </Cover>
                 </Link>
-                <Link to="/game/wizards">
+                <Link to="/game/ric">
                     <Cover src="/covers/reksioiczarodzieje.jpg">
                         {t('reksioAndWizards')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
                 </Link>
-                <Link to="/game/timemachine">
+                <Link to="/game/riwc">
                     <Cover src="/covers/reksioiwehikulczasu.jpg">
                         {t('reksioAndTimeMachine')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
                 </Link>
-                <Link to="/game/nemo">
+                <Link to="/game/rikn">
                     <Cover src="/covers/reksioikapitannemo.jpg">
                         {t('reksioAndCaptainNemo')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
@@ -184,13 +184,13 @@ function App() {
                 note={'* ' + t('englishVersionIsFanMade')}
                 style={{ marginTop: '30px' }}
             >
-                <Link to="/game/inaction">
+                <Link to="/game/rikwa">
                     <Cover src="/covers/reksioikreteswakcji.jpg">
                         {t('reksioAndKretesInAction')}<br/>
                         🇵🇱 🇷🇴 🇷🇺
                     </Cover>
                 </Link>
-                <Link to="/game/thirddimension">
+                <Link to="/game/rikttw">
                     <Cover src="/covers/reksioikretestajemnicatrzeciegowymiaru.jpg">
                         {t('reksioAndKretesTheSecret')}<br/>
                         🇵🇱 🇷🇴 🇷🇺

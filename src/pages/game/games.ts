@@ -27,7 +27,7 @@ export interface Index {
 }
 
 const games: Record<string, Index> = {
-    "piratetreasure": {
+    "risp": {
         title: "reksioAndPirates",
         description: "reksioAndPiratesDescription",
         coverImage: "/covers/reksioiskarbpiratow.jpg",
@@ -43,21 +43,21 @@ const games: Record<string, Index> = {
                         url: "/play/reksioiskarbpiratow",
                         source: "zagrajwreksia.pl"
                     },
-                    // {
-                    //     name: "Wersja poprawiona z łatkami",
-                    //     description: "Wszystkie oficjalne łatki + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
-                    //     url: "#",
-                    //     size: "123 MB",
-                    //     source: "zagrajwreksia.pl"
-                    // },
+                    {
+                        name: "🔧 Wersja poprawiona z łatkami",
+                        description: "Łatka No-CD + łatki dla współczesnnych systemów operacyjnych",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/RISP-Patched.zip",
+                        size: "260 MB",
+                        source: "zagrajwreksia.pl"
+                    },
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Skarb%20Piratow.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/Reksio%20i%20Skarb%20Pirat%C3%B3w%20%5Bpiklib8%5D.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
-                                url: "https://archive.org/download/1.-reksio-i-skarb-piratow/1.%20Reksio%20i%20Skarb%20Pirat%C3%B3w.iso"
+                                url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20Skarb%20Pirat%C3%B3w%20%5Bpiklib8%5D.iso"
                             }
                         ],
                         size: "611 MB",
@@ -69,6 +69,19 @@ const games: Record<string, Index> = {
                 langCode: "ro",
                 langIcon: "🇷🇴",
                 downloads: [
+                    {
+                        name: "🔧 Improved version with patches",
+                        description: "No-CD patch + patches for modern operating systems",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Romanian-Patched.zip",
+                        mirrors: [
+                            {
+                                name: "Combined Romanian",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
+                            }
+                        ],
+                        size: "333 MB",
+                        source: "Serena Pancu"
+                    },
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
@@ -114,7 +127,7 @@ const games: Record<string, Index> = {
             }
         ],
     },
-    "ufo": {
+    "riu": {
         title: "reksioAndUFO",
         description: "reksioAndUFODescription",
         coverImage: "/covers/reksioiufo.jpg",
@@ -125,16 +138,23 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
+                        name: "🔧 Wersja poprawiona z łatkami",
+                        description: "Łatka No-CD + łatki dla współczesnnych systemów operacyjnych",
+                        url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
+                        size: "315 MB",
+                        source: "zagrajwreksia.pl"
+                    },
+                    {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Ufo.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiU/Reksio%20i%20UFO%20%5Bpiklib8%5D.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
-                                url: "https://archive.org/download/reksio-i-ufo/2.%20Reksio%20i%20Ufo.iso"
+                                url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20UFO%20%5Bpiklib8%5D.iso"
                             }
                         ],
-                        size: "470 MB",
+                        size: "558 MB",
                         source: "archive.org"
                     }
                 ]
@@ -143,6 +163,19 @@ const games: Record<string, Index> = {
                 langCode: "ro",
                 langIcon: "🇷🇴",
                 downloads: [
+                    {
+                        name: "🔧 Improved version with patches",
+                        description: "No-CD patch + patches for modern operating systems",
+                        url: "https://iso.zagrajwreksia.pl/RiU/RiU-Romanian-Patched.zip",
+                        mirrors: [
+                            {
+                                name: "Combined Romanian",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
+                            }
+                        ],
+                        size: "323 MB",
+                        source: "Serena Pancu"
+                    },
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
@@ -188,7 +221,7 @@ const games: Record<string, Index> = {
             }
         ],
     },
-    "wizards": {
+    "ric": {
         title: "reksioAndWizards",
         description: "reksioAndWizardsDescription",
         coverImage: "/covers/reksioiczarodzieje.jpg",
@@ -199,13 +232,20 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
+                        name: "🔧 Wersja poprawiona z łatkami",
+                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
+                        url: "https://iso.zagrajwreksia.pl/RiC/RiC-Patched.zip",
+                        size: "555 MB",
+                        source: "zagrajwreksia.pl i ric-workshop"
+                    },
+                    {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Czarodzieje.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiC/Reksio%20i%20Czarodzieje.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
-                                url: "https://archive.org/download/3.-reksio-i-czarodzieje/3.%20Reksio%20i%20Czarodzieje.iso"
+                                url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20Czarodzieje.iso"
                             }
                         ],
                         size: "677 MB",
@@ -217,6 +257,19 @@ const games: Record<string, Index> = {
                 langCode: "ro",
                 langIcon: "🇷🇴",
                 downloads: [
+                    {
+                        name: "🔧 Improved version with patches",
+                        description: "No-CD patch + patches for modern operating systems",
+                        url: "https://iso.zagrajwreksia.pl/RiC/RiC-Romanian-Patched.zip",
+                        mirrors: [
+                            {
+                                name: "Combined Romanian",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
+                            }
+                        ],
+                        size: "523 MB",
+                        source: "Serena Pancu"
+                    },
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
@@ -233,7 +286,7 @@ const games: Record<string, Index> = {
             },
         ],
     },
-    "timemachine": {
+    "riwc": {
         title: "reksioAndTimeMachine",
         description: "reksioAndTimeMachineDescription",
         coverImage: "/covers/reksioiwehikulczasu.jpg",
@@ -246,11 +299,11 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Wehikul%20Czasu.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiWC/Reksio%20i%20Wehikul%20Czasu.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
-                                url: "https://archive.org/download/4.-reksio-i-wehikul-czasu/4.%20Reksio%20i%20Wehiku%C5%82%20Czasu.iso"
+                                url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20Wehiku%C5%82%20Czasu.iso"
                             }
                         ],
                         size: "675 MB",
@@ -262,6 +315,19 @@ const games: Record<string, Index> = {
                 langCode: "ro",
                 langIcon: "🇷🇴",
                 downloads: [
+                    {
+                        name: "Improved version with patches",
+                        description: "No-CD patch + patches for modern operating systems",
+                        url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Romanian-Patched.zip",
+                        mirrors: [
+                            {
+                                name: "Combined Romanian",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
+                            }
+                        ],
+                        size: "560 MB",
+                        source: "Serena Pancu"
+                    },
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
@@ -278,7 +344,7 @@ const games: Record<string, Index> = {
             },
         ],
     },
-    "nemo": {
+    "rikn": {
         title: "reksioAndCaptainNemo",
         description: "reksioAndCaptainNemoDescription",
         coverImage: "/covers/reksioikapitannemo.jpg",
@@ -308,6 +374,19 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
+                        name: "Improved version with patches",
+                        description: "No-CD patch + patches for modern operating systems",
+                        url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Romanian-Patched.zip",
+                        mirrors: [
+                            {
+                                name: "Combined Romanian",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
+                            }
+                        ],
+                        size: "796 MB",
+                        source: "Serena Pancu"
+                    },
+                    {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
                         url: "https://archive.org/download/reksio-si-capitanul-nemo/Reksio%20si%20Capitanul%20Nemo.iso",
@@ -323,7 +402,7 @@ const games: Record<string, Index> = {
             },
         ],
     },
-    "inaction": {
+    "rikwa": {
         title: "reksioAndKretesInAction",
         description: "reksioAndKretesInActionDescription",
         coverImage: "/covers/reksioikreteswakcji.jpg",
@@ -347,6 +426,19 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
+                        name: "Improved version with patches",
+                        description: "No-CD patch + patches for modern operating systems",
+                        url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Romanian-Patched.zip",
+                        mirrors: [
+                            {
+                                name: "Combined Romanian",
+                                url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
+                            }
+                        ],
+                        size: "307 MB",
+                        source: "Serena Pancu"
+                    },
+                    {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
                         url: "https://archive.org/download/reksio-si-kretes-in-actiune/Reksio%20si%20Kretes%20in%20Actiune.ISO",
@@ -362,7 +454,7 @@ const games: Record<string, Index> = {
             },
         ],
     },
-    "thirddimension": {
+    "rikttw": {
         title: "reksioAndKretesTheSecret",
         description: "reksioAndKretesTheSecretDescription",
         coverImage: "/covers/reksioikretestajemnicatrzeciegowymiaru.jpg",
