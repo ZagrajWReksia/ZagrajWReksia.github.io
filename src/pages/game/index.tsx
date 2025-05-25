@@ -91,9 +91,13 @@ const DownloadOption = styled.div`
     padding: 15px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+`
 
+const Source = styled.small`
+    color: rgb(186, 186, 186);
+    
     a {
-        text-decoration: none;
+        color: rgb(186, 186, 186);
     }
 `
 
@@ -151,7 +155,7 @@ export function GameDetailsPage() {
                             {selectedLanguage.downloads.map((download, index) => (
                                 <DownloadOption key={index}>
                                     <div>
-                                        <Link to={download.url}>
+                                        <Link to={download.url} style={{textDecoration: 'none'}}>
                                             <span>{t(download.name)}</span>
                                         </Link>
                                         {download.size && (
@@ -175,9 +179,11 @@ export function GameDetailsPage() {
                                     )}
                                     {download.source && (
                                         <div>
-                                            <small style={{color: "rgb(186, 186, 186)"}}>
-                                                {t('source')}: {download.source}
-                                            </small>
+                                            <Source>
+                                                {t('source')}: {download.sourceUrl ? (
+                                                    <a href={download.sourceUrl}>{download.source}</a>
+                                                ) : download.source}
+                                            </Source>
                                         </div>
                                     )}
                                 </DownloadOption>

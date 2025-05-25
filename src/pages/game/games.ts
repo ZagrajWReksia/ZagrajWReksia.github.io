@@ -10,6 +10,7 @@ export interface Download {
     mirrors?: Mirror[];
     size?: string;
     source: string;
+    sourceUrl?: string;
 }
 
 export interface Language {
@@ -44,8 +45,8 @@ const games: Record<string, Index> = {
                         source: "zagrajwreksia.pl"
                     },
                     {
-                        name: "🔧 Wersja poprawiona z łatkami",
-                        description: "Łatka No-CD + łatki dla współczesnnych systemów operacyjnych",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiSP/RISP-Patched.zip",
                         size: "260 MB",
                         source: "zagrajwreksia.pl"
@@ -61,7 +62,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "611 MB",
-                        source: "archive.org"
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
                     }
                 ]
             },
@@ -70,8 +72,8 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
-                        name: "🔧 Improved version with patches",
-                        description: "No-CD patch + patches for modern operating systems",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -80,7 +82,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "333 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     },
                     {
                         name: "originalCDVersionName",
@@ -121,7 +124,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "401 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     }
                 ]
             }
@@ -138,8 +142,8 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "🔧 Wersja poprawiona z łatkami",
-                        description: "Łatka No-CD + łatki dla współczesnnych systemów operacyjnych",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
                         size: "315 MB",
                         source: "zagrajwreksia.pl"
@@ -155,7 +159,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "558 MB",
-                        source: "archive.org"
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
                     }
                 ]
             },
@@ -164,8 +169,8 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
-                        name: "🔧 Improved version with patches",
-                        description: "No-CD patch + patches for modern operating systems",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -174,7 +179,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "323 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     },
                     {
                         name: "originalCDVersionName",
@@ -215,7 +221,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "468 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     }
                 ]
             }
@@ -232,11 +239,12 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
-                        name: "🔧 Wersja poprawiona z łatkami",
+                        name: "improvedVersionName",
                         description: "Łatka No-CD + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Patched.zip",
                         size: "555 MB",
-                        source: "zagrajwreksia.pl i ric-workshop"
+                        source: "zagrajwreksia.pl i ric-workshop",
+                        sourceUrl: "https://github.com/roostarreksio/ric-workshop"
                     },
                     {
                         name: "originalCDVersionName",
@@ -249,7 +257,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "677 MB",
-                        source: "archive.org"
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
                     }
                 ]
             },
@@ -258,8 +267,8 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
-                        name: "🔧 Improved version with patches",
-                        description: "No-CD patch + patches for modern operating systems",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -268,7 +277,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "523 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     },
                     {
                         name: "originalCDVersionName",
@@ -307,7 +317,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "675 MB",
-                        source: "archive.org"
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
                     }
                 ]
             },
@@ -316,8 +327,8 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
-                        name: "Improved version with patches",
-                        description: "No-CD patch + patches for modern operating systems",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -326,7 +337,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "560 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     },
                     {
                         name: "originalCDVersionName",
@@ -374,8 +386,8 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
-                        name: "Improved version with patches",
-                        description: "No-CD patch + patches for modern operating systems",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -384,7 +396,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "796 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     },
                     {
                         name: "originalCDVersionName",
@@ -426,8 +439,8 @@ const games: Record<string, Index> = {
                 langIcon: "🇷🇴",
                 downloads: [
                     {
-                        name: "Improved version with patches",
-                        description: "No-CD patch + patches for modern operating systems",
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -436,7 +449,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "307 MB",
-                        source: "Serena Pancu"
+                        source: "Serena Pancu",
+                        sourceUrl: "https://linktr.ee/serena.pancu"
                     },
                     {
                         name: "originalCDVersionName",
