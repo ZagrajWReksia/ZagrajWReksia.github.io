@@ -102,12 +102,30 @@ const games: Record<string, Index> = {
             {
                 langCode: "cz",
                 langIcon: "🇨🇿",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/rexiesakalozok/Rexi%20%C3%A9s%20a%20kal%C3%B3zok.iso",
+                        size: "509 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/rexiesakalozok"
+                    }
+                ]
             },
             {
                 langCode: "hu",
                 langIcon: "🇭🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/rexiesakalozok/Rexi%20%C3%A9s%20a%20kal%C3%B3zok.iso",
+                        size: "509 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/rexiesakalozok"
+                    }
+                ]
             },
             {
                 langCode: "en",
@@ -199,12 +217,30 @@ const games: Record<string, Index> = {
             {
                 langCode: "cz",
                 langIcon: "🇨🇿",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/rexiesazufo/Rexi%20%C3%A9s%20az%20UFO.iso",
+                        size: "689 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/rexiesazufo"
+                    }
+                ]
             },
             {
                 langCode: "hu",
                 langIcon: "🇭🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/rexiesazufo/Rexi%20%C3%A9s%20az%20UFO.iso",
+                        size: "689 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/rexiesazufo"
+                    }
+                ]
             },
             {
                 langCode: "en",
