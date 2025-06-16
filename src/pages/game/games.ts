@@ -48,7 +48,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiSP/RISP-Patched.zip",
-                        size: "260 MB",
+                        size: "272 MB",
                         source: "zagrajwreksia.pl"
                     },
                     {
@@ -61,7 +61,7 @@ const games: Record<string, Index> = {
                                 url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20Skarb%20Pirat%C3%B3w%20%5Bpiklib8%5D.iso"
                             }
                         ],
-                        size: "611 MB",
+                        size: "640 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
                     }
@@ -81,7 +81,7 @@ const games: Record<string, Index> = {
                                 url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
                             }
                         ],
-                        size: "333 MB",
+                        size: "349 MB",
                         source: "Serena Pancu",
                         sourceUrl: "https://linktr.ee/serena.pancu"
                     },
@@ -97,7 +97,21 @@ const games: Record<string, Index> = {
             {
                 langCode: "ru",
                 langIcon: "🇷🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/Рекс и сокровища пиратов.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reks-i-sokrovishha-piratov/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B8%20%D1%81%D0%BE%D0%BA%D1%80%D0%BE%D0%B2%D0%B8%D1%89%D0%B0%20%D0%BF%D0%B8%D1%80%D0%B0%D1%82%D0%BE%D0%B2.iso"
+                            }
+                        ],
+                        size: "427 MB",
+                        source: "Unknown"
+                    }
+                ]
             },
             {
                 langCode: "cz",
@@ -163,7 +177,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
-                        size: "315 MB",
+                        size: "330 MB",
                         source: "zagrajwreksia.pl"
                     },
                     {
@@ -176,7 +190,7 @@ const games: Record<string, Index> = {
                                 url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20UFO%20%5Bpiklib8%5D.iso"
                             }
                         ],
-                        size: "558 MB",
+                        size: "584 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
                     }
@@ -196,7 +210,7 @@ const games: Record<string, Index> = {
                                 url: "https://mega.nz/folder/0q1CnCSK#vQULfXLctKnTPQ2PrSBsXQ/file/9qszUSiQ"
                             }
                         ],
-                        size: "323 MB",
+                        size: "339 MB",
                         source: "Serena Pancu",
                         sourceUrl: "https://linktr.ee/serena.pancu"
                     },
@@ -212,7 +226,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ru",
                 langIcon: "🇷🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/RiU/Рекс и НЛО.iso",
+                        size: "553 MB",
+                        source: "Unknown"
+                    }
+                ]
             },
             {
                 langCode: "cz",
@@ -328,7 +350,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ru",
                 langIcon: "🇷🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/RiC/Рекс и волшебники.iso",
+                        size: "704 MB",
+                        source: "Unknown"
+                    }
+                ]
             },
         ],
     },
@@ -388,7 +418,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ru",
                 langIcon: "🇷🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/RiWC/Рекс и Машина времени.iso",
+                        size: "653 MB",
+                        source: "Unknown"
+                    }
+                ]
             },
         ],
     },
@@ -405,14 +443,14 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/Reksio%20i%20Kapitan%20Nemo.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiKN/Reksio%20i%20Kapitan%20Nemo.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
-                                url: "https://archive.org/download/reksio-i-kapitan-nemo/5.%20Reksio%20i%20Kapitan%20Nemo.iso"
+                                url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20Kapitan%20Nemo.iso"
                             }
                         ],
-                        size: "533 MB",
+                        size: "559 MB",
                         source: "archive.org"
                     }
                 ]
@@ -447,7 +485,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ru",
                 langIcon: "🇷🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/RiKN/Рекс и капитан Немо.iso",
+                        size: "554 MB",
+                        source: "Unknown"
+                    }
+                ]
             },
         ],
     },
@@ -464,8 +510,14 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-kretes-w-akcji/Reksio%20i%20Kretes%20w%20Akcji.iso",
-                        size: "640 MB",
+                        url: "https://iso.zagrajwreksia.pl/RiKwA/Reksio i Kretes w Akcji.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20Kretes%20w%20Akcji.iso"
+                            }
+                        ],
+                        size: "670 MB",
                         source: "archive.org"
                     }
                 ]
@@ -500,7 +552,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ru",
                 langIcon: "🇷🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/RiKwA/Рекс и Крот на тропе войны.iso",
+                        size: "409 MB",
+                        source: "Unknown"
+                    }
+                ]
             },
         ],
     },
@@ -517,8 +577,14 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-kretes-tajemnica-trzeciego-wymiaru/Reksio%20i%20Kretes%20Tajemnica%20Trzeciego%20Wymiaru.iso",
-                        size: "365 MB",
+                        url: "https://iso.zagrajwreksia.pl/RiKTTW/Reksio%20i%20Kretes%20Tajemnica%20Trzeciego%20Wymiaru%201.1.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/pl-aidemmedia/Reksio%20i%20Kretes%20Tajemnica%20Trzeciego%20Wymiaru%201.1.iso"
+                            }
+                        ],
+                        size: "382 MB",
                         source: "archive.org"
                     }
                 ]
@@ -539,7 +605,15 @@ const games: Record<string, Index> = {
             {
                 langCode: "ru",
                 langIcon: "🇷🇺",
-                downloads: []
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/RiKTTW/Рекс и его друзья в третьем измерении.iso",
+                        size: "276 MB",
+                        source: "Unknown"
+                    }
+                ]
             },
         ],
     },
