@@ -1,7 +1,7 @@
 import {RefObject, useEffect, useRef, useState} from 'react'
-import {createGamePlayer, FileLoaders, GamePlayerInstance} from "reksioengine";
+import {createGamePlayer, FileLoaders, GamePlayerInstance, SaveFileManager} from "reksioengine";
 import styled from "styled-components";
-import {Fullscreen} from "lucide-react";
+import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
 import {useNavigate} from "react-router";
 import {useTranslation} from "react-i18next";
@@ -67,10 +67,12 @@ function Index() {
 
         const instance = createGamePlayer(gameRef.current, {
             fileLoader: new FileLoaders.ListingJSONUrlFileLoader('https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json'),
+            saveFile: SaveFileManager.fromLocalStorage('risp-savefile'),
             onExit: () => document.exitFullscreen()
         })
 
         if (instance !== null) {
+            instance.start()
             playerRef.current = instance
         }
 
@@ -89,6 +91,48 @@ function Index() {
         (gameRef.current as Element).requestFullscreen()
     }
 
+    const exportSaveFile = () => {
+        if (!playerRef.current) {
+            return
+        }
+
+        const data = playerRef.current.exportSaveFile()
+        const blob = new Blob([data], { type: 'text/plain' })
+        const fileURL = URL.createObjectURL(blob)
+        const downloadLink = document.createElement('a')
+        downloadLink.href = fileURL
+        downloadLink.download = `${playerRef.current.currentScene || 'SaveFile'}_${new Date().toISOString()}.ini`
+        downloadLink.click()
+        URL.revokeObjectURL(fileURL)
+    }
+
+    const importSaveFile = () => {
+        if (!playerRef.current) {
+            return
+        }
+
+        const input = document.createElement('input')
+        input.type = 'file'
+
+        input.onchange = (event) => {
+            const target = event.target as HTMLInputElement;
+            if (target.files === null) {
+                return
+            }
+
+            const file = target.files[0]
+            const reader = new FileReader()
+            reader.readAsText(file, 'UTF-8')
+            reader.onload = (readerEvent) => {
+                if (readerEvent.target !== null && typeof readerEvent.target.result === "string") {
+                    playerRef.current?.importSaveFile(readerEvent.target.result)
+                }
+            }
+        }
+
+        input.click()
+    }
+
     return <Container>
         <Button
             onClick={() => {navigate(-1)}}
@@ -102,8 +146,8 @@ function Index() {
         </GameContainer>
         <Controls>
             <Button onClick={enterFullscreen}><Fullscreen size={15}/> {t('playerEnterFullscreen')}</Button>
-            {/*<Button><FileDown size={15} /> Download save file</Button>*/}
-            {/*<Button><FileUp size={15} /> Load save file</Button>*/}
+            <Button onClick={exportSaveFile}><FileDown size={15} /> {t('playerExportSaveFile')}</Button>
+            <Button onClick={importSaveFile}><FileUp size={15} /> {t('playerImportSaveFile')}</Button>
         </Controls>
 
         <Footer>

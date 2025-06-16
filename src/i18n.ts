@@ -47,6 +47,8 @@ const resources = {
             "createdAndManagedBy": "Created and managed by <1>Adikso</1>",
             "sourceCode": "Source code",
             "playerEnterFullscreen": "Full screen",
+            "playerImportSaveFile": "Load save",
+            "playerExportSaveFile": "Export save",
             "playerPressHereToStart": "Press here to start",
             "reksioAndPiratesDescription": `Somewhere in the Non-Pacific Ocean, under mysterious circumstances, the pirate Captain O'Verboard disappears. Along with him vanishes the only map leading to the legendary treasure...
 
@@ -200,6 +202,8 @@ const resources = {
             "createdAndManagedBy": "Stworzone i zarządzane przez <1>Adikso</1>",
             "sourceCode": "Kod źródłowy",
             "playerEnterFullscreen": "Pełny ekran",
+            "playerImportSaveFile": "Wczytaj zapis",
+            "playerExportSaveFile": "Eksportuj zapis",
             "playerPressHereToStart": "Kliknij tutaj aby uruchomić grę",
             "reksioAndPiratesDescription": `Gdzieś na Oceanie Niespokojnym w tajemniczych okolicznościach znika dowódca piratów Kapitan O'Gryzek. Razem z nim ginie jedyna mapa prowadząca do legendarnego skarbu...
                     
