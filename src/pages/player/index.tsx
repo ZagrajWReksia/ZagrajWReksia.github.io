@@ -60,11 +60,20 @@ function Index() {
         setReady(true)
     }
 
+    const migrateSaveFile = () => {
+        const oldSaveFile = localStorage.getItem('saveFile')
+        if (oldSaveFile !== null) {
+            localStorage.setItem('risp-savefile', oldSaveFile)
+            localStorage.removeItem('saveFile')
+        }
+    }
+
     useEffect(() => {
         if (!ready) {
             return
         }
 
+        migrateSaveFile()
         const instance = createGamePlayer(gameRef.current, {
             fileLoader: new FileLoaders.ListingJSONUrlFileLoader('https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json'),
             saveFile: SaveFileManager.fromLocalStorage('risp-savefile'),
