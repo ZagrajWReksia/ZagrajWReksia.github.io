@@ -715,7 +715,13 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-miasto-sekretow/Reksio%20i%20Miasto%20Sekret%C3%B3w.iso",
+                        url: "https://iso.zagrajwreksia.pl/CoS/Reksio i Miasto Sekretow.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-i-miasto-sekretow/Reksio%20i%20Miasto%20Sekret%C3%B3w.iso"
+                            }
+                        ],
                         size: "282 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-i-miasto-sekretow"
@@ -782,7 +788,13 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/6.-reksio-i-miasto-sekretow-city-of-secrets-le/6.%20Reksio%20i%20Miasto%20Sekret%C3%B3w%2C%20City%20of%20Secrets%20%28LE%29.iso",
+                        url: "https://iso.zagrajwreksia.pl/CoS/Reksio i Miasto Sekretow LE.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/6.-reksio-i-miasto-sekretow-city-of-secrets-le/6.%20Reksio%20i%20Miasto%20Sekret%C3%B3w%2C%20City%20of%20Secrets%20%28LE%29.iso"
+                            }
+                        ],
                         size: "1 GB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/6.-reksio-i-miasto-sekretow-city-of-secrets-le"
@@ -797,7 +809,13 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/6.-reksio-i-miasto-sekretow-city-of-secrets-le/6.%20Reksio%20i%20Miasto%20Sekret%C3%B3w%2C%20City%20of%20Secrets%20%28LE%29.iso",
+                        url: "https://iso.zagrajwreksia.pl/CoS/Reksio i Miasto Sekretow LE.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/6.-reksio-i-miasto-sekretow-city-of-secrets-le/6.%20Reksio%20i%20Miasto%20Sekret%C3%B3w%2C%20City%20of%20Secrets%20%28LE%29.iso"
+                            }
+                        ],
                         size: "1 GB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/6.-reksio-i-miasto-sekretow-city-of-secrets-le"
