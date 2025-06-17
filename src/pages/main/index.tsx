@@ -7,7 +7,7 @@ import {Box} from "../../components/box.tsx";
 import {LanguageSelector} from "../../components/language-selector.tsx";
 import {Footer} from "../../components/footer.tsx";
 import {Trans, useTranslation} from "react-i18next";
-import {gamesByGroup, Index} from "../game/games.ts"
+import {gamesByGroup, Index, Language} from "../game/games.ts"
 
 const CoverContainer = styled.div`
     display: flex;
