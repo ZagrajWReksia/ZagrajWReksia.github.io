@@ -41,7 +41,8 @@ const resources = {
             "reksioAndKretesInAction": "Reksio and Kretes in Action",
             "reksioAndKretesTheSecret": "Reksio and Kretes: The Secret of the Third Dimension",
             "reksioAndCityOfSecrets": "City of Secrets",
-            "reksioAndCityOfSecretsLE": "City of Secrets: Limited Edition",
+            "reksioAndCityOfSecretsLE": "Reksio and the City of Secrets: Limited Edition",
+            "cityOfSecrets": "City of Secrets",
             "reksioAndCityOfSecrets2": "City of Secrets 2",
             "abcWithReksio": "ABC z Reksiem",
             "ortographyWithReksio": "Reksio i Ortografia",
@@ -177,7 +178,7 @@ const resources = {
                     This game was tested on animals. They didn't like it and went away.
                     This game was tested on testers. Nobody asked them if they wanted to do it and they couldn't get away. 
             `,
-            "reksioAndCityOfSecretsLEDescription": ""
+            "cityOfSecretsDescription": `Rebrand of Reksio and City of Secrets LE without Reksio`
         }
     },
     pl: {
@@ -219,6 +220,7 @@ const resources = {
             "reksioAndKretesTheSecret": "Reksio i Kretes Tajemnica Trzeciego Wymiaru",
             "reksioAndCityOfSecrets": "Reksio i Miasto SeKretów",
             "reksioAndCityOfSecretsLE": "Reksio i Miasto SeKretów: Limited Edition",
+            "cityOfSecrets": "City of Secrets",
             "reksioAndCityOfSecrets2": "Miasto SeKretów 2",
             "abcWithReksio": "ABC z Reksiem",
             "ortographyWithReksio": "Reksio i Ortografia",
@@ -361,7 +363,8 @@ const resources = {
                     Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa i oglądając mapy odkrywa położenie Atlantydy i jednej z jakiejś tajemniczych sfer... zaraz to nie było tak! Przecież miał dosłownie " Zapaść się pod ziemię",...
         
                     - NO NIE WIERZĘ!!! Teraz Aidem Media przesadziło! Najpierw umieszczają mnie i Reksia w Trzecim Wymiarze, następnie wysyłają do miasta pełnego kretów i sekretów, a jeszcze chcą mnie nauczyć angielskiego. Co ja jestem, Moles the Mole? Wygląda na to, że tak! No to see you later! - wypowiedział te słowa zezłoszczony, niezrehabilitowany Kretes (albo i nie powiedział)
-            `
+            `,
+            "cityOfSecretsDescription": `Rebrand Reksio i Miasto Sekretów LE bez udziału Reksia`
         }
     },
     ro: {

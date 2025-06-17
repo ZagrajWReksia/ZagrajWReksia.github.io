@@ -776,7 +776,7 @@ const games: Record<string, Index> = {
     "rimsle": {
         group: 'second',
         title: "reksioAndCityOfSecretsLE",
-        description: "reksioAndCityOfSecretsLEDescription",
+        description: "",
         coverImage: "/covers/reksioimiastosekretowle.jpg",
         year: 2010,
         languages: [
@@ -819,6 +819,43 @@ const games: Record<string, Index> = {
                         size: "1 GB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/6.-reksio-i-miasto-sekretow-city-of-secrets-le"
+                    }
+                ]
+            },
+        ],
+    },
+    "cos": {
+        group: 'second',
+        title: "cityOfSecrets",
+        description: "cityOfSecretsDescription",
+        coverImage: "/covers/cityofsecrets.jpg",
+        year: 2010,
+        languages: [
+            {
+                official: true,
+                langCode: "pl",
+                langIcon: "🇵🇱",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/CoS/City of Secrets LE.iso",
+                        size: "1 GB",
+                        source: "Kreton Podziemny"
+                    }
+                ]
+            },
+            {
+                official: true,
+                langCode: "en",
+                langIcon: "🇬🇧",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/CoS/City of Secrets LE.iso",
+                        size: "1 GB",
+                        source: "Kreton Podziemny"
                     }
                 ]
             },
