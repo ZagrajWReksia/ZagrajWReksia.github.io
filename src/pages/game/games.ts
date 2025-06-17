@@ -806,6 +806,45 @@ const games: Record<string, Index> = {
             },
         ],
     },
+    "cos2": {
+        group: 'second',
+        title: "reksioAndCityOfSecrets2",
+        description: "reksioAndCityOfSecrets2Description",
+        coverImage: "/covers/cityofsecrets2.jpg",
+        year: 2013,
+        languages: [
+            {
+                official: true,
+                langCode: "pl",
+                langIcon: "🇵🇱",
+                downloads: [
+                    {
+                        name: "unofficialPCPort",
+                        description: "unofficialPCPortDescription",
+                        url: "https://iso.zagrajwreksia.pl/CoS2ep1_PC_2.0.1.zip",
+                        size: "359 MB",
+                        source: "Dove6, Mysliwy",
+                        sourceUrl: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"
+                    }
+                ]
+            },
+            {
+                official: true,
+                langCode: "en",
+                langIcon: "🇬🇧",
+                downloads: [
+                    {
+                        name: "unofficialPCPort",
+                        description: "unofficialPCPortDescription",
+                        url: "https://iso.zagrajwreksia.pl/CoS2ep1_PC_2.0.1.zip",
+                        size: "359 MB",
+                        source: "Dove6, Mysliwy",
+                        sourceUrl: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"
+                    }
+                ]
+            },
+        ],
+    },
     "abc": {
         group: 'educational',
         title: "abcWithReksio",

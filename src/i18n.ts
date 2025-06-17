@@ -42,6 +42,7 @@ const resources = {
             "reksioAndKretesTheSecret": "Reksio and Kretes: The Secret of the Third Dimension",
             "reksioAndCityOfSecrets": "City of Secrets",
             "reksioAndCityOfSecretsLE": "City of Secrets: Limited Edition",
+            "reksioAndCityOfSecrets2": "City of Secrets 2",
             "abcWithReksio": "ABC z Reksiem",
             "ortographyWithReksio": "Reksio i Ortografia",
             "countingWithReksio": "Liczę z Reksiem",
@@ -52,6 +53,8 @@ const resources = {
             "originalCDVersionDescription": "This version is exactly as it appears on the disk. May not work on modern operating systems.",
             "improvedVersionName": "🔧 Improved version with patches",
             "improvedVersionDescription": "No-CD patch + patches for modern operating systems",
+            "unofficialPCPort": "Unofficial PC port",
+            "unofficialPCPortDescription": "This game was ported from Android/iOS to PC by community",
             "visitReksioDiscordForHelp": "Need help with the game or installation? Join Reksio community on <1>Discord</1>.",
             "source": "Source",
             "createdAndManagedBy": "Created and managed by <1>Adikso</1>",
@@ -166,7 +169,15 @@ const resources = {
                     
                     Someone... familiar.
             `,
-            "reksioAndCityOfSecretsDescription": `After Rex falls into a hole in your basement, you must rescue Rex from a city full of secrets in this incredible adventure game! Not only has Rex found a city full of mole people, but he's also been accused of espionage!`
+            "reksioAndCityOfSecretsDescription": `After Rex falls into a hole in your basement, you must rescue Rex from a city full of secrets in this incredible adventure game! Not only has Rex found a city full of mole people, but he's also been accused of espionage!`,
+            "reksioAndCityOfSecrets2Description": `Usually, a dangerous and perilous adventure hides behind a completely innocent beginning. A beginning that doesn't mention anything about a giant worm, dangerous cooking recipes, the common people fighting the oppressive regime, rebelling workers and trade unions. Nor does it mention a strange salesman that forgoes the career of a dark god to start his own fish stand business. An innocent beginning doesn't say anything that could be linked to words like danger, trouble or threat. It's just the way with all those adventures, it seems they have nothing better to do than just render a man's... animal's... mole's... life unpleasant.
+                    
+                    Moles the Mole, a not-so-bright and nice hero, but a hero nonetheless, will have the questionable opportunity to discover what fate has in store for him. One night, closer to morning than evening, Moles has been brutally awakened by scary noises. Fear tightened it's icy grip on Moles' heart and just when our hero was about to execute a tactical withdrawal, the mystery solved itself - with a terrifying series of noises, our hero's most impressive muscle was demanding a night snack. Unfortunately, the problem with adventure games is that nothing's ever easy in them. The fridge is empty, the designer didn't draw a larder and the writer already had an idea how to complicate the hero's life. Now that's an innocent beginning, if I've ever seen one. And you know what's the usual deal with those innocent beginnings.
+                    
+                    This game was tested on animals. They didn't like it and went away.
+                    This game was tested on testers. Nobody asked them if they wanted to do it and they couldn't get away. 
+            `,
+            "reksioAndCityOfSecretsLEDescription": ""
         }
     },
     pl: {
@@ -208,6 +219,7 @@ const resources = {
             "reksioAndKretesTheSecret": "Reksio i Kretes Tajemnica Trzeciego Wymiaru",
             "reksioAndCityOfSecrets": "Reksio i Miasto SeKretów",
             "reksioAndCityOfSecretsLE": "Reksio i Miasto SeKretów: Limited Edition",
+            "reksioAndCityOfSecrets2": "Miasto SeKretów 2",
             "abcWithReksio": "ABC z Reksiem",
             "ortographyWithReksio": "Reksio i Ortografia",
             "countingWithReksio": "Liczę z Reksiem",
@@ -217,6 +229,8 @@ const resources = {
             "originalCDVersionName": "💿 Oryginalna wersja z płyty (ISO)",
             "originalCDVersionDescription": "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
             "improvedVersionName": "🔧 Wersja poprawiona z łatkami",
+            "unofficialPCPort": "Nieoficjalny port PC",
+            "unofficialPCPortDescription": "Gra przeportowana przez społeczność z Androida/iOS na PC",
             "improvedVersionDescription": "Łatka No-CD + łatki dla współczesnych systemów operacyjnych",
             "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na <1>Discorda</1> społeczności.",
             "source": "Źródło",
@@ -335,7 +349,19 @@ const resources = {
                     Co mieści się w sercu krainy Szczurów?
                     
                     Przygotuj się na fascynującą, kolorową i trójwymiarową podróż do wnętrza Ziemi. Kierując na zmianę Reksiem i Kretesem, przeżyj najbardziej niesamowitą z dotychczasowych przygód i odkryj wszystkie sekrety Miasta seKretów. 
-`
+            `,
+            "reksioAndCityOfSecrets2Description": `Zwykle niebezpieczne przygody mają całkowicie niewinny początek. Początek, który nie ma nic wspólnego z gigantycznymi robakami, podejrzanymi przepisami, walką ludu z reżimem, protestującymi robotnikami czy związkami zawodowymi. Ani z osobliwym sprzedawcą rezygnującym z kariery mrocznego bóstwa na rzecz prowadzenia własnego stoiska rybnego. Ani z niczym innym, co można by powiązać ze słowami takimi jak kłopoty czy zagrożenie. Tak to już jest z tymi przygodami, które jedyne co, to uprzykrzają życie ludziom... zwierzętom... kretom.
+                    
+                    Kreta Kretesa, nie najbystrzejszego i najbardziej uprzejmego, ale wciąż bohatera, czeka wątpliwą przyjemność odkrycia, co los trzyma dla niego w zanadrzu. Pewnej nocy (bliżej rana niż wieczora) Kretes został brutalnie zbudzony przez przerażające odgłosy. Strach zacisnął swe szpony na sercu biednego kreta i gdy ten szykował się już do taktycznego odwrotu... zagadka rozwiązała się sama - za mrożącymi krew w żyłach odgłosami stał najbardziej imponujący mięsień bohatera, domagając się w ten sposób nocnej przekąski. Niestety, z grami przygodowymi jest taki problem, że nic nie jest w nich proste. Lodówka okazała się pusta, spiżarni projektant nie raczył narysować, scenarzysta za to zdążył już wpaść na pomysł, jak utrudnić życie Kretesowi. To dopiero niewinny początek. A co będzie dalej, pewnie już się domyślacie.
+                    
+                    Gra była testowana na zwierzętach. Niezbyt im się to spodobało i uciekły.
+                    Gra była testowana również na testerach. Ci nie mieli wyboru. 
+            `,
+            "reksioAndCityOfSecretsLEDescription": `
+                    Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa i oglądając mapy odkrywa położenie Atlantydy i jednej z jakiejś tajemniczych sfer... zaraz to nie było tak! Przecież miał dosłownie " Zapaść się pod ziemię",...
+        
+                    - NO NIE WIERZĘ!!! Teraz Aidem Media przesadziło! Najpierw umieszczają mnie i Reksia w Trzecim Wymiarze, następnie wysyłają do miasta pełnego kretów i sekretów, a jeszcze chcą mnie nauczyć angielskiego. Co ja jestem, Moles the Mole? Wygląda na to, że tak! No to see you later! - wypowiedział te słowa zezłoszczony, niezrehabilitowany Kretes (albo i nie powiedział)
+            `
         }
     },
     ro: {
