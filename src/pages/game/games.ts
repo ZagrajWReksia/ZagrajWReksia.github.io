@@ -877,6 +877,12 @@ const games: Record<string, Index> = {
                         name: "unofficialPCPort",
                         description: "unofficialPCPortDescription",
                         url: "https://iso.zagrajwreksia.pl/CoS2ep1_PC_2.0.1.zip",
+                        mirrors: [
+                            {
+                                name: "GDrive",
+                                url: "https://drive.google.com/file/d/1c9eRjikTQk__FdofqtCDfjedddOE6H8I/view"
+                            }
+                        ],
                         size: "359 MB",
                         source: "Dove6, Mysliwy",
                         sourceUrl: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"
@@ -892,6 +898,12 @@ const games: Record<string, Index> = {
                         name: "unofficialPCPort",
                         description: "unofficialPCPortDescription",
                         url: "https://iso.zagrajwreksia.pl/CoS2ep1_PC_2.0.1.zip",
+                        mirrors: [
+                            {
+                                name: "GDrive",
+                                url: "https://drive.google.com/file/d/1c9eRjikTQk__FdofqtCDfjedddOE6H8I/view"
+                            }
+                        ],
                         size: "359 MB",
                         source: "Dove6, Mysliwy",
                         sourceUrl: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"
