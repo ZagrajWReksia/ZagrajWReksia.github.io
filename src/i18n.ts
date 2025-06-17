@@ -11,6 +11,7 @@ const resources = {
             "lang_cz": "Czech",
             "lang_hu": "Hungarian",
             "lang_en": "English",
+            "lang_de": "German",
             "creditsTranslations": "Translations",
             "creditsBackground": "Background extended by Paweł Wierzbicki",
             "viewInOtherLanguages": "View this website in other languages:",
@@ -22,6 +23,7 @@ const resources = {
             "withoutGameDownloading": "Without downloading",
             "mirrors": "Mirrors",
             "extras": "Extras",
+            "newSeries": "New series",
             "englishVersionIsFanMade": "The English version is fan made and uses AI for dubbing.",
             "mainAboutHello": "Welcome to zagrajwreksia.pl - a website created to archive all available games from Adventures of Reksio series (including their versions), so you can download them and even play some of them directly in your browser (via ReksioEngine).",
             "mainAboutReadMore": "Read more about the project",
@@ -38,6 +40,14 @@ const resources = {
             "reksioAndCaptainNemo": "Reksio and Captain Nemo",
             "reksioAndKretesInAction": "Reksio and Kretes in Action",
             "reksioAndKretesTheSecret": "Reksio and Kretes: The Secret of the Third Dimension",
+            "reksioAndCityOfSecrets": "City of Secrets",
+            "reksioAndCityOfSecretsLE": "City of Secrets: Limited Edition",
+            "abcWithReksio": "ABC z Reksiem",
+            "ortographyWithReksio": "Reksio i Ortografia",
+            "countingWithReksio": "Liczę z Reksiem",
+            "reksioKindergarten": "Wesołe Przedszkole Reksia",
+            "reksioPuzzles": "Łamigłówki Reksia - Wielki Odkrywca",
+            "reksioAndAnimals": "Reksio i Zwierzęta",
             "originalCDVersionName": "💿 Original CD version (ISO)",
             "originalCDVersionDescription": "This version is exactly as it appears on the disk. May not work on modern operating systems.",
             "improvedVersionName": "🔧 Improved version with patches",
@@ -156,6 +166,7 @@ const resources = {
                     
                     Someone... familiar.
             `,
+            "reksioAndCityOfSecretsDescription": `After Rex falls into a hole in your basement, you must rescue Rex from a city full of secrets in this incredible adventure game! Not only has Rex found a city full of mole people, but he's also been accused of espionage!`
         }
     },
     pl: {
@@ -166,6 +177,7 @@ const resources = {
             "lang_cz": "Czeski",
             "lang_hu": "Węgierski",
             "lang_en": "Angielski",
+            "lang_de": "Niemiecki",
             "creditsTranslations": "Tłumaczenia",
             "creditsBackground": "Tło rozszerzone przez Pawła Wierzbickiego",
             "viewInOtherLanguages": "Zobacz tę stronę w innym języku:",
@@ -177,6 +189,7 @@ const resources = {
             "withoutGameDownloading": "Bez pobierania gry",
             "mirrors": "Mirrory",
             "extras": "Dodatki do serii",
+            "newSeries": "Nowa seria",
             "englishVersionIsFanMade": "Wersja w języku angielskim jest wersją fanowską i używa AI do dubbingu.",
             "mainAboutHello": "Witaj na zagrajwreksia.pl – stronie poświęconej archiwizacji wszelkich możliwych gier o reksiu (oraz ich wersji), umożliwiającej ich pobranie, a także grę w niektóre z nich bezpośrednio w przeglądarce (dzięki ReksioEngine).",
             "mainAboutReadMore": "Przeczytaj więcej o projekcie",
@@ -193,6 +206,14 @@ const resources = {
             "reksioAndCaptainNemo": "Reksio i Kapitan Nemo",
             "reksioAndKretesInAction": "Reksio i Kretes w Akcji",
             "reksioAndKretesTheSecret": "Reksio i Kretes Tajemnica Trzeciego Wymiaru",
+            "reksioAndCityOfSecrets": "Reksio i Miasto SeKretów",
+            "reksioAndCityOfSecretsLE": "Reksio i Miasto SeKretów: Limited Edition",
+            "abcWithReksio": "ABC z Reksiem",
+            "ortographyWithReksio": "Reksio i Ortografia",
+            "countingWithReksio": "Liczę z Reksiem",
+            "reksioKindergarten": "Wesołe Przedszkole Reksia",
+            "reksioPuzzles": "Łamigłówki Reksia - Wielki Odkrywca",
+            "reksioAndAnimals": "Reksio i Zwierzęta",
             "originalCDVersionName": "💿 Oryginalna wersja z płyty (ISO)",
             "originalCDVersionDescription": "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
             "improvedVersionName": "🔧 Wersja poprawiona z łatkami",
@@ -303,6 +324,18 @@ const resources = {
                     
                     Ktoś znajomy... 
             `,
+            "reksioAndCityOfSecretsDescription": `Dzielny pies Reksio schodzi do piwnicy w norze swojego przyjaciela komandora kreta Kretesa i dosłownie "zapada się pod ziemię". Zaniepokojony komandor wyrusza natychmiast jego śladem i wkrótce poprzez labirynt korytarzy i tuneli dociera do ukrytego pod ziemią, tajemniczego miasta kretów. Okazuje się, że Reksio został pojmany, uwięziony i skazany za szpiegostwo na rzecz Szczurów, a to, jak okaże się niebawem, zaledwie czubek przysłowiowej kury lodowej.
+                    
+                    Czy Kretesowi uda się w porę uwolnić Reksia?
+                    
+                    Kim jest tajemniczy burmistrz, który rządzi miastem od czasów rewolucji?
+                    
+                    Czy Reksio pozwoli dobrowolnie połknąć się olbrzymiemu wężowi, żeby odzyskać zagubioną puszkę z dowodami rzeczowymi?
+                    
+                    Co mieści się w sercu krainy Szczurów?
+                    
+                    Przygotuj się na fascynującą, kolorową i trójwymiarową podróż do wnętrza Ziemi. Kierując na zmianę Reksiem i Kretesem, przeżyj najbardziej niesamowitą z dotychczasowych przygód i odkryj wszystkie sekrety Miasta seKretów. 
+`
         }
     },
     ro: {
@@ -313,6 +346,7 @@ const resources = {
             "lang_cz": "Cehă",
             "lang_hu": "Maghiară",
             "lang_en": "Engleză",
+            "lang_de": "Germană",
             "creditsTranslations": "Traduceri",
             "viewInOtherLanguages": "Vezi acest site în alte limbi:",
             "adventuresOfReksio": "Aventurile lui Reksio",
@@ -337,6 +371,10 @@ const resources = {
             "reksioAndCaptainNemo": "Reksio și Căpitanul Nemo",
             "reksioAndKretesInAction": "Reksio și Kretes în Acțiune",
             "reksioAndKretesTheSecret": "Reksio și Kretes: Misterul celei de a Treia Dimensiuni",
+            "countingWithReksio": "Matematica cu Reksio",
+            "ortographyWithReksio": "Reksio Si Ortografia",
+            "reksioKindergarten": "Reksio la gradinita vesela",
+            "reksioPuzzles": "Reksio, Micul Intelept",
             "source": "Sursă",
             "createdAndManagedBy": "Create și gestionat de <1>Adikso</1>",
             "sourceCode": "Cod sursă",

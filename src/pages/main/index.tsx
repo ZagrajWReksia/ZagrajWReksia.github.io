@@ -1,12 +1,13 @@
 import './style.css';
 import styled from "styled-components";
 import {Link} from "react-router";
-import { ReactNode } from "react";
+import {ReactNode} from "react";
 import {FancyHeading, SubTitle} from "../../components/text.tsx";
 import {Box} from "../../components/box.tsx";
 import {LanguageSelector} from "../../components/language-selector.tsx";
 import {Footer} from "../../components/footer.tsx";
 import {Trans, useTranslation} from "react-i18next";
+import {gamesByGroup, Index} from "../game/games.ts"
 
 const CoverContainer = styled.div`
     display: flex;
@@ -32,6 +33,7 @@ const CoverWrapper = styled.div`
     width: 200px;
 
     transition: scale ease-in-out 100ms;
+
     &:hover {
         scale: 1.1;
     }
@@ -76,12 +78,33 @@ interface CoverProps {
     children?: ReactNode;
 }
 
-const Cover = ({ src, className, children }: CoverProps) => (
+const Cover = ({src, className, children}: CoverProps) => (
     <CoverWrapper className={className}>
-        <CoverImage src={src} className={className} />
+        <CoverImage src={src} className={className}/>
         <CoverTitle>{children}</CoverTitle>
     </CoverWrapper>
 );
+
+const GameEntry = ({id, game}: { id: string, game: Index }) => {
+    const {t} = useTranslation();
+    const playInBrowser = game.languages.some((language: Language) => language.downloads.some(download => download.name == 'playInBrowser'))
+
+    return (
+        <Link to={`/game/${id}`}>
+            <Cover src={game.coverImage}>
+                {t(game.title)}<br/>
+                {game.languages.map((language: Language) => {
+                    if (!language.official) {
+                        return language.langIcon + '* '
+                    } else {
+                        return language.langIcon + ' '
+                    }
+                })}
+                {playInBrowser && <div>{t('playInBrowser')}</div>}
+            </Cover>
+        </Link>
+    )
+}
 
 const Logo = () => (
     <img
@@ -105,37 +128,37 @@ interface GameSectionProps {
     style?: React.CSSProperties;
 }
 
-const GameSection = ({ title, subtitle, children, note, style }: GameSectionProps) => (
+const GameSection = ({title, subtitle, children, note, style}: GameSectionProps) => (
     <GameSectionContainer style={style}>
-        {title && <FancyHeading text={title} />}
+        {title && <FancyHeading text={title}/>}
         {subtitle && <SubTitle>{subtitle}</SubTitle>}
         <CoverContainer>
             {children}
         </CoverContainer>
-        {note && <div style={{ marginTop: '30px', textAlign: 'center' }}>{note}</div>}
+        {note && <div style={{marginTop: '30px', textAlign: 'center'}}>{note}</div>}
     </GameSectionContainer>
 );
 
 function App() {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     return (
         <Background>
             <Message>
-                <Logo />
-                <LanguageSelector />
+                <Logo/>
+                <LanguageSelector/>
 
-                <br /><br />
+                <br/><br/>
 
                 <Box>
-                    {t('mainAboutHello')}<br />
-                    <Link to="/about">{t('mainAboutReadMore')}</Link><br />
-                    <br />
+                    {t('mainAboutHello')}<br/>
+                    <Link to="/about">{t('mainAboutReadMore')}</Link><br/>
+                    <br/>
                     {t('mainAboutBoombit')}
-                    <br />
-                    <br />
+                    <br/>
+                    <br/>
                     {t('mainAboutMoreAboutGames')}
-                    <br />
+                    <br/>
                     <Trans i18nKey="mainAboutLinkAndLink">
                         <a href="https://www.przygody-reksia.pl/">Przygody Reksia HUB</a> oraz na <a href="https://reksio.fandom.com/wiki/Reksio_Wiki">Reksiopedii</a>
                     </Trans>
@@ -144,73 +167,40 @@ function App() {
 
             <GameSection
                 title={t('adventuresOfReksio')}
+                note={'* ' + t('englishVersionIsFanMade')}
                 subtitle={t('mainSeries')}
             >
-                <Link to="/game/risp">
-                    <Cover src="/covers/reksioiskarbpiratow.jpg">
-                        {t('reksioAndPirates')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*<br/>
-                        {t('playInBrowser')}
-                    </Cover>
-                </Link>
-                <Link to="/game/riu">
-                    <Cover src="/covers/reksioiufo.jpg">
-                        {t('reksioAndUFO')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺 🇨🇿 🇭🇺 🇬🇧*
-                    </Cover>
-                </Link>
-                <Link to="/game/ric">
-                    <Cover src="/covers/reksioiczarodzieje.jpg">
-                        {t('reksioAndWizards')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺
-                    </Cover>
-                </Link>
-                <Link to="/game/riwc">
-                    <Cover src="/covers/reksioiwehikulczasu.jpg">
-                        {t('reksioAndTimeMachine')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺
-                    </Cover>
-                </Link>
-                <Link to="/game/rikn">
-                    <Cover src="/covers/reksioikapitannemo.jpg">
-                        {t('reksioAndCaptainNemo')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺
-                    </Cover>
-                </Link>
+                {gamesByGroup('main').map(([key, game]) => (
+                    <GameEntry id={key} key={key} game={game}/>
+                ))}
             </GameSection>
 
             <GameSection
                 subtitle={t('extras')}
-                note={'* ' + t('englishVersionIsFanMade')}
-                style={{ marginTop: '30px' }}
+                style={{marginTop: '30px'}}
             >
-                <Link to="/game/rikwa">
-                    <Cover src="/covers/reksioikreteswakcji.jpg">
-                        {t('reksioAndKretesInAction')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺
-                    </Cover>
-                </Link>
-                <Link to="/game/rikttw">
-                    <Cover src="/covers/reksioikretestajemnicatrzeciegowymiaru.jpg">
-                        {t('reksioAndKretesTheSecret')}<br/>
-                        🇵🇱 🇷🇴 🇷🇺
-                    </Cover>
-                </Link>
+                {gamesByGroup('extra').map(([key, game]) => (
+                    <GameEntry id={key} key={key} game={game}/>
+                ))}
+            </GameSection>
+
+            <GameSection
+                subtitle={t('newSeries')}
+                style={{marginTop: '30px'}}
+            >
+                {gamesByGroup('second').map(([key, game]) => (
+                    <GameEntry id={key} key={key} game={game}/>
+                ))}
             </GameSection>
 
             <GameSection
                 title={t('educationalGames')}
                 subtitle={t('forVerySmallPlayers')}
-                style={{ marginTop: '100px', paddingBottom: '200px' }}
+                style={{marginTop: '100px', paddingBottom: '200px'}}
             >
-                <div>
-                    <div style={{textAlign: 'center', marginBottom: '30px', fontWeight: 'bold'}}>
-                        Work in progress
-                    </div>
-                    <div>
-                        <img src="/cones.png" alt="cones" style={{maxWidth: '100%'}}/>
-                    </div>
-                </div>
+                {gamesByGroup('educational').map(([key, game]) => (
+                    <GameEntry id={key} key={key} game={game}/>
+                ))}
             </GameSection>
 
             <Footer/>
