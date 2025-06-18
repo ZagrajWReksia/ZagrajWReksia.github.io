@@ -1284,6 +1284,30 @@ const games: Record<string, Index> = {
             },
         ],
     },
+    "reksioiprzyjaciele": {
+        group: 'educational',
+        title: "reksioAndFriends",
+        description: "",
+        coverImage: "/covers/reksioiprzyjaciele.jpg",
+        year: 2000,
+        languages: [
+            {
+                official: true,
+                langCode: "pl",
+                langIcon: "🇵🇱",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-i-przyjaciele/Reksio%20i%20przyjaciele.ISO",
+                        size: "347 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/reksio-i-przyjaciele"
+                    }
+                ]
+            },
+        ],
+    },
 }
 
 export const gamesByGroup = (group: string) => {
