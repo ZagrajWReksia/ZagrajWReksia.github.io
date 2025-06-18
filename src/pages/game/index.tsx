@@ -174,6 +174,14 @@ export function GameDetailsPage() {
                                             {t(download.description)}
                                         </small>
                                     </div>
+                                    {download.instructions ? (
+                                        <div>
+                                            <small style={{whiteSpace: 'preserve-breaks'}}>
+                                                {typeof download.instructions === 'string' ? t(download.instructions) : t(download.instructions.key, download.instructions.args)}
+                                            </small>
+                                        </div>
+                                    ) : <></>}
+
                                     {download.mirrors && (
                                         <small>
                                             {t('mirrors')}:&nbsp;

@@ -6,6 +6,7 @@ export interface Mirror {
 export interface Download {
     name: string;
     description: string;
+    instructions?: string | { key: string; args: Record<string, unknown> };
     url: string;
     mirrors?: Mirror[];
     size?: string;
@@ -51,6 +52,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'ReksioPiraci.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiSP/RISP-Patched.zip",
                         size: "272 MB",
                         source: "zagrajwreksia.pl"
@@ -79,6 +86,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'ReksioPiraci.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -188,6 +201,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'ReksioUfo.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
                         size: "330 MB",
                         source: "zagrajwreksia.pl"
@@ -216,6 +235,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'ReksioUfo.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -325,6 +350,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "Łatka No-CD + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Czarodzieje.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Patched.zip",
                         size: "555 MB",
                         source: "zagrajwreksia.pl i ric-workshop",
@@ -354,6 +385,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Czarodzieje.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -410,6 +447,19 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Wehikul.exe'
+                            }
+                        },
+                        url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Patched.zip",
+                        size: "587 MB",
+                        source: "zagrajwreksia.pl"
+                    },
+                    {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiWC/Reksio%20i%20Wehikul%20Czasu.iso",
@@ -433,6 +483,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Wehikul.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -490,6 +546,19 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Nemo.exe'
+                            }
+                        },
+                        url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Patched.zip",
+                        size: "816 MB",
+                        source: "zagrajwreksia.pl"
+                    },
+                    {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiKN/Reksio%20i%20Kapitan%20Nemo.iso",
@@ -513,6 +582,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Nemo.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -569,6 +644,19 @@ const games: Record<string, Index> = {
                 langIcon: "🇵🇱",
                 downloads: [
                     {
+                        name: "improvedVersionName",
+                        description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Rex5.exe'
+                            }
+                        },
+                        url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Patched.zip",
+                        size: "324 MB",
+                        source: "zagrajwreksia.pl"
+                    },
+                    {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/RiKwA/Reksio i Kretes w Akcji.iso",
@@ -592,6 +680,12 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         description: "improvedVersionDescription",
+                        instructions: {
+                            key: "instructionsRunExe",
+                            args: {
+                                file: 'Rex5.exe'
+                            }
+                        },
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Romanian-Patched.zip",
                         mirrors: [
                             {
