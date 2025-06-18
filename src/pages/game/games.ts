@@ -1030,12 +1030,12 @@ const games: Record<string, Index> = {
             },
         ],
     },
-    "ortografia": {
+    "reksioiprzyjaciele": {
         group: 'educational',
-        title: "ortographyWithReksio",
+        title: "reksioAndFriends",
         description: "",
-        coverImage: "/covers/reksioiortografia.jpg",
-        year: 2003,
+        coverImage: "/covers/reksioiprzyjaciele.jpg",
+        year: 2000,
         languages: [
             {
                 official: true,
@@ -1045,25 +1045,64 @@ const games: Record<string, Index> = {
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-ortografia/Reksio%20i%20Ortografia.iso",
-                        size: "640 MB",
+                        url: "https://archive.org/download/reksio-i-przyjaciele/Reksio%20i%20przyjaciele.ISO",
+                        size: "347 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-ortografia"
+                        sourceUrl: "https://archive.org/details/reksio-i-przyjaciele"
+                    }
+                ]
+            },
+        ],
+    },
+    "reksioizwierzeta": {
+        group: 'educational',
+        title: "reksioAndAnimals",
+        description: "",
+        coverImage: "/covers/reksioizwierzeta.png",
+        year: 2000,
+        languages: [
+            {
+                official: true,
+                langCode: "pl",
+                langIcon: "🇵🇱",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-i-zwierzaki/Reksio%20i%20Zwierz%C4%99ta.iso",
+                        size: "252 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/reksio-i-zwierzaki"
                     }
                 ]
             },
             {
                 official: true,
-                langCode: "ro",
-                langIcon: "🇷🇴",
+                langCode: "cz",
+                langIcon: "🇨🇿",
                 downloads: [
                     {
                         name: "originalCDVersionName",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-ortografia/Reksio%20si%20Ortografia.iso",
-                        size: "374 MB",
+                        url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip",
+                        size: "437 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-ortografia"
+                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
+                    }
+                ]
+            },
+            {
+                official: true,
+                langCode: "hu",
+                langIcon: "🇭🇺",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip",
+                        size: "437 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
                     }
                 ]
             },
@@ -1117,6 +1156,45 @@ const games: Record<string, Index> = {
                         url: "https://archive.org/download/schitaem-s-reksom/%D0%A1%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%20%D1%81%20%D0%A0%D0%B5%D0%BA%D1%81%D0%BE%D0%BC.iso",
                         size: "642 MB",
                         source: "Reksioblog",
+                    }
+                ]
+            },
+        ],
+    },
+    "ortografia": {
+        group: 'educational',
+        title: "ortographyWithReksio",
+        description: "",
+        coverImage: "/covers/reksioiortografia.jpg",
+        year: 2003,
+        languages: [
+            {
+                official: true,
+                langCode: "pl",
+                langIcon: "🇵🇱",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-i-ortografia/Reksio%20i%20Ortografia.iso",
+                        size: "640 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/reksio-i-ortografia"
+                    }
+                ]
+            },
+            {
+                official: true,
+                langCode: "ro",
+                langIcon: "🇷🇴",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        description: "originalCDVersionDescription",
+                        url: "https://archive.org/download/reksio-si-ortografia/Reksio%20si%20Ortografia.iso",
+                        size: "374 MB",
+                        source: "archive.org",
+                        sourceUrl: "https://archive.org/details/reksio-si-ortografia"
                     }
                 ]
             },
@@ -1225,84 +1303,6 @@ const games: Record<string, Index> = {
                         size: "300 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reks-na-ostrove-chudes"
-                    }
-                ]
-            },
-        ],
-    },
-    "reksioizwierzeta": {
-        group: 'educational',
-        title: "reksioAndAnimals",
-        description: "",
-        coverImage: "/covers/reksioizwierzeta.png",
-        year: 2000,
-        languages: [
-            {
-                official: true,
-                langCode: "pl",
-                langIcon: "🇵🇱",
-                downloads: [
-                    {
-                        name: "originalCDVersionName",
-                        description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-zwierzaki/Reksio%20i%20Zwierz%C4%99ta.iso",
-                        size: "252 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-zwierzaki"
-                    }
-                ]
-            },
-            {
-                official: true,
-                langCode: "cz",
-                langIcon: "🇨🇿",
-                downloads: [
-                    {
-                        name: "originalCDVersionName",
-                        description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip",
-                        size: "437 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
-                    }
-                ]
-            },
-            {
-                official: true,
-                langCode: "hu",
-                langIcon: "🇭🇺",
-                downloads: [
-                    {
-                        name: "originalCDVersionName",
-                        description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip",
-                        size: "437 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
-                    }
-                ]
-            },
-        ],
-    },
-    "reksioiprzyjaciele": {
-        group: 'educational',
-        title: "reksioAndFriends",
-        description: "",
-        coverImage: "/covers/reksioiprzyjaciele.jpg",
-        year: 2000,
-        languages: [
-            {
-                official: true,
-                langCode: "pl",
-                langIcon: "🇵🇱",
-                downloads: [
-                    {
-                        name: "originalCDVersionName",
-                        description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-przyjaciele/Reksio%20i%20przyjaciele.ISO",
-                        size: "347 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-przyjaciele"
                     }
                 ]
             },

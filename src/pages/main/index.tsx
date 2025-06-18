@@ -47,6 +47,20 @@ const CoverImage = styled.img`
     object-fit: cover;
 `;
 
+const CoverImageWrapper = styled.div<{year: number}>`
+    position: relative;
+    &::after {
+        content: "${props => props.year}";
+        position: absolute;
+        font-size: 10px;
+        background: rgba(0, 0, 0, 1);
+        padding: 1px 3px;
+        border-radius: 5px;
+        right: 5px;
+        bottom: 10px;
+    }
+`
+
 const CoverTitle = styled.div`
     max-width: 200px;
     font-weight: bold;
@@ -74,13 +88,16 @@ const GameSectionContainer = styled.div`
 
 interface CoverProps {
     src: string;
+    year: number;
     className?: string;
     children?: ReactNode;
 }
 
-const Cover = ({src, className, children}: CoverProps) => (
+const Cover = ({src, year, className, children}: CoverProps) => (
     <CoverWrapper className={className}>
-        <CoverImage src={src} className={className}/>
+        <CoverImageWrapper year={year}>
+            <CoverImage src={src} className={className}/>
+        </CoverImageWrapper>
         <CoverTitle>{children}</CoverTitle>
     </CoverWrapper>
 );
@@ -91,7 +108,7 @@ const GameEntry = ({id, game}: { id: string, game: Index }) => {
 
     return (
         <Link to={`/game/${id}`}>
-            <Cover src={game.coverImage}>
+            <Cover src={game.coverImage} year={game.year}>
                 {t(game.title)}<br/>
                 {game.languages.map((language: Language) => {
                     if (!language.official) {
