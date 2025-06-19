@@ -148,6 +148,22 @@ export function GameDetailsPage() {
                         <strong>{t('releaseDate')}:</strong> {game.year}<br/>
                     </DetailsSectionDescription>
 
+                    {game.instructions && (
+                        <div style={{marginTop: '20px'}}>
+                            <FancyHeading size="medium" text={t('specialInstructions')}/>
+                            {game.instructions.map(instruction => (
+                                <div>
+                                    {instruction.type === 'password' && (
+                                        <>
+                                            <div>{t('codeFromBooklet')}</div>
+                                            <div dangerouslySetInnerHTML={{ __html: instruction.content }}/>
+                                        </>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+
                     <Alert style={{marginBottom: '20px'}}>
                         <Trans i18nKey="visitReksioDiscordForHelp">
                             Need help with the game or installation? Join Reksio community on

@@ -67,6 +67,8 @@ const resources = {
             "playerImportSaveFile": "Load save",
             "playerExportSaveFile": "Export save",
             "playerPressHereToStart": "Press here to start",
+            "specialInstructions": "Special Instructions",
+            "codeFromBooklet": "In case the game asks you for the code from the booklet, type the following code:",
             "reksioAndPiratesDescription": `Somewhere in the Non-Pacific Ocean, under mysterious circumstances, the pirate Captain O'Verboard disappears. Along with him vanishes the only map leading to the legendary treasure...
 
                     Meanwhile, Reksio, windsurfing across the sea, is caught in a raging storm. Amid flashes of lightning and the roar of the waves, Reksio crashes into the shores of a mysterious island. Soon after, he finds a bottle washed up on the beach, containing an enigmatic message:
@@ -252,6 +254,8 @@ const resources = {
             "playerImportSaveFile": "Wczytaj zapis",
             "playerExportSaveFile": "Eksportuj zapis",
             "playerPressHereToStart": "Kliknij tutaj aby uruchomić grę",
+            "specialInstructions": "Dodatkowe instrukcje",
+            "codeFromBooklet": "W przypadku, gdy gra poprosi Cię o podanie kodu z książeczki, wpisz poniższy kod:",
             "reksioAndPiratesDescription": `Gdzieś na Oceanie Niespokojnym w tajemniczych okolicznościach znika dowódca piratów Kapitan O'Gryzek. Razem z nim ginie jedyna mapa prowadząca do legendarnego skarbu...
                     
                     Tymczasem pływający na desce windsurfingowej Reksio zostaje porwany przez szalejący sztorm. Wśród błysków piorunów i ryku fal Reksio rozbija się u wybrzeży tajemniczej wyspy. Wkrótce znajduje wyrzuconą przez ocean butelkę z zagadkową zawartością.

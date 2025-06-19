@@ -52,6 +52,7 @@ function About() {
                     <div>Romanian translation: Serena</div>
                     <div>Polish translation: Adikso</div>
                     <div>English translation: Serena, Adikso</div>
+                    <div>Main series covers and booklet passwords: Ko-Ko-Kompan</div>
                     <br/>
                     <div><strong>Games collection:</strong></div>
                     <div>No-CD Patches: Dove6</div>

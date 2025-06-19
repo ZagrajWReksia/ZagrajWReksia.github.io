@@ -22,10 +22,16 @@ export interface Language {
     downloads: Download[];
 }
 
+export interface Instruction {
+    type: string;
+    content: string;
+}
+
 export interface Index {
     group: string;
     title: string;
     description: string;
+    instructions?: Instruction[];
     coverImage: string;
     year: number;
     languages: Language[];
@@ -36,6 +42,12 @@ const games: Record<string, Index> = {
         group: "main",
         title: "reksioAndPirates",
         description: "reksioAndPiratesDescription",
+        instructions: [
+            {
+                type: "password",
+                content: `<img src="/extra/risp-code.png" style="height: 100px"/>`
+            }
+        ],
         coverImage: "/covers/reksioiskarbpiratow.jpg",
         year: 2002,
         languages: [
@@ -218,6 +230,12 @@ const games: Record<string, Index> = {
         group: "main",
         title: "reksioAndUFO",
         description: "reksioAndUFODescription",
+        instructions: [
+            {
+                type: "password",
+                content: `<img src="/extra/riu-code.png" style="height: 100px"/>`
+            }
+        ],
         coverImage: "/covers/reksioiufo.jpg",
         year: 2003,
         languages: [
@@ -497,6 +515,12 @@ const games: Record<string, Index> = {
         group: "main",
         title: "reksioAndTimeMachine",
         description: "reksioAndTimeMachineDescription",
+        instructions: [
+            {
+                type: "password",
+                content: `<img src="/extra/riwc-code.png" style="height: 100px"/>`
+            }
+        ],
         coverImage: "/covers/reksioiwehikulczasu.jpg",
         year: 2004,
         languages: [
