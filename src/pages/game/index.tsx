@@ -172,9 +172,9 @@ export function GameDetailsPage() {
                             {selectedLanguage.downloads.map((download, index) => (
                                 <DownloadOption key={index}>
                                     <div>
+                                        {download.icon}&nbsp;
                                         <Link
                                             to={download.url}
-                                            style={{textDecoration: 'none'}}
                                             onClick={() => onDownload(download)}
                                         >
                                             <span>{t(download.name)}</span>
@@ -203,6 +203,7 @@ export function GameDetailsPage() {
                                                 <span>
                                                     <a
                                                         href={mirror.url}
+                                                        style={{color: '#fff'}}
                                                         onClick={() => onDownload(download, mirror)}
                                                     >{mirror.name}</a>{idx != download!.mirrors!.length - 1 && ', '}
                                                 </span>
