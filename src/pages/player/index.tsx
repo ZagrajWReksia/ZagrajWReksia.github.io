@@ -1,10 +1,11 @@
-import {RefObject, useEffect, useRef, useState} from 'react'
+import {RefObject, useEffect, useMemo, useRef, useState} from 'react'
 import {createGamePlayer, FileLoaders, GamePlayerInstance, SaveFileManager} from "reksioengine";
 import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
 import {useNavigate} from "react-router";
 import {useTranslation} from "react-i18next";
+import {event} from "../../analytics.ts";
 
 const Container = styled.div`
     display: flex;
@@ -52,6 +53,7 @@ function Index() {
     const gameRef = useRef(null)
     const playerRef: RefObject<GamePlayerInstance | null> = useRef(null)
     const [ready, setReady] = useState<boolean>(false)
+    const playthroughId = useMemo(() => crypto.randomUUID(), [])
 
     const onReady = async () => {
         if (gameRef.current === null || playerRef.current !== null) {
@@ -77,12 +79,25 @@ function Index() {
         const instance = createGamePlayer(gameRef.current, {
             fileLoader: new FileLoaders.ListingJSONUrlFileLoader('https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json'),
             saveFile: SaveFileManager.fromLocalStorage('risp-savefile'),
-            onExit: () => document.exitFullscreen()
+            onExit: () => document.exitFullscreen(),
+            onSceneChange: (next, previous) => {
+                event('player_scene_change', {
+                    playthroughId,
+                    game: 'risp',
+                    nextScene: next,
+                    previousScene: previous
+                })
+            }
         })
 
         if (instance !== null) {
             instance.start()
             playerRef.current = instance
+
+            event('player_started', {
+                playthroughId,
+                game: 'risp'
+            })
         }
 
         return () => {
@@ -91,7 +106,7 @@ function Index() {
                 playerRef.current = null
             }
         }
-    }, [ready])
+    }, [ready, playthroughId])
 
     const enterFullscreen = () => {
         if (!gameRef.current) {

@@ -5,9 +5,10 @@ import {FancyHeading} from "../../components/text.tsx";
 import {Button} from "../../components/button.tsx";
 import {Footer} from "../../components/footer.tsx";
 import {Trans, useTranslation} from "react-i18next";
-import games, { Language } from "./games.ts"
+import games, {Download, Language, Mirror} from "./games.ts"
 import i18next from "i18next";
 import {Alert} from "../../components/box.tsx";
+import {event} from "../../analytics.ts";
 
 const Wrapper = styled.div`
     @media (max-width: 767px) {
@@ -110,6 +111,15 @@ export function GameDetailsPage() {
     const game = games[gameId];
     const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(game?.languages?.find(lang => lang.langCode === i18next.resolvedLanguage) ?? null);
 
+    const onDownload = async (download: Download, mirror?: Mirror) => {
+        event('game_download', {
+            gameId: gameId,
+            language: selectedLanguage?.langCode,
+            downloadName: download.name,
+            mirrorName: mirror?.name,
+        })
+    }
+
     if (!game) {
         return <div>Game not found</div>;
     }
@@ -162,7 +172,11 @@ export function GameDetailsPage() {
                             {selectedLanguage.downloads.map((download, index) => (
                                 <DownloadOption key={index}>
                                     <div>
-                                        <Link to={download.url} style={{textDecoration: 'none'}}>
+                                        <Link
+                                            to={download.url}
+                                            style={{textDecoration: 'none'}}
+                                            onClick={() => onDownload(download)}
+                                        >
                                             <span>{t(download.name)}</span>
                                         </Link>
                                         {download.size && (
@@ -187,7 +201,10 @@ export function GameDetailsPage() {
                                             {t('mirrors')}:&nbsp;
                                             {download.mirrors.map((mirror, idx) => (
                                                 <span>
-                                                    <a href={mirror.url}>{mirror.name}</a>{idx != download!.mirrors!.length - 1 && ', '}
+                                                    <a
+                                                        href={mirror.url}
+                                                        onClick={() => onDownload(download, mirror)}
+                                                    >{mirror.name}</a>{idx != download!.mirrors!.length - 1 && ', '}
                                                 </span>
                                             ))}
                                         </small>
