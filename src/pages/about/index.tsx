@@ -58,7 +58,7 @@ function About() {
                     <div>ISOs from collections of: Dove6, ReksioBlog, HeavenlyTape, Serena, KretonPodziemny</div>
                     <div>City of Secrets 2 PC port: Dove6, Mysliwy112</div>
                     <div>English translations: Serena</div>
-                    <div>Patched Polish games: Adikso</div>
+                    <div>Patched Polish games: Adikso, Dove6, Serena</div>
                     <div>Patched Romanian games: Serena</div>
                     <br/>
                     <div><strong>ReksioEngine:</strong></div>

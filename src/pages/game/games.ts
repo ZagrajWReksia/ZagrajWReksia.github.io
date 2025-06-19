@@ -112,7 +112,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-comoara-piratilor/Reksio%20si%20Comoara%20Piratilor.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/Reksio si Comoara Piratilor.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-comoara-piratilor/Reksio%20si%20Comoara%20Piratilor.iso"
+                            }
+                        ],
                         size: "363 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-comoara-piratilor"
@@ -149,7 +155,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/rexiesakalozok/Rexi%20%C3%A9s%20a%20kal%C3%B3zok.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/Rexi es a kalozok.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/rexiesakalozok/Rexi%20%C3%A9s%20a%20kal%C3%B3zok.iso"
+                            }
+                        ],
                         size: "509 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesakalozok"
@@ -165,7 +177,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/rexiesakalozok/Rexi%20%C3%A9s%20a%20kal%C3%B3zok.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/Rexi es a kalozok.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/rexiesakalozok/Rexi%20%C3%A9s%20a%20kal%C3%B3zok.iso"
+                            }
+                        ],
                         size: "509 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesakalozok"
@@ -306,7 +324,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/rexiesazufo/Rexi%20%C3%A9s%20az%20UFO.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiU/Rexi es az UFO.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/rexiesazufo/Rexi%20%C3%A9s%20az%20UFO.iso"
+                            }
+                        ],
                         size: "689 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesazufo"
@@ -322,7 +346,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/rexiesazufo/Rexi%20%C3%A9s%20az%20UFO.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiU/Rexi es az UFO.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/rexiesazufo/Rexi%20%C3%A9s%20az%20UFO.iso"
+                            }
+                        ],
                         size: "689 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesazufo"
@@ -427,7 +457,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-magicienii/Reksio%20si%20Magicienii.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiC/Reksio si Magicienii.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-magicienii/Reksio%20si%20Magicienii.iso"
+                            }
+                        ],
                         size: "655 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-magicienii"
@@ -530,7 +566,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-masina-timpului/Reksio%20si%20Masina%20Timpului.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiWC/Reksio si Masina Timpului.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-masina-timpului/Reksio%20si%20Masina%20Timpului.iso"
+                            }
+                        ],
                         size: "688 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-masina-timpului"
@@ -650,7 +692,7 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/RiKN/Рекс и капитан Немо.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiKN/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%20%D0%9D%D0%B5%D0%BC%D0%BE.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
@@ -694,7 +736,7 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/RiKwA/Reksio i Kretes w Akcji.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiKwA/Reksio%20i%20Kretes%20w%20Akcji.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
@@ -737,7 +779,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-kretes-in-actiune/Reksio%20si%20Kretes%20in%20Actiune.ISO",
+                        url: "https://iso.zagrajwreksia.pl/RiKwA/Reksio%20si%20Kretes%20in%20Actiune.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-kretes-in-actiune/Reksio%20si%20Kretes%20in%20Actiune.ISO"
+                            }
+                        ],
                         size: "385 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-kretes-in-actiune"
@@ -753,7 +801,7 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/RiKwA/Рекс и Крот на тропе войны.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiKwA/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B8%20%D0%9A%D1%80%D0%BE%D1%82%20%D0%BD%D0%B0%20%D1%82%D1%80%D0%BE%D0%BF%D0%B5%20%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B.iso",
                         mirrors: [
                             {
                                 name: "archive.org",
@@ -805,7 +853,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-kretes-misterul-celei-de-a-treia-dimensiuni/Reksio%20si%20Kretes_%20Misterul%20celei%20de%20a%20treia%20dimensiuni.ISO",
+                        url: "https://iso.zagrajwreksia.pl/RiKTTW/Reksio%20si%20Kretes%20Misterul%20celei%20de%20a%20treia%20dimensiuni.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-kretes-misterul-celei-de-a-treia-dimensiuni/Reksio%20si%20Kretes_%20Misterul%20celei%20de%20a%20treia%20dimensiuni.ISO"
+                            }
+                        ],
                         size: "267 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-kretes-misterul-celei-de-a-treia-dimensiuni"
