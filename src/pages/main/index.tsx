@@ -117,7 +117,7 @@ const GameEntry = ({id, game}: { id: string, game: Index }) => {
                         return language.langIcon + ' '
                     }
                 })}
-                {playInBrowser && <div>{t('playInBrowser')}</div>}
+                {playInBrowser && <div>🌐 {t('playInBrowser')}</div>}
             </Cover>
         </Link>
     )
