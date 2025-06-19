@@ -1,7 +1,9 @@
 import './style.css';
 import styled from "styled-components";
 import {Box} from "../../components/box.tsx";
-import {LanguageSelector} from "../../components/language-selector.tsx";
+import {Link} from "react-router";
+import {Button} from "../../components/button.tsx";
+import {useTranslation} from "react-i18next";
 
 const Background = styled.div`
     border-radius: 10px;
@@ -28,23 +30,41 @@ const Logo = () => (
 
 
 function About() {
+    const { t } = useTranslation();
+
     return (
         <Background>
             <Message>
                 <Logo />
-                <LanguageSelector />
 
-                <br /><br />
-
+                <div>
+                    <Link to="/">
+                        <Button style={{'marginBottom': '10px', textDecoration: 'none'}}>
+                            {t('goBack')}
+                        </Button>
+                    </Link>
+                </div>
                 <Box>
-                    Witaj na zagrajwreksia.pl - stronie mającej na celu archiwizacje wszelkich możliwych gier o reksiu (i ich wersji), umożliwienie ich pobrania oraz zagrania w niektóre z nich bezpośrednio w przeglądarce (ReksioEngine).<br />
-                    <a href="#">Przeczytaj więcej o projekcie</a><br />
-                    <br />
-                    Firmie BoomBit (AidemMedia) skończyła się licencja na wykorzystywanie postaci Reksia przez co nie są w stanie jej już sprzedawać i nie mają nic przeciwko pobieraniu gier.
-                    <br />
-                    <br />
-                    Więcej informacji o grach z serii <b>Przygody Reksia</b> możesz znaleźć na: <br />
-                    <a href="https://www.przygody-reksia.pl/">Przygody Reksia HUB</a> oraz na <a href="https://reksio.fandom.com/wiki/Reksio_Wiki">Reksiopedii</a>
+                    <h3 style={{marginTop: 0}}>Credits</h3>
+                    <div><strong>Website:</strong></div>
+                    <div>Code: Adikso</div>
+                    <div>Background: Paweł Wierzbicki</div>
+                    <div>Romanian translation: Serena</div>
+                    <div>Polish translation: Adikso</div>
+                    <div>English translation: Serena, Adikso</div>
+                    <br/>
+                    <div><strong>Games collection:</strong></div>
+                    <div>No-CD Patches: Dove6</div>
+                    <div>ISOs from collections of: Dove6, ReksioBlog, HeavenlyTape, Serena, KretonPodziemny</div>
+                    <div>City of Secrets 2 PC port: Dove6, Mysliwy112</div>
+                    <div>English translations: Serena</div>
+                    <div>Patched Polish games: Adikso</div>
+                    <div>Patched Romanian games: Serena</div>
+                    <br/>
+                    <div><strong>ReksioEngine:</strong></div>
+                    <div>Main programmer: Adikso</div>
+                    <div>Programming help: Dove6, Yoshida</div>
+                    <div>Previous reverse engineering work: Dove6, Yoshida, Mysliwy112</div>
                 </Box>
             </Message>
         </Background>
