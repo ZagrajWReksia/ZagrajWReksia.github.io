@@ -150,7 +150,13 @@ export function GameDetailsPage() {
 
                     <Alert style={{marginBottom: '20px'}}>
                         <Trans i18nKey="visitReksioDiscordForHelp">
-                            Need help with the game or installation? Join Reksio community on <a href="https://discord.gg/przygody-reksia">Discord</a>
+                            Need help with the game or installation? Join Reksio community on
+                            <a
+                                href="https://discord.gg/przygody-reksia"
+                                onClick={() => event('join_discord')}
+                            >
+                                Discord
+                            </a>
                         </Trans>
                     </Alert>
 

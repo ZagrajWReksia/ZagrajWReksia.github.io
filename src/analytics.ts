@@ -1,4 +1,4 @@
-export const event = (event: string, metadata: any) => {
+export const event = (event: string, metadata?: any) => {
     console.log(event, metadata);
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error
