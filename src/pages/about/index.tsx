@@ -66,6 +66,9 @@ function About() {
                     <div>Programming help: Dove6, Yoshida</div>
                     <div>Previous reverse engineering work: Dove6, Yoshida, Mysliwy112</div>
                 </Box>
+                <Box style={{marginTop: '10px'}}>
+                    Public statistics of this website can be found <a href="https://dashboard.simpleanalytics.com/zagrajwreksia.pl">here</a>
+                </Box>
             </Message>
         </Background>
     );
