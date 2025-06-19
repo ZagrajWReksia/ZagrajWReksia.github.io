@@ -1009,7 +1009,7 @@ const games: Record<string, Index> = {
     "abc": {
         group: 'educational',
         title: "abcWithReksio",
-        description: "",
+        description: "abcWithReksioDescription",
         coverImage: "/covers/abczreksiem.jpg",
         year: 2000,
         languages: [
@@ -1111,7 +1111,7 @@ const games: Record<string, Index> = {
     "liczezreksiem": {
         group: 'educational',
         title: "countingWithReksio",
-        description: "",
+        description: "countingWithReksioDescription",
         coverImage: "/covers/liczezreksiem.png",
         year: 2002,
         languages: [
@@ -1164,7 +1164,7 @@ const games: Record<string, Index> = {
     "ortografia": {
         group: 'educational',
         title: "ortographyWithReksio",
-        description: "",
+        description: "ortographyWithReksioDescription",
         coverImage: "/covers/reksioiortografia.jpg",
         year: 2003,
         languages: [
@@ -1203,7 +1203,7 @@ const games: Record<string, Index> = {
     "wesoleprzedszkolereksia": {
         group: 'educational',
         title: "reksioKindergarten",
-        description: "",
+        description: "reksioKindergartenDescription",
         coverImage: "/covers/wesoleprzedszkolereksia.jpg",
         year: 2003,
         languages: [

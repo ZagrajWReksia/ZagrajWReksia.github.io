@@ -180,7 +180,11 @@ const resources = {
                     This game was tested on animals. They didn't like it and went away.
                     This game was tested on testers. Nobody asked them if they wanted to do it and they couldn't get away. 
             `,
-            "cityOfSecretsDescription": `Rebrand of Reksio and City of Secrets LE without Reksio`
+            "cityOfSecretsDescription": `Rebrand of Reksio and City of Secrets LE without Reksio`,
+            "ortographyWithReksioDescription": "",
+            "reksioKindergartenDescription": "",
+            "countingWithReksioDescription": "",
+            "abcWithReksioDescription": "",
         }
     },
     pl: {
@@ -368,7 +372,60 @@ const resources = {
         
                     - NO NIE WIERZĘ!!! Teraz Aidem Media przesadziło! Najpierw umieszczają mnie i Reksia w Trzecim Wymiarze, następnie wysyłają do miasta pełnego kretów i sekretów, a jeszcze chcą mnie nauczyć angielskiego. Co ja jestem, Moles the Mole? Wygląda na to, że tak! No to see you later! - wypowiedział te słowa zezłoszczony, niezrehabilitowany Kretes (albo i nie powiedział)
             `,
-            "cityOfSecretsDescription": `Rebrand Reksio i Miasto Sekretów LE bez udziału Reksia`
+            "cityOfSecretsDescription": `Rebrand Reksio i Miasto Sekretów LE bez udziału Reksia`,
+            "ortographyWithReksioDescription": `Program “Reksio i ortografia” adresowany jest do uczniów szkół podstawowych i zawiera kompletną wiedzę ortograficzną, wymaganą przez program nauczania. Jest zbiorem zasad pisowni oraz ciekawych, dynamicznych zabaw sprawdzających znajomość ortografii, w których można wybrać poziom trudności i zagadnienie. Pasjonujące gry z Reksiem umilą naukę i zachęcą do utrwalania zdobytej wiedzy. Sprawią, że nauka stanie się niezapomnianą przygodą!
+                    W programie znajdują się ulubione przez dzieci typy gier i zabaw. Są to między innymi wyścigi samochodów, motorówek, slalom skuterem śnieżnym, czy gry zręcznościowe: wyspa bobrów, wyścig po nenufarach, wylęgarnia kurczaków i turniej przy studni. Jeśli dziecko woli gry strategiczne, zapraszamy do zabawy polegającej na zdobywaniu zamków. Gdy jednak pisownia niektórych wyrazów sprawia kłopot, Reksio zaprasza do swojej budy, na krótką lekcjię ortografii. Ale to jeszcze nie wszystko...
+                    Całość nasycona jest bogatą grafiką animowaną, wesołą muzyką oraz ciekawymi pomysłami na łatwe przyswojenie zasad poprawnej pisowni. Czego można chcieć więcej! Wystarczy dużo ćwiczyć, aby być najlepszym!
+            `,
+            "reksioKindergartenDescription": `„Wesołe Przedszkole Reksia” to kolejny tytuł z serii edukacji przedszkolnej dla najmłodszych dzieci. Program opracowany został według założeń dydaktycznych wychowania przedszkolnego. Zawiera siedem interesujących zabaw, które wspomagają tok edukacji przedszkolnej, stymulują rozwój umysłowy oraz twórcze myślenie.
+                    
+                    Kolejka - ulubiona zabawa wszystkich przedszkolaków. W tej grze należy pomóc maszyniście zabrać wszystkich pasażerów i dojechać z nimi na stację końcową. To wiele godzin zabawy dla każdego malucha i jego taty!
+                    
+                    Znikające zabawki - Gdzie jest miś? Czy to ta sama lalka czy inna? A czy był tutaj robot?
+                    Doskonała zabawa ćwicząca pamięć i spostrzegawczość. Rosnący poziom trudności i dużo zabawnych animacji.
+                    
+                    Memo - tę zabawę, polegającą na łączeniu elementów w pary znają wszystkie dzieci. Ale w naszym programie wzbogaciliśmy ją w animowane plansze i mówiące karty memo! Znakomita zabawa dla dwóch osób!
+                    
+                    Klocki - Każde dziecko lubi się nimi bawić? Niestety prawdziwe klocki nie potrafią się ruszać... Klocki Reksia - potrafią! Zbuduj statek, ambulans, krokodyla i zobacz, co się stanie...
+                    
+                    Wesoła Strzelnica - W tej zabawie zwycięzcą zostaje ten, kto pobije rekord strzelnicy.!
+                    To dynamiczna gra zręcznościowa zarówno dla młodszych, jak i starszych dzieci.
+                    
+                    Układanki - Doskonała zabawa dla tych, którzy lubią bawić się układankami.
+                    W niezwykłym Przedszkolu Reksia elementy układanki poruszają się, a postacie wyczyniają różne śmieszne figle...
+                    
+                    Mówiące Kolorowanki - Pokoloruj i wydrukuj obrazki z przygodami Reksia. Uważaj na kolory - nikt nie lubi, kiedy maluje mu się głowę na zielono. Reksio z pewnością zwróci na to uwagę.
+            `,
+            "countingWithReksioDescription": `
+                    LICZĘ Z REKSIEM to połączenie multimedialnej przygody z nauką i kompleksowym sprawdzeniem znajomości matematyki z zakresu nauczania początkowego. Zadaniem gracza jest pomóc Reksiowi w uratowaniu zwierząt, które porwał Wilk.
+                    Aby tego dokonać, trzeba zagłębić się w świat matematyki.....
+                    W rozbudowanej grze matematycznej przeżyjesz niezapomniane przygody. Przed Tobą labirynty, podchody, tajne akcje, dziwne maszyny, łamigłówki, pasjonujące zadania i arytmetyczne pojedynki z Wilkiem.
+                    Ale to nie wszystko!
+                    
+                    Czekają na Ciebie także puzzle, kolorowanki i Wielki Turniej Matematyczny dla kilku graczy!
+                    A jeśli chcesz udać się na lekcję matematyki i poznać nowe zagadnienia, Reksio zaprasza do swojej szkoły!
+                    
+                    W programie znajdziesz:
+                    - Pasjonującą grę przygodową!
+                    - Wesołe lekcje matematyki dla początkujących!
+                    - Dynamiczne gry i zabawy oraz ciekawe nagrody!
+                    - Obszerny trening, pozwalający przećwiczyć gry
+                    zawarte w programie!
+                    - Turniej Matematyczny dla czterech graczy!
+                    - Dwa poziomy trudności:
+                    dla dzieci z klas 0-1 oraz dzieci z klas 2-3 i starszych!
+                    - Statystyki, z których dowiesz się, o postępach w nauce!
+                    - Ponad 500 zadań matematycznych podzielonych na dwa poziomy trudności!
+                    - 120 pięknych plansz do odwiedzenia, 2000 kwestii mówionych,
+                    20 wspaniale animowanych postaci!
+                    
+                    Nauka matematyki może być wielką przygodą!
+            `,
+            "abcWithReksioDescription": `ABC z Reksiem, to program dla dzieci od 5 lat. Przeznaczony jest do nauki podstaw alfabetu, funkcji litery w słowie oraz czytania i rozumienia prostych słów, zwrotów i zdań. Program jest rozbudowany i zróżnicowany. Zawiera około 300 gier i zabaw. Znaleźć tu można zarówno kurs nauki alfabetu, jak i wiele zabaw związanych z poznawaniem liter.
+                    "ABC z Reksiem" składa się z trzech części: gry, elementarza i szkoły. Pierwsza z nich to wesoła zabawa, w której gracz pomaga Reksiowi skompletować alfabet, podczas rozwiązywania różnych gier i zgadywanek. Interaktywny elementarz to zbiór kolorowych stron poświęconych poszczególnym literkom. Znajdują się tu ukryte animacje, słowa i różne zabawy. Szkoła to przyjazny dziecku kurs nauki alfabetu składający się z około 100 zdań, zabaw i prezentacji. Dziecko uczy się tutaj nie tylko rozpoznawać litery, ale także posługiwać się nimi w różnych sytuacjach. Literkowa gra to zabawa ze Smokiem Literkowym, który porwał chłopca - najlepszego przyjaciela Reksia. Aby go uwolnić Reksio musi skompletować cały alfabet. Dziecko pomaga pieskowi. Jednocześnie poznaje alfabet, ćwiczy pisanie i czytanie. 
+                    Centrum reksiowego świata stanowi podwórze domu. Tam ukryte jest 6 ciekawych gier, w których można zdobyć literki. W zabawie "Kura w opałach" Reksio musi odeprzeć ataki lisów. 
+                    W "Szklarni" sadzi nasionko i hoduje literki, natomiast w "Maszynie koguta" zamienia przedmioty na litery. W grze: "Wędrowcy" uzupełnia brakujące litery w słowach, zaś w "Literkowym sklepie" sprzedaje przedmioty i zamienia je na literki. Reksio chodzi także "Na ryby" gdzie łowi przedmioty, które następnie może w sklepie zamienić na litery. 
+            `
         }
     },
     ro: {
