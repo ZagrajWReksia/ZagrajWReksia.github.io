@@ -155,8 +155,18 @@ function Index() {
         </GameContainer>
         <Controls>
             <Button onClick={enterFullscreen}><Fullscreen size={15}/> {t('playerEnterFullscreen')}</Button>
-            <Button onClick={exportSaveFile}><FileDown size={15} /> {t('playerExportSaveFile')}</Button>
-            <Button onClick={importSaveFile}><FileUp size={15} /> {t('playerImportSaveFile')}</Button>
+            <Button
+                onClick={exportSaveFile}
+                disabled={!ready}
+            >
+                <FileDown size={15} /> {t('playerExportSaveFile')}
+            </Button>
+            <Button
+                onClick={importSaveFile}
+                disabled={!ready}
+            >
+                <FileUp size={15} /> {t('playerImportSaveFile')}
+            </Button>
         </Controls>
 
         <Footer>

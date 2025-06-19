@@ -14,6 +14,11 @@ export const Button = styled.button`
     &:active {
         background-color: rgb(73, 73, 73);
     }
+    
+    &:disabled {
+        opacity: 0.4;
+        pointer-events:none;
+    }
 
     svg {
         margin-bottom: -2px;
