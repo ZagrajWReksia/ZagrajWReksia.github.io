@@ -305,7 +305,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-ozn-ul/Reksio%20si%20OZN-ul.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiU/Reksio%20si%20OZN-ul.iso",
+                        mirrors: [
+                            {
+                                name: "Combined Romanian",
+                                url: "https://archive.org/download/reksio-si-ozn-ul/Reksio%20si%20OZN-ul.iso"
+                            }
+                        ],
                         size: "561 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-ozn-ul"
@@ -951,7 +957,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-kretes-in-orasul-secretelor/Reksio%20si%20Kretes%20in%20orasul%20secretelor.iso",
+                        url: "https://iso.zagrajwreksia.pl/CoS/Reksio%20si%20Kretes%20in%20orasul%20secretelor.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-kretes-in-orasul-secretelor/Reksio%20si%20Kretes%20in%20orasul%20secretelor.iso"
+                            }
+                        ],
                         size: "719 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-kretes-in-orasul-secretelor"
@@ -967,7 +979,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reks-i-krot-v-podzemnom-gorod/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B8%20%D0%9A%D1%80%D0%BE%D1%82%20%D0%B2%20%D0%BF%D0%BE%D0%B4%D0%B7%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4.iso",
+                        url: "https://iso.zagrajwreksia.pl/CoS/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B8%20%D0%9A%D1%80%D0%BE%D1%82%20%D0%B2%20%D0%BF%D0%BE%D0%B4%D0%B7%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reks-i-krot-v-podzemnom-gorod/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B8%20%D0%9A%D1%80%D0%BE%D1%82%20%D0%B2%20%D0%BF%D0%BE%D0%B4%D0%B7%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4.iso"
+                            }
+                        ],
                         size: "511 MB",
                         source: "Reksioblog",
                     }
@@ -982,7 +1000,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/city-of-secrets-de/City%20of%20Secrets%20%28DE%29.iso",
+                        url: "https://iso.zagrajwreksia.pl/CoS/City%20of%20Secrets%20%28DE%29.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/city-of-secrets-de/City%20of%20Secrets%20%28DE%29.iso"
+                            }
+                        ],
                         size: "789 MB",
                         source: "Reksioblog",
                     }
@@ -1149,7 +1173,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/abc-z-reksiem/ABC%20z%20Reksiem.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/ABC%20z%20Reksiem.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/abc-z-reksiem/ABC%20z%20Reksiem.iso"
+                            }
+                        ],
                         size: "609 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/abc-z-reksiem"
@@ -1174,7 +1204,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-przyjaciele/Reksio%20i%20przyjaciele.ISO",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio%20i%20przyjaciele.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-i-przyjaciele/Reksio%20i%20przyjaciele.ISO"
+                            }
+                        ],
                         size: "347 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-i-przyjaciele"
@@ -1199,7 +1235,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-zwierzaki/Reksio%20i%20Zwierz%C4%99ta.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio%20i%20Zwierzeta.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-i-zwierzaki/Reksio%20i%20Zwierz%C4%99ta.iso"
+                            }
+                        ],
                         size: "253 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-i-zwierzaki"
@@ -1256,7 +1298,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/licze-z-reksiem/Licz%C4%99%20z%20Reksiem.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Licze%20z%20Reksiem.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/licze-z-reksiem/Licz%C4%99%20z%20Reksiem.iso"
+                            }
+                        ],
                         size: "700 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/licze-z-reksiem"
@@ -1312,7 +1360,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-i-ortografia/Reksio%20i%20Ortografia.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio%20i%20Ortografia.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-i-ortografia/Reksio%20i%20Ortografia.iso"
+                            }
+                        ],
                         size: "640 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-i-ortografia"
@@ -1353,7 +1407,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/przedszkole-reksia/Przedszkole%20Reksia.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Przedszkole%20Reksia.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/przedszkole-reksia/Przedszkole%20Reksia.iso"
+                            }
+                        ],
                         size: "538 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/przedszkole-reksia"
@@ -1410,7 +1470,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/lamiglowki-reksia-wielki-odkrywca/%C5%81amig%C5%82%C3%B3wki%20Reksia%20-%20Wielki%20Odkrywca.ISO",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Lamiglowki%20Reksia.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/lamiglowki-reksia-wielki-odkrywca/%C5%81amig%C5%82%C3%B3wki%20Reksia%20-%20Wielki%20Odkrywca.ISO"
+                            }
+                        ],
                         size: "433 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/lamiglowki-reksia-wielki-odkrywca"
