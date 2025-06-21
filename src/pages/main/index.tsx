@@ -8,6 +8,7 @@ import {LanguageSelector} from "../../components/language-selector.tsx";
 import {Footer} from "../../components/footer.tsx";
 import {Trans, useTranslation} from "react-i18next";
 import {gamesByGroup, Index, Language} from "../game/games.ts"
+import Flag from "../../components/flag.tsx";
 
 const CoverContainer = styled.div`
     display: flex;
@@ -111,11 +112,7 @@ const GameEntry = ({id, game}: { id: string, game: Index }) => {
             <Cover src={game.coverImage} year={game.year}>
                 {t(game.title)}<br/>
                 {game.languages.map((language: Language) => {
-                    if (!language.official) {
-                        return language.langIcon + '* '
-                    } else {
-                        return language.langIcon + ' '
-                    }
+                    return <span><Flag code={language.langCode}/>{!language.official ? '*' : ''} </span>
                 })}
                 {playInBrowser && <div>🌐 {t('playInBrowser')}</div>}
             </Cover>

@@ -17,7 +17,6 @@ export interface Download {
 
 export interface Language {
     langCode: string;
-    langIcon: string;
     official: boolean;
     downloads: Download[];
 }
@@ -54,7 +53,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "playInBrowser",
@@ -97,7 +95,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -140,7 +137,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -161,7 +157,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "cz",
-                langIcon: "🇨🇿",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -183,7 +178,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "hu",
-                langIcon: "🇭🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -205,7 +199,6 @@ const games: Record<string, Index> = {
             {
                 official: false,
                 langCode: "en",
-                langIcon: "🇬🇧",
                 downloads: [
                     {
                         name: "zipArchive",
@@ -242,7 +235,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -278,7 +270,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -321,7 +312,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -342,7 +332,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "cz",
-                langIcon: "🇨🇿",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -364,7 +353,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "hu",
-                langIcon: "🇭🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -386,7 +374,6 @@ const games: Record<string, Index> = {
             {
                 official: false,
                 langCode: "en",
-                langIcon: "🇬🇧",
                 downloads: [
                     {
                         name: "zipArchive",
@@ -417,7 +404,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -454,7 +440,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -497,7 +482,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -533,7 +517,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -569,7 +552,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -612,7 +594,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -643,7 +624,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -679,7 +659,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -716,7 +695,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -746,7 +724,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -782,7 +759,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "improvedVersionName",
@@ -825,7 +801,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -855,7 +830,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -877,7 +851,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -899,7 +872,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -929,7 +901,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -951,7 +922,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -973,7 +943,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -994,7 +963,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "de",
-                langIcon: "🇩🇪",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1024,7 +992,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1046,7 +1013,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "en",
-                langIcon: "🇬🇧",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1077,7 +1043,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1092,7 +1057,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "en",
-                langIcon: "🇬🇧",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1116,7 +1080,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "unofficialPCPort",
@@ -1137,7 +1100,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "en",
-                langIcon: "🇬🇧",
                 downloads: [
                     {
                         name: "unofficialPCPort",
@@ -1167,7 +1129,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1198,7 +1159,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1229,7 +1189,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1251,7 +1210,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "cz",
-                langIcon: "🇨🇿",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1267,7 +1225,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "hu",
-                langIcon: "🇭🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1292,7 +1249,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1314,7 +1270,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1330,7 +1285,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1354,7 +1308,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1376,7 +1329,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1401,7 +1353,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1423,7 +1374,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1439,7 +1389,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1464,7 +1413,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "pl",
-                langIcon: "🇵🇱",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1486,7 +1434,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ro",
-                langIcon: "🇷🇴",
                 downloads: [
                     {
                         name: "originalCDVersionName",
@@ -1502,7 +1449,6 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 langCode: "ru",
-                langIcon: "🇷🇺",
                 downloads: [
                     {
                         name: "originalCDVersionName",

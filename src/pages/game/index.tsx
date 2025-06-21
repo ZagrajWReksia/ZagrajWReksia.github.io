@@ -9,6 +9,7 @@ import games, {Download, Language, Mirror} from "./games.ts"
 import i18next from "i18next";
 import {Alert} from "../../components/box.tsx";
 import {event, trackUrl} from "../../analytics.ts";
+import Flag from "../../components/flag.tsx";
 
 const Wrapper = styled.div`
     @media (max-width: 767px) {
@@ -184,7 +185,7 @@ export function GameDetailsPage() {
                                 active={selectedLanguage?.langCode === lang.langCode}
                                 onClick={() => setSelectedLanguage(lang)}
                             >
-                                {lang.langIcon} {t(`lang_${lang.langCode}`)}
+                                <Flag code={lang.langCode}/> {t(`lang_${lang.langCode}`)}
                             </LanguageOption>
                         ))}
                     </LanguageSelector>
