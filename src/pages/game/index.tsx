@@ -8,7 +8,7 @@ import {Trans, useTranslation} from "react-i18next";
 import games, {Download, Language, Mirror} from "./games.ts"
 import i18next from "i18next";
 import {Alert} from "../../components/box.tsx";
-import {event} from "../../analytics.ts";
+import {event, trackUrl} from "../../analytics.ts";
 
 const Wrapper = styled.div`
     @media (max-width: 767px) {
@@ -112,12 +112,12 @@ export function GameDetailsPage() {
     const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(game?.languages?.find(lang => lang.langCode === i18next.resolvedLanguage) ?? null);
 
     const onDownload = async (download: Download, mirror?: Mirror) => {
-        event('game_download', {
+        trackUrl(mirror?.url ?? download.url, {
             gameId: gameId,
             language: selectedLanguage?.langCode,
             downloadName: download.name,
             mirrorName: mirror?.name,
-        })
+        });
     }
 
     if (!game) {
