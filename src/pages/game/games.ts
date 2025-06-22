@@ -1183,7 +1183,7 @@ const games: Record<string, Index> = {
         group: 'educational',
         title: "reksioAndAnimals",
         description: "",
-        coverImage: "/covers/reksioizwierzeta.png",
+        coverImage: "/covers/reksioizwierzeta.jpg",
         year: 2000,
         languages: [
             {
