@@ -45,7 +45,6 @@ const CoverImage = styled.img`
     border-radius: 3%;
     width: 200px;
     height: 270px;
-    object-fit: cover;
 `;
 
 const CoverImageWrapper = styled.div<{year: number}>`
