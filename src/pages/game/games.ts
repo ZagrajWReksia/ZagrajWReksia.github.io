@@ -1219,7 +1219,7 @@ const games: Record<string, Index> = {
                 downloads: [
                     {
                         name: "zipArchive",
-                        icon: "💿",
+                        icon: "📦",
                         description: "",
                         url: "https://iso.zagrajwreksia.pl/EDU/Reksio_es_az_allatkak.zip",
                         mirrors: [
@@ -1240,7 +1240,7 @@ const games: Record<string, Index> = {
                 downloads: [
                     {
                         name: "zipArchive",
-                        icon: "💿",
+                        icon: "📦",
                         description: "",
                         url: "https://iso.zagrajwreksia.pl/EDU/Reksio_es_az_allatkak.zip",
                         mirrors: [
