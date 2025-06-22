@@ -685,7 +685,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-capitanul-nemo/Reksio%20si%20Capitanul%20Nemo.iso",
+                        url: "https://iso.zagrajwreksia.pl/RiKN/Reksio%20si%20Capitanul%20Nemo.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-capitanul-nemo/Reksio%20si%20Capitanul%20Nemo.iso"
+                            }
+                        ],
                         size: "552 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-capitanul-nemo"
@@ -1212,10 +1218,16 @@ const games: Record<string, Index> = {
                 langCode: "cz",
                 downloads: [
                     {
-                        name: "originalCDVersionName",
+                        name: "zipArchive",
                         icon: "💿",
-                        description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip",
+                        description: "",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio_es_az_allatkak.zip",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip"
+                            }
+                        ],
                         size: "438 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
@@ -1227,11 +1239,17 @@ const games: Record<string, Index> = {
                 langCode: "hu",
                 downloads: [
                     {
-                        name: "originalCDVersionName",
+                        name: "zipArchive",
                         icon: "💿",
-                        description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip",
-                        size: "437 MB",
+                        description: "",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio_es_az_allatkak.zip",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-es-az-allatkak/Reksio_es_az_allatkak.zip"
+                            }
+                        ],
+                        size: "438 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
                     }
@@ -1275,7 +1293,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/matematica-cu-reksio/Matematica%20cu%20Reksio.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Matematica%20cu%20Reksio.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/matematica-cu-reksio/Matematica%20cu%20Reksio.iso"
+                            }
+                        ],
                         size: "635 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/matematica-cu-reksio"
@@ -1290,7 +1314,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/schitaem-s-reksom/%D0%A1%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%20%D1%81%20%D0%A0%D0%B5%D0%BA%D1%81%D0%BE%D0%BC.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/%D0%A1%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%20%D1%81%20%D0%A0%D0%B5%D0%BA%D1%81%D0%BE%D0%BC.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/schitaem-s-reksom/%D0%A1%D1%87%D0%B8%D1%82%D0%B0%D0%B5%D0%BC%20%D1%81%20%D0%A0%D0%B5%D0%BA%D1%81%D0%BE%D0%BC.iso"
+                            }
+                        ],
                         size: "644 MB",
                         source: "Reksioblog",
                     }
@@ -1334,7 +1364,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-si-ortografia/Reksio%20si%20Ortografia.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio%20si%20Ortografia.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-si-ortografia/Reksio%20si%20Ortografia.iso"
+                            }
+                        ],
                         size: "374 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-ortografia"
@@ -1379,7 +1415,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-la-gradinita-vesela/Reksio%20la%20gradinita%20vesela.ISO",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio%20la%20gradinita%20vesela.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-la-gradinita-vesela/Reksio%20la%20gradinita%20vesela.ISO"
+                            }
+                        ],
                         size: "421 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-la-gradinita-vesela"
@@ -1394,7 +1436,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reks-v-detskom-sadu/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B2%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%BC%20%D1%81%D0%B0%D0%B4%D1%83.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B2%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%BC%20%D1%81%D0%B0%D0%B4%D1%83.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reks-v-detskom-sadu/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%B2%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%BC%20%D1%81%D0%B0%D0%B4%D1%83.iso"
+                            }
+                        ],
                         size: "346 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reks-v-detskom-sadu"
@@ -1439,7 +1487,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reksio-micul-intelept/Reksio%2C%20micul%20intelept.ISO",
+                        url: "https://iso.zagrajwreksia.pl/EDU/Reksio%20micul%20intelept.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reksio-micul-intelept/Reksio%2C%20micul%20intelept.ISO"
+                            }
+                        ],
                         size: "238 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-micul-intelept"
@@ -1454,7 +1508,13 @@ const games: Record<string, Index> = {
                         name: "originalCDVersionName",
                         icon: "💿",
                         description: "originalCDVersionDescription",
-                        url: "https://archive.org/download/reks-na-ostrove-chudes/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%BD%D0%B0%20%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B5%20%D0%A7%D1%83%D0%B4%D0%B5%D1%81.iso",
+                        url: "https://iso.zagrajwreksia.pl/EDU/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%BD%D0%B0%20%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B5%20%D0%A7%D1%83%D0%B4%D0%B5%D1%81.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/reks-na-ostrove-chudes/%D0%A0%D0%B5%D0%BA%D1%81%20%D0%BD%D0%B0%20%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B5%20%D0%A7%D1%83%D0%B4%D0%B5%D1%81.iso"
+                            }
+                        ],
                         size: "302 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reks-na-ostrove-chudes"
