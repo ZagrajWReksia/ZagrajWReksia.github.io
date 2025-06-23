@@ -203,7 +203,7 @@ const games: Record<string, Index> = {
                     {
                         name: "zipArchive",
                         icon: "📦",
-                        description: "This is a fan-made translation. Includes patches for modern operating systems. ",
+                        description: "unofficialTranslationDescription",
                         url: "https://iso.zagrajwreksia.pl/RiSP/Reksio%20and%20the%20Pirate%20Treasure.zip",
                         mirrors: [
                             {
@@ -378,7 +378,7 @@ const games: Record<string, Index> = {
                     {
                         name: "zipArchive",
                         icon: "📦",
-                        description: "This is a fan made translation. Includes patches for modern operating systems.",
+                        description: "unofficialTranslationDescription",
                         url: "https://iso.zagrajwreksia.pl/RiU/Reksio%20and%20the%20UFO.zip",
                         mirrors: [
                             {
