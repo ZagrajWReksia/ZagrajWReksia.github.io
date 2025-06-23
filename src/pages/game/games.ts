@@ -1090,7 +1090,7 @@ const games: Record<string, Index> = {
                     {
                         name: "unofficialPCPort",
                         description: "unofficialPCPortDescription",
-                        url: "https://iso.zagrajwreksia.pl/CoS2ep1_PC_2.0.1.zip",
+                        url: "https://iso.zagrajwreksia.pl/CoS/CoS2ep1_PC_2.0.1.zip",
                         mirrors: [
                             {
                                 name: "GDrive",
@@ -1110,7 +1110,7 @@ const games: Record<string, Index> = {
                     {
                         name: "unofficialPCPort",
                         description: "unofficialPCPortDescription",
-                        url: "https://iso.zagrajwreksia.pl/CoS2ep1_PC_2.0.1.zip",
+                        url: "https://iso.zagrajwreksia.pl/CoS/CoS2ep1_PC_2.0.1.zip",
                         mirrors: [
                             {
                                 name: "GDrive",
