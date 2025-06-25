@@ -4,6 +4,7 @@ import {Box} from "../../components/box.tsx";
 import {Link} from "react-router";
 import {Button} from "../../components/button.tsx";
 import {useTranslation} from "react-i18next";
+import {Footer} from "../../components/footer.tsx";
 
 const Background = styled.div`
     border-radius: 10px;
@@ -99,6 +100,8 @@ function About() {
                     Public statistics of this website can be found <a href="https://cloud.umami.is/share/6VniumP7m3vxfcpt/zagrajwreksia.pl">here</a>
                 </Box>
             </Message>
+
+            <Footer/>
         </Background>
     );
 }
