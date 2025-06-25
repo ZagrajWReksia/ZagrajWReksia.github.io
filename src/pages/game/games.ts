@@ -44,7 +44,7 @@ const games: Record<string, Index> = {
         instructions: [
             {
                 type: "password",
-                content: `<img src="/extra/risp-code.png" style="height: 100px"/>`
+                content: `<img src="/extra/risp-code.png" style="height: 70px; padding: 10px;"/>`
             }
         ],
         coverImage: "/covers/reksioiskarbpiratow.jpg",
@@ -226,7 +226,7 @@ const games: Record<string, Index> = {
         instructions: [
             {
                 type: "password",
-                content: `<img src="/extra/riu-code.png" style="height: 100px"/>`
+                content: `<img src="/extra/riu-code.png" style="height: 70px; padding: 10px;"/>`
             }
         ],
         coverImage: "/covers/reksioiufo.jpg",
@@ -398,6 +398,12 @@ const games: Record<string, Index> = {
         group: "main",
         title: "reksioAndWizards",
         description: "reksioAndWizardsDescription",
+        instructions: [
+            {
+                type: "password",
+                content: `<img src="/extra/ric-code.png" style="height: 70px; padding: 10px;"/>`
+            }
+        ],
         coverImage: "/covers/reksioiczarodzieje.jpg",
         year: 2004,
         languages: [
@@ -508,7 +514,7 @@ const games: Record<string, Index> = {
         instructions: [
             {
                 type: "password",
-                content: `<img src="/extra/riwc-code.png" style="height: 100px"/>`
+                content: `<img src="/extra/riwc-code.png" style="height: 70px; padding: 10px;"/>`
             }
         ],
         coverImage: "/covers/reksioiwehikulczasu.jpg",
