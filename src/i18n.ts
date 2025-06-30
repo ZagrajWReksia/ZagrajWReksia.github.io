@@ -48,7 +48,7 @@ const resources = {
             "reksioAndOrthography": "Reksio and Orthography",
             "countingWithReksio": "Counting with Reksio",
             "reksioKindergarten": "Reksio's Joyous Kindergarten",
-            "reksioPuzzles": "Reksio's Puzzles - The Little Explorer",
+            "reksioPuzzles": "Reksio's Puzzles - The Great Explorer",
             "reksioAndAnimals": "Reksio and Animals",
             "reksioAndFriends": "Reksio and Friends",
             "originalCDVersionName": "Original CD version (ISO)",
@@ -185,7 +185,7 @@ const resources = {
                     This game was tested on animals. They didn't like it and went away.
                     This game was tested on testers. Nobody asked them if they wanted to do it and they couldn't get away. 
             `,
-            "cityOfSecretsDescription": `Rebrand of Reksio and City of Secrets LE without Reksio`,
+            "cityOfSecretsDescription": `Rebrand of Reksio and the City of Secrets LE without Reksio`,
             "reksioAndOrthographyDescription": "",
             "reksioKindergartenDescription": "",
             "countingWithReksioDescription": "",
@@ -377,8 +377,7 @@ const resources = {
                     Gra była testowana na zwierzętach. Niezbyt im się to spodobało i uciekły.
                     Gra była testowana również na testerach. Ci nie mieli wyboru. 
             `,
-            "reksioAndCityOfSecretsLEDescription": `
-                    Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa i oglądając mapy odkrywa położenie Atlantydy i jednej z jakiejś tajemniczych sfer... zaraz to nie było tak! Przecież miał dosłownie " Zapaść się pod ziemię",...
+            "reksioAndCityOfSecretsLEDescription": `Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa i oglądając mapy odkrywa położenie Atlantydy i jednej z jakiejś tajemniczych sfer... zaraz to nie było tak! Przecież miał dosłownie " Zapaść się pod ziemię",...
         
                     - NO NIE WIERZĘ!!! Teraz Aidem Media przesadziło! Najpierw umieszczają mnie i Reksia w Trzecim Wymiarze, następnie wysyłają do miasta pełnego kretów i sekretów, a jeszcze chcą mnie nauczyć angielskiego. Co ja jestem, Moles the Mole? Wygląda na to, że tak! No to see you later! - wypowiedział te słowa zezłoszczony, niezrehabilitowany Kretes (albo i nie powiedział)
             `,
@@ -406,8 +405,7 @@ const resources = {
                     
                     Mówiące Kolorowanki - Pokoloruj i wydrukuj obrazki z przygodami Reksia. Uważaj na kolory - nikt nie lubi, kiedy maluje mu się głowę na zielono. Reksio z pewnością zwróci na to uwagę.
             `,
-            "countingWithReksioDescription": `
-                    LICZĘ Z REKSIEM to połączenie multimedialnej przygody z nauką i kompleksowym sprawdzeniem znajomości matematyki z zakresu nauczania początkowego. Zadaniem gracza jest pomóc Reksiowi w uratowaniu zwierząt, które porwał Wilk.
+            "countingWithReksioDescription": `LICZĘ Z REKSIEM to połączenie multimedialnej przygody z nauką i kompleksowym sprawdzeniem znajomości matematyki z zakresu nauczania początkowego. Zadaniem gracza jest pomóc Reksiowi w uratowaniu zwierząt, które porwał Wilk.
                     Aby tego dokonać, trzeba zagłębić się w świat matematyki.....
                     W rozbudowanej grze matematycznej przeżyjesz niezapomniane przygody. Przed Tobą labirynty, podchody, tajne akcje, dziwne maszyny, łamigłówki, pasjonujące zadania i arytmetyczne pojedynki z Wilkiem.
                     Ale to nie wszystko!
@@ -610,6 +608,46 @@ const resources = {
                     
                     Cineva... familiar.
             `,
+            "reksioAndCityOfSecretsDescription": `Dzielny pies Reksio schodzi do piwnicy w norze swojego przyjaciela komandora kreta Kretesa i dosłownie "zapada się pod ziemię". Zaniepokojony komandor wyrusza natychmiast jego śladem i wkrótce poprzez labirynt korytarzy i tuneli dociera do ukrytego pod ziemią, tajemniczego miasta kretów. Okazuje się, że Reksio został pojmany, uwięziony i skazany za szpiegostwo na rzecz Szczurów, a to, jak okaże się niebawem, zaledwie czubek przysłowiowej kury lodowej.
+                    
+                    Czy Kretesowi uda się w porę uwolnić Reksia?
+                    
+                    Kim jest tajemniczy burmistrz, który rządzi miastem od czasów rewolucji?
+                    
+                    Czy Reksio pozwoli dobrowolnie połknąć się olbrzymiemu wężowi, żeby odzyskać zagubioną puszkę z dowodami rzeczowymi?
+                    
+                    Co mieści się w sercu krainy Szczurów?
+                    
+                    Przygotuj się na fascynującą, kolorową i trójwymiarową podróż do wnętrza Ziemi. Kierując na zmianę Reksiem i Kretesem, przeżyj najbardziej niesamowitą z dotychczasowych przygód i odkryj wszystkie sekrety Miasta seKretów. 
+            `,
+            "reksioAndOrthographyDescription": `Va doriți ca puștiul dumneavoastră să vorbească in limba română corect, fără să facă greșeli de vorbire sau de scriere? Dacă sunteți unul dintre părinții cu adevărat preocupați de cunoștințele copilului dumneavoastră, atunci sigur veți aprecia la justa lui valoare acest joc educațional-distractiv.
+                    
+                    Când folosim *s* sau *z*, *m* sau *n*, *ii* sau *iii* , *ae* sau *e*, când folosim cratima sau care sunt cuvintele compuse. Iată câteva din temele puse in dezbatere!
+                    
+                    Grafica și animația extrem de vii și vesele fac din regulile gramaticale o plăcere! Mai ales că, pentru rezolvarea lor, vei fi ajutat de animăluțe simpatice și invățatul Reksio!
+                    
+                    Jocurile dezvoltă memoria și gândirea logică! Un perfect echilibru între divertisment și educație, programul este conceput în așa fel încât învățatul să fie o plăcere.
+                    
+                    Cu ajutorul acestui CD, copilul dumeavoastră va invăța în mod rapid și foarte ușor cuvinte noi și expresii dificile. Setul de jocuri și sarcinile pregătite creeaza o poveste care face ca dobândirea cunoștințelor să se facă într-un mod agreabil pentru copil! 
+            `,
+            "reksioKindergartenDescription": `După atâtea peripeții, Reksio s-a înscris la grădinița și te invită la o plimbare educativă cu opt opriri, adica opt jocuri pentru cei mici.
+                    
+                    Poți deveni campion al memoriei jucând „Descoperă perechile” sau „Jucarii ce dispar”, îți poți demonstra talentul de constructor în atelier unde va trebui să construiești conform schemei, vei fi mecanic de locomotivă și va trebui sa conduci toți pasagerii in Gara Centrală.
+                    
+                    Alte surprize te așteaptă, descoperă-le! 
+            `,
+            "countingWithReksioDescription": `Puștiul tău îți spune că orele de matematică sunt plictisitoare, că adunările și scăderile îi dau bătăi de cap, iar înmulțirile și împărțirile sunt greu de rezolvat?
+                    
+                    Dacă te confrunți cu această problemă, sau doar dacă vrei să-i oferi un motiv de a-și petrece timpul intr-un mod interesant și plăcut, în care să se distreze, dar și să devină captivat de matematică, atunci Reksio și Matematica, te poate ajuta!
+                    
+                    Reksio va fi meditatorul personal! Alături de el, vei învăța să numeri, iar operațiile matematice de bază (adunarea, scăderea, înmulțirea, împărțirea) și figurile geometirce le vei aprofunda. De asemenea, vei rezolva probleme cu mulțimi, de logică matematică si ecuații!
+                    
+                    Nicicând nu a fost mai ușor sa înveți matematică! Alături de colegi haioși, vei reuși să-ți focalizezi atenția asupra problemelor ridicate de joc sau să te orientezi în spațiu, ghidându-te după o hartă! Acumularea cunoștințelor într-o manieră distractivă este doar începutul!
+                    
+                    Poți opta pentru două grade diferite de dificultate: greu și ușor, în funcție de vârstă, care te vor ajuta să-ți exersezi gândirea logică, capacitatea de asociere și de memorare. Poate fi folosit ca o metodă de testare a cunoștințelor dobândite.
+                    
+                    Deci, ajutați copilul să se distreze cu folos! 
+            `
         }
     }
 };
