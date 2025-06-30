@@ -1,4 +1,4 @@
-import {RefObject, useEffect, useMemo, useRef, useState} from 'react'
+import {RefObject, useEffect, useMemo, useRef, useState, useCallback} from 'react'
 import {createGamePlayer, FileLoaders, GamePlayerInstance, SaveFileManager} from "reksioengine";
 import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
@@ -84,13 +84,13 @@ function Index() {
         setReady(true)
     }
 
-    const migrateSaveFile = () => {
+    const migrateSaveFile = useCallback(() => {
         const oldSaveFile = localStorage.getItem('saveFile')
         if (oldSaveFile !== null) {
             localStorage.setItem(`${game.id}-savefile`, oldSaveFile)
             localStorage.removeItem('saveFile')
         }
-    }
+    }, [game.id])
 
     useEffect(() => {
         if (!ready) {
@@ -128,7 +128,7 @@ function Index() {
                 playerRef.current = null
             }
         }
-    }, [ready, playthroughId])
+    }, [ready, playthroughId, game.listingUrl, game.id, migrateSaveFile])
 
     const enterFullscreen = () => {
         if (!gameRef.current) {
