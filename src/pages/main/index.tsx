@@ -208,7 +208,7 @@ function App() {
 
             <GameSection
                 title={t('educationalGames')}
-                subtitle={t('forVerySmallPlayers')}
+                subtitle={t('forTheLittlestPlayers')}
                 style={{marginTop: '100px', paddingBottom: '200px'}}
             >
                 {gamesByGroup('educational').map(([key, game]) => (

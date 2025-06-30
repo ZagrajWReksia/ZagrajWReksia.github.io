@@ -18,14 +18,14 @@ const resources = {
             "adventuresOfReksio": "Adventures of Reksio",
             "mainSeries": "Main series",
             "educationalGames": "Educational games",
-            "forVerySmallPlayers": "For the littlest players",
+            "forTheLittlestPlayers": "For the littlest players",
             "playInBrowser": "Play in the browser",
             "withoutGameDownloading": "Without downloading",
             "mirrors": "Mirrors",
             "extras": "Extras",
             "newSeries": "New series",
-            "englishVersionIsFanMade": "The English version is fan made and uses AI for dubbing.",
-            "mainAboutHello": "Welcome to zagrajwreksia.pl - a website created to archive all available games from Adventures of Reksio series (including their versions), so you can download them and even play some of them directly in your browser (via ReksioEngine).",
+            "englishVersionIsFanMade": "The English version is fanmade and its dubbing is made with AI",
+            "mainAboutHello": "Welcome to zagrajwreksia.pl - a website created to archive all the available versions of all the games from Adventures of Reksio series, so that they can be downloaded and even played directly in the browser (via ReksioEngine).",
             "mainAboutReadMore": "Read more about the project",
             "mainAboutBoombit": "The studio BoomBit (Aidem Media) has had its license to use the character Reksio expire, making them unable to sell their games featuring it anymore, and do not have issues with people downloading the games.",
             "mainAboutMoreAboutGames": "You can find more information about the games from the the Adventures of Reksio series at:",
@@ -39,38 +39,38 @@ const resources = {
             "reksioAndTimeMachine": "Reksio and the Time Machine",
             "reksioAndCaptainNemo": "Reksio and Captain Nemo",
             "reksioAndKretesInAction": "Reksio and Kretes in Action",
-            "reksioAndKretesTheSecret": "Reksio and Kretes: The Secret of the Third Dimension",
+            "reksioAndKretesTheMystery": "Reksio and Kretes: The Mystery of the Third Dimension",
             "reksioAndCityOfSecrets": "City of Secrets",
             "reksioAndCityOfSecretsLE": "Reksio and the City of Secrets: Limited Edition",
             "cityOfSecrets": "City of Secrets",
-            "reksioAndCityOfSecrets2": "City of Secrets 2",
-            "abcWithReksio": "ABC z Reksiem",
-            "ortographyWithReksio": "Reksio i Ortografia",
-            "countingWithReksio": "Liczę z Reksiem",
-            "reksioKindergarten": "Wesołe Przedszkole Reksia",
-            "reksioPuzzles": "Łamigłówki Reksia - Wielki Odkrywca",
-            "reksioAndAnimals": "Reksio i Zwierzęta",
-            "reksioAndFriends": "Reksio i Przyjaciele",
+            "cityOfSecrets2": "City of Secrets 2",
+            "abcWithReksio": "ABC with Reksio",
+            "reksioAndOrthography": "Reksio and Orthography",
+            "countingWithReksio": "Counting with Reksio",
+            "reksioKindergarten": "Reksio's Joyous Kindergarten",
+            "reksioPuzzles": "Reksio's Puzzles - The Great Explorer",
+            "reksioAndAnimals": "Reksio and Animals",
+            "reksioAndFriends": "Reksio and Friends",
             "originalCDVersionName": "Original CD version (ISO)",
-            "originalCDVersionDescription": "This version is exactly as it appears on the disk. May not work on modern operating systems.",
+            "originalCDVersionDescription": "This version is exactly as it appears on the disk; may not work on modern operating systems",
             "improvedVersionName": "Improved version with patches",
             "zipArchive": "ZIP Archive",
             "instructionsRunExe": "Run the game by clicking on {{file}}",
             "improvedVersionDescription": "No-CD patch + patches for modern operating systems",
             "unofficialPCPort": "Unofficial PC port",
             "unofficialPCPortDescription": "This game was ported from Android/iOS to PC by community",
-            "unofficialTranslationDescription": "Unofficial fan made translation",
-            "visitReksioDiscordForHelp": "Need help with the game or installation? Join Reksio community on <1>Discord</1>.",
+            "unofficialTranslationDescription": "Unofficial fanmade translation",
+            "visitReksioDiscordForHelp": "Need help with the game or installation? Join Reksio community on <1>Discord</1>!",
             "source": "Source",
             "credits": "Credits",
             "createdAndManagedBy": "Created and managed by <1>Adikso</1>",
             "sourceCode": "Source code",
-            "playerEnterFullscreen": "Full screen",
+            "playerEnterFullscreen": "Fullscreen",
             "playerImportSaveFile": "Load save",
-            "playerExportSaveFile": "Export save",
+            "playerExportSaveFile": "Download save",
             "playerPressHereToStart": "Press here to start",
-            "specialInstructions": "Special Instructions",
-            "codeFromBooklet": "In case the game asks you for the code from the booklet, type the following code:",
+            "specialInstructions": "Special instructions",
+            "codeFromBooklet": "If the game asks you for the code from the booklet, enter the following:",
             "reksioAndPiratesDescription": `Somewhere in the Non-Pacific Ocean, under mysterious circumstances, the pirate Captain O'Verboard disappears. Along with him vanishes the only map leading to the legendary treasure...
 
                     Meanwhile, Reksio, windsurfing across the sea, is caught in a raging storm. Amid flashes of lightning and the roar of the waves, Reksio crashes into the shores of a mysterious island. Soon after, he finds a bottle washed up on the beach, containing an enigmatic message:
@@ -163,7 +163,7 @@ const resources = {
                     
                     In doing so, they begin to uncover a number of strange inconsistencies...
             `,
-            "reksioAndKretesTheSecretDescription": `A mysterious hum in the middle of the night jolts Reksio, Kretes, and the Rooster Inventor out of bed. Without hesitation and despite the danger, the friends set out to investigate.
+            "reksioAndKretesTheMysteryDescription": `A mysterious hum in the middle of the night jolts Reksio, Kretes, and the Rooster Inventor out of bed. Without hesitation and despite the danger, the friends set out to investigate.
 
                     Soon, they discover that a massive Black Monolith has appeared in a forest clearing. Kretes touches its surface — and in an instant, all three heroes are pulled into the depths of the third dimension.
                     
@@ -177,16 +177,16 @@ const resources = {
                     
                     Someone... familiar.
             `,
-            "reksioAndCityOfSecretsDescription": `After Rex falls into a hole in your basement, you must rescue Rex from a city full of secrets in this incredible adventure game! Not only has Rex found a city full of mole people, but he's also been accused of espionage!`,
-            "reksioAndCityOfSecrets2Description": `Usually, a dangerous and perilous adventure hides behind a completely innocent beginning. A beginning that doesn't mention anything about a giant worm, dangerous cooking recipes, the common people fighting the oppressive regime, rebelling workers and trade unions. Nor does it mention a strange salesman that forgoes the career of a dark god to start his own fish stand business. An innocent beginning doesn't say anything that could be linked to words like danger, trouble or threat. It's just the way with all those adventures, it seems they have nothing better to do than just render a man's... animal's... mole's... life unpleasant.
+            "reksioAndCityOfSecretsDescription": `After Rex falls into a hole in your basement, you must rescue him from a city full of secrets in this incredible adventure game! Not only has Rex found a city full of mole people, but he's also been accused of espionage!`,
+            "cityOfSecrets2Description": `Usually, a perilous adventure hides behind a completely innocent beginning. A beginning that doesn't mention anything about a giant worm, dangerous cooking recipes, the common people fighting the oppressive regime, rebelling workers and trade unions. Nor does it mention a strange salesman that forgoes the career of a dark god to start his own fish stand business. An innocent beginning doesn't say anything that could be linked to words like danger, trouble, or threat. It's just the way with all those adventures, it seems they have nothing better to do than just render a man's... animal's... mole's... life unpleasant.
                     
-                    Moles the Mole, a not-so-bright and nice hero, but a hero nonetheless, will have the questionable opportunity to discover what fate has in store for him. One night, closer to morning than evening, Moles has been brutally awakened by scary noises. Fear tightened it's icy grip on Moles' heart and just when our hero was about to execute a tactical withdrawal, the mystery solved itself - with a terrifying series of noises, our hero's most impressive muscle was demanding a night snack. Unfortunately, the problem with adventure games is that nothing's ever easy in them. The fridge is empty, the designer didn't draw a larder and the writer already had an idea how to complicate the hero's life. Now that's an innocent beginning, if I've ever seen one. And you know what's the usual deal with those innocent beginnings.
+                    Moles the Mole, a not-so-bright and nice hero, but a hero nonetheless, will have the questionable opportunity to discover what fate has in store for him. One night, closer to morning than evening, Moles has been brutally awakened by scary noises. Fear tightened it's icy grip on Moles's heart and just when our hero was about to execute a tactical withdrawal, the mystery solved itself - with a terrifying series of noises, our hero's most impressive muscle was demanding a night snack. Unfortunately, the problem with adventure games is that nothing's ever easy in them. The fridge is empty, the designer didn't draw a larder and the writer already had an idea how to complicate the hero's life. Now that's an innocent beginning, if I've ever seen one. And you know what's the usual deal with those innocent beginnings.
                     
                     This game was tested on animals. They didn't like it and went away.
                     This game was tested on testers. Nobody asked them if they wanted to do it and they couldn't get away. 
             `,
-            "cityOfSecretsDescription": `Rebrand of Reksio and City of Secrets LE without Reksio`,
-            "ortographyWithReksioDescription": "",
+            "cityOfSecretsDescription": `Rebrand of Reksio and the City of Secrets LE without Reksio`,
+            "reksioAndOrthographyDescription": "",
             "reksioKindergartenDescription": "",
             "countingWithReksioDescription": "",
             "abcWithReksioDescription": "",
@@ -207,13 +207,13 @@ const resources = {
             "adventuresOfReksio": "Przygody Reksia",
             "mainSeries": "Główna seria",
             "educationalGames": "Gry edukacyjne",
-            "forVerySmallPlayers": "Dla bardzo małych graczy",
+            "forTheLittlestPlayers": "Dla bardzo małych graczy",
             "playInBrowser": "Graj w przeglądarce",
             "withoutGameDownloading": "Bez pobierania gry",
             "mirrors": "Mirrory",
             "extras": "Dodatki do serii",
             "newSeries": "Nowa seria",
-            "englishVersionIsFanMade": "Wersja w języku angielskim jest wersją fanowską i używa AI do dubbingu.",
+            "englishVersionIsFanMade": "Wersja w języku angielskim jest wersją fanowską i używa AI do dubbingu",
             "mainAboutHello": "Witaj na zagrajwreksia.pl – stronie poświęconej archiwizacji wszelkich możliwych gier o reksiu (oraz ich wersji), umożliwiającej ich pobranie, a także grę w niektóre z nich bezpośrednio w przeglądarce (dzięki ReksioEngine).",
             "mainAboutReadMore": "Przeczytaj więcej o projekcie",
             "mainAboutBoombit": "Firmie BoomBit (AidemMedia) wygasła licencja na wykorzystywanie postaci Reksia przez co nie są w stanie jej już sprzedawać i nie mają nic przeciwko pobieraniu gier.",
@@ -228,20 +228,20 @@ const resources = {
             "reksioAndTimeMachine": "Reksio i Wehikuł Czasu",
             "reksioAndCaptainNemo": "Reksio i Kapitan Nemo",
             "reksioAndKretesInAction": "Reksio i Kretes w Akcji",
-            "reksioAndKretesTheSecret": "Reksio i Kretes Tajemnica Trzeciego Wymiaru",
+            "reksioAndKretesTheMystery": "Reksio i Kretes Tajemnica Trzeciego Wymiaru",
             "reksioAndCityOfSecrets": "Reksio i Miasto SeKretów",
             "reksioAndCityOfSecretsLE": "Reksio i Miasto SeKretów: Limited Edition",
             "cityOfSecrets": "City of Secrets",
-            "reksioAndCityOfSecrets2": "Miasto SeKretów 2",
+            "cityOfSecrets2": "Miasto SeKretów 2",
             "abcWithReksio": "ABC z Reksiem",
-            "ortographyWithReksio": "Reksio i Ortografia",
+            "reksioAndOrthography": "Reksio i Ortografia",
             "countingWithReksio": "Liczę z Reksiem",
             "reksioKindergarten": "Wesołe Przedszkole Reksia",
             "reksioPuzzles": "Łamigłówki Reksia - Wielki Odkrywca",
             "reksioAndAnimals": "Reksio i Zwierzęta",
             "reksioAndFriends": "Reksio i Przyjaciele",
             "originalCDVersionName": "Oryginalna wersja z płyty (ISO)",
-            "originalCDVersionDescription": "Wersja dokładnie taka jak na płycie. Może nie działać na współczesnych systemach operacyjnych.",
+            "originalCDVersionDescription": "Wersja dokładnie taka jak na płycie; może nie działać na współczesnych systemach operacyjnych",
             "improvedVersionName": "Wersja poprawiona z łatkami",
             "zipArchive": "Archiwum ZIP",
             "instructionsRunExe": "Uruchom grę klikając na plik {{file}}",
@@ -249,7 +249,7 @@ const resources = {
             "unofficialPCPortDescription": "Gra przeportowana przez społeczność z Androida/iOS na PC",
             "unofficialTranslationDescription": "Nieoficjalne tłumaczenie fanowskie",
             "improvedVersionDescription": "Łatka No-CD + łatki dla współczesnych systemów operacyjnych",
-            "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na <1>Discorda</1> społeczności.",
+            "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na <1>Discorda</1> społeczności!",
             "source": "Źródło",
             "credits": "Autorzy",
             "createdAndManagedBy": "Stworzone i zarządzane przez <1>Adikso</1>",
@@ -346,7 +346,7 @@ const resources = {
 
                     "Minęło kilka miesięcy od zakończenia wielkiej przygody Reksia i Kretesa. Bohaterowie rozkoszują się upragnionym spokojem. Sielankę przerywa nadejście paczki z Ameryki. To ekskluzywny zestaw gier zręcznościowych o przygodach Reksia i Kretesa. Bohaterowie zasiadają przed konsolą, skonstruowaną przez Koguta Wynalazcę i próbują grać. Przy okazji odkrywają wiele nieścisłości..." 
             `,
-            "reksioAndKretesTheSecretDescription": `Tajemniczy szum w środku nocy stawia na nogi Reksia, Kretesa i Koguta Wynalazcę. Przyjaciele, nie bacząc na niebezpieczeństwo, wyruszają na zwiad. Niebawem okazuje się, że na polanie w lesie wyrósł potężny Czarny Monolit. Kretes dotyka jego powierzchni i naraz wszyscy trzej bohaterowie zostają wciągnięci w czeluść trzeciego wymiaru.
+            "reksioAndKretesTheMysteryDescription": `Tajemniczy szum w środku nocy stawia na nogi Reksia, Kretesa i Koguta Wynalazcę. Przyjaciele, nie bacząc na niebezpieczeństwo, wyruszają na zwiad. Niebawem okazuje się, że na polanie w lesie wyrósł potężny Czarny Monolit. Kretes dotyka jego powierzchni i naraz wszyscy trzej bohaterowie zostają wciągnięci w czeluść trzeciego wymiaru.
 
                     Ktoś uprowadził przyjaciół i porzucił u podnóża Mrocznej Wieży.
                     
@@ -370,20 +370,19 @@ const resources = {
                     
                     Przygotuj się na fascynującą, kolorową i trójwymiarową podróż do wnętrza Ziemi. Kierując na zmianę Reksiem i Kretesem, przeżyj najbardziej niesamowitą z dotychczasowych przygód i odkryj wszystkie sekrety Miasta seKretów. 
             `,
-            "reksioAndCityOfSecrets2Description": `Zwykle niebezpieczne przygody mają całkowicie niewinny początek. Początek, który nie ma nic wspólnego z gigantycznymi robakami, podejrzanymi przepisami, walką ludu z reżimem, protestującymi robotnikami czy związkami zawodowymi. Ani z osobliwym sprzedawcą rezygnującym z kariery mrocznego bóstwa na rzecz prowadzenia własnego stoiska rybnego. Ani z niczym innym, co można by powiązać ze słowami takimi jak kłopoty czy zagrożenie. Tak to już jest z tymi przygodami, które jedyne co, to uprzykrzają życie ludziom... zwierzętom... kretom.
+            "cityOfSecrets2Description": `Zwykle niebezpieczne przygody mają całkowicie niewinny początek. Początek, który nie ma nic wspólnego z gigantycznymi robakami, podejrzanymi przepisami, walką ludu z reżimem, protestującymi robotnikami czy związkami zawodowymi. Ani z osobliwym sprzedawcą rezygnującym z kariery mrocznego bóstwa na rzecz prowadzenia własnego stoiska rybnego. Ani z niczym innym, co można by powiązać ze słowami takimi jak kłopoty czy zagrożenie. Tak to już jest z tymi przygodami, które jedyne co, to uprzykrzają życie ludziom... zwierzętom... kretom.
                     
                     Kreta Kretesa, nie najbystrzejszego i najbardziej uprzejmego, ale wciąż bohatera, czeka wątpliwą przyjemność odkrycia, co los trzyma dla niego w zanadrzu. Pewnej nocy (bliżej rana niż wieczora) Kretes został brutalnie zbudzony przez przerażające odgłosy. Strach zacisnął swe szpony na sercu biednego kreta i gdy ten szykował się już do taktycznego odwrotu... zagadka rozwiązała się sama - za mrożącymi krew w żyłach odgłosami stał najbardziej imponujący mięsień bohatera, domagając się w ten sposób nocnej przekąski. Niestety, z grami przygodowymi jest taki problem, że nic nie jest w nich proste. Lodówka okazała się pusta, spiżarni projektant nie raczył narysować, scenarzysta za to zdążył już wpaść na pomysł, jak utrudnić życie Kretesowi. To dopiero niewinny początek. A co będzie dalej, pewnie już się domyślacie.
                     
                     Gra była testowana na zwierzętach. Niezbyt im się to spodobało i uciekły.
                     Gra była testowana również na testerach. Ci nie mieli wyboru. 
             `,
-            "reksioAndCityOfSecretsLEDescription": `
-                    Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa i oglądając mapy odkrywa położenie Atlantydy i jednej z jakiejś tajemniczych sfer... zaraz to nie było tak! Przecież miał dosłownie " Zapaść się pod ziemię",...
+            "reksioAndCityOfSecretsLEDescription": `Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa i oglądając mapy odkrywa położenie Atlantydy i jednej z jakiejś tajemniczych sfer... zaraz to nie było tak! Przecież miał dosłownie " Zapaść się pod ziemię",...
         
                     - NO NIE WIERZĘ!!! Teraz Aidem Media przesadziło! Najpierw umieszczają mnie i Reksia w Trzecim Wymiarze, następnie wysyłają do miasta pełnego kretów i sekretów, a jeszcze chcą mnie nauczyć angielskiego. Co ja jestem, Moles the Mole? Wygląda na to, że tak! No to see you later! - wypowiedział te słowa zezłoszczony, niezrehabilitowany Kretes (albo i nie powiedział)
             `,
             "cityOfSecretsDescription": `Rebrand Reksio i Miasto Sekretów LE bez udziału Reksia`,
-            "ortographyWithReksioDescription": `Program “Reksio i ortografia” adresowany jest do uczniów szkół podstawowych i zawiera kompletną wiedzę ortograficzną, wymaganą przez program nauczania. Jest zbiorem zasad pisowni oraz ciekawych, dynamicznych zabaw sprawdzających znajomość ortografii, w których można wybrać poziom trudności i zagadnienie. Pasjonujące gry z Reksiem umilą naukę i zachęcą do utrwalania zdobytej wiedzy. Sprawią, że nauka stanie się niezapomnianą przygodą!
+            "reksioAndOrthographyDescription": `Program “Reksio i ortografia” adresowany jest do uczniów szkół podstawowych i zawiera kompletną wiedzę ortograficzną, wymaganą przez program nauczania. Jest zbiorem zasad pisowni oraz ciekawych, dynamicznych zabaw sprawdzających znajomość ortografii, w których można wybrać poziom trudności i zagadnienie. Pasjonujące gry z Reksiem umilą naukę i zachęcą do utrwalania zdobytej wiedzy. Sprawią, że nauka stanie się niezapomnianą przygodą!
                     W programie znajdują się ulubione przez dzieci typy gier i zabaw. Są to między innymi wyścigi samochodów, motorówek, slalom skuterem śnieżnym, czy gry zręcznościowe: wyspa bobrów, wyścig po nenufarach, wylęgarnia kurczaków i turniej przy studni. Jeśli dziecko woli gry strategiczne, zapraszamy do zabawy polegającej na zdobywaniu zamków. Gdy jednak pisownia niektórych wyrazów sprawia kłopot, Reksio zaprasza do swojej budy, na krótką lekcjię ortografii. Ale to jeszcze nie wszystko...
                     Całość nasycona jest bogatą grafiką animowaną, wesołą muzyką oraz ciekawymi pomysłami na łatwe przyswojenie zasad poprawnej pisowni. Czego można chcieć więcej! Wystarczy dużo ćwiczyć, aby być najlepszym!
             `,
@@ -406,8 +405,7 @@ const resources = {
                     
                     Mówiące Kolorowanki - Pokoloruj i wydrukuj obrazki z przygodami Reksia. Uważaj na kolory - nikt nie lubi, kiedy maluje mu się głowę na zielono. Reksio z pewnością zwróci na to uwagę.
             `,
-            "countingWithReksioDescription": `
-                    LICZĘ Z REKSIEM to połączenie multimedialnej przygody z nauką i kompleksowym sprawdzeniem znajomości matematyki z zakresu nauczania początkowego. Zadaniem gracza jest pomóc Reksiowi w uratowaniu zwierząt, które porwał Wilk.
+            "countingWithReksioDescription": `LICZĘ Z REKSIEM to połączenie multimedialnej przygody z nauką i kompleksowym sprawdzeniem znajomości matematyki z zakresu nauczania początkowego. Zadaniem gracza jest pomóc Reksiowi w uratowaniu zwierząt, które porwał Wilk.
                     Aby tego dokonać, trzeba zagłębić się w świat matematyki.....
                     W rozbudowanej grze matematycznej przeżyjesz niezapomniane przygody. Przed Tobą labirynty, podchody, tajne akcje, dziwne maszyny, łamigłówki, pasjonujące zadania i arytmetyczne pojedynki z Wilkiem.
                     Ale to nie wszystko!
@@ -452,17 +450,17 @@ const resources = {
             "adventuresOfReksio": "Aventurile lui Reksio",
             "mainSeries": "Seria principală",
             "educationalGames": "Jocuri educaționale",
-            "forVerySmallPlayers": "Pentru cei mai mici jucători",
+            "forTheLittlestPlayers": "Pentru cei mai mici jucători",
             "playInBrowser": "Joacă în browser",
             "extras": "Jocuri extra",
-            "englishVersionIsFanMade": "Versiunea în engleză este făcută de fani și folosești AI pentru dublaj.",
-            "mainAboutHello": "Bine ai venit pe zagrajwreksia.pl - un site făcut pentru a arhiva toate jocurile disponibile din seria Aventurile lui Reksio (cu toate versiunile lor), și pentru a permite descărcarea lor și chiar jucarea unora direct în browser (prin ReksioEngine).",
+            "englishVersionIsFanMade": "Versiunea în engleză este făcută de fani și dublajul este făcut cu AI",
+            "mainAboutHello": "Bine ai venit pe zagrajwreksia.pl - un site dedicat arhivării tuturor versiunilor disponibile ale tuturor jocurilor din seria Aventurile lui Reksio, pentru descărcarea lor și chiar jucarea unora dintre acestea direct în browser (prin ReksioEngine).",
             "mainAboutReadMore": "Citește mai multe despre acest proiect",
             "mainAboutBoombit": "Studioului BoomBit (Aidem Media) i-a expirat licența de utilizat personajul Reksio, astfel că aceștia nu își mai pot vinde jocurile cu el, și nu au probleme cu ideea ca lumea să le descarce.",
             "mainAboutMoreAboutGames": "Puteți afla mai multe informații despre jocurile din seria Aventurile lui Reksio pe:",
             "mainAboutLinkAndLink": "<0>Przygody Reksia HUB</0> (🇵🇱/🇬🇧) și <2>Reksiopedia</2> (🇵🇱)",
             "chooseLanguageVersion": "Alege limba versiunii",
-            "releaseDate": "Data apariției",
+            "releaseDate": "Data lansării",
             "goBack": "Înapoi",
             "reksioAndPirates": "Reksio și Comoara Piraților",
             "reksioAndUFO": "Reksio și OZN-ul",
@@ -470,15 +468,42 @@ const resources = {
             "reksioAndTimeMachine": "Reksio și Mașina Timpului",
             "reksioAndCaptainNemo": "Reksio și Căpitanul Nemo",
             "reksioAndKretesInAction": "Reksio și Kretes în Acțiune",
-            "reksioAndKretesTheSecret": "Reksio și Kretes: Misterul celei de a Treia Dimensiuni",
+            "reksioAndKretesTheMystery": "Reksio și Kretes: Misterul celei de a Treia Dimensiuni",
             "reksioAndCityOfSecrets": "Reksio și Kretes în Orașul Secretelor",
+            "reksioAndCityOfSecretsLE": "Reksio și Kretes în Orașul Secretelor: Ediția Limitată",
+            "cityOfSecrets": "Orașul Secretelor",
+            "cityOfSecrets2": "Orașul Secretelor 2",
             "countingWithReksio": "Matematica cu Reksio",
-            "ortographyWithReksio": "Reksio și Ortografia",
-            "reksioKindergarten": "Reksio la grădinița veselă",
-            "reksioPuzzles": "Reksio, micul înțelept",
+            "reksioAndOrthography": "Reksio și Ortografia",
+            "reksioKindergarten": "Reksio la Grădinița Veselă",
+            "reksioPuzzles": "Reksio, Micul Înțelept",
+            "abcWithReksio": "ABC with Reksio",
+            "reksioAndAnimals": "Reksio and Animals",
+            "reksioAndFriends": "Reksio and Friends",
             "source": "Sursă",
-            "createdAndManagedBy": "Create și gestionat de <1>Adikso</1>",
+            "createdAndManagedBy": "Creat și gestionat de <1>Adikso</1>",
             "sourceCode": "Cod sursă",
+            "originalCDVersionName": "Versiunea originală de pe CD (ISO)",
+            "originalCDVersionDescription": "Această versiune este exact cum se găsește pe disc; este posibil să nu funcționeze pe sisteme de operare moderne",
+            "improvedVersionName": "Versiune îmbunătățită cu patch-uri",
+            "zipArchive": "Arhivă ZIP",
+            "instructionsRunExe": "Rulează jocul dând clic pe {{file}}",
+            "improvedVersionDescription": "Cu crack și patch-uri pentru sisteme de operare moderne",
+            "unofficialPCPort": "Port neoficial pentru PC",
+            "unofficialPCPortDescription": "Acest joc a fost portat de pe Android/iOS pe PC de comunitate",
+            "unofficialTranslationDescription": "Traducere neoficială făcută de fani",
+            "visitReksioDiscordForHelp": "Ai nevoie de ajutor cu jocul sau instalarea acestuia? Alătură-te comunității Reksio pe <1>Discord</1>!",
+            "credits": "Credite",
+            "playerEnterFullscreen": "Ecran complet",
+            "playerImportSaveFile": "Încarcă salvarea",
+            "playerExportSaveFile": "Descarcă salvarea",
+            "playerPressHereToStart": "Dă clic aici pentru a începe",
+            "specialInstructions": "Instrucțiuni speciale",
+            "codeFromBooklet": "Dacă jocul îți cere codul din revistă, trebuie să introduci:",
+            "creditsBackground": "Fundalul a fost extins de Paweł Wierzbicki",
+            "withoutGameDownloading": "Fără descărcare",
+            "mirrors": "Link alternativ",
+            "newSeries": "Seria nouă",
             "reksioAndPiratesDescription": `Undeva, în Oceanul Non-Pacific, căpitanul piraților, pe nume Vântură-Ape, dispare in condiții misterioase. Singura hartă ce duce la o legendară comoară dispare o data cu el.
 
                     Între timp, surferul Reksio este prins de o furtună pe mare. Tunete, fulgere... Valurile imense îl arunca pe țărmul unei insule tropicale. Aici găsește o sticlă care conține un bilețel enigmatic.
@@ -569,7 +594,7 @@ const resources = {
                     
                     Și astfel, ei încep să descopere un număr de inconsistențe dubioase...
             `,
-            "reksioAndKretesTheSecretDescription": `Un zumzet misterios în mijlocul nopții îi scoală din pat pe Reksio, Kretes, și Cocoșul Inventator. Fără ezitare și în ciuda pericolului, eroii noștri ies în recunoaștere.
+            "reksioAndKretesTheMysteryDescription": `Un zumzet misterios în mijlocul nopții îi scoală din pat pe Reksio, Kretes, și Cocoșul Inventator. Fără ezitare și în ciuda pericolului, eroii noștri ies în recunoaștere.
 
                     Curând, ei descoperă un un masiv Monolit Negru a apărut într-o poiană. Kretes atinge suprafața acesteia - și într-o clipă, toți trei eroi sunt trași în adâncurile celei de a treia dimensiuni.
                     
@@ -583,6 +608,46 @@ const resources = {
                     
                     Cineva... familiar.
             `,
+            "reksioAndCityOfSecretsDescription": `Curajosul câine Reksio coboară in vizuina lui Kretes și se evaporă pur și simplu. Îngrijorat, Kretes pleacă in căutarea sa, străbate labirinturi, tuneluri, coridoare, pană ajunge in Oraşul Secretelor: Capturat de şobolanii ce conduc oraşul, Reksio a fost judecat pentru spionaj şi condamnat la închisoare.
+            
+                    Va reuşi Kretes să-l salveze la timp?
+                    
+                    Cine este misteriosul primar care s-a instalat în fruntea Oraşului imediat după Revoluţie?
+                    
+                    Se va lăsa Reksio inghiţit de şarpele uriaş pentru a recupera probele ce-i dovedesc nevinovaţia?
+                    
+                    Cine se află in spatele şobolanilor care terorizează oraşul?
+                    
+                    Pregătiţi-vă pentru excursia 3D frumos colorată, aventuraţi-vă in subteran alături de Reksio şi Kretes şi descoperiţi toate misterele Oraşului Secretelor. 
+            `,
+            "reksioAndOrthographyDescription": `Va doriți ca puștiul dumneavoastră să vorbească in limba română corect, fără să facă greșeli de vorbire sau de scriere? Dacă sunteți unul dintre părinții cu adevărat preocupați de cunoștințele copilului dumneavoastră, atunci sigur veți aprecia la justa lui valoare acest joc educațional-distractiv.
+                    
+                    Când folosim *s* sau *z*, *m* sau *n*, *ii* sau *iii* , *ae* sau *e*, când folosim cratima sau care sunt cuvintele compuse. Iată câteva din temele puse in dezbatere!
+                    
+                    Grafica și animația extrem de vii și vesele fac din regulile gramaticale o plăcere! Mai ales că, pentru rezolvarea lor, vei fi ajutat de animăluțe simpatice și invățatul Reksio!
+                    
+                    Jocurile dezvoltă memoria și gândirea logică! Un perfect echilibru între divertisment și educație, programul este conceput în așa fel încât învățatul să fie o plăcere.
+                    
+                    Cu ajutorul acestui CD, copilul dumeavoastră va invăța în mod rapid și foarte ușor cuvinte noi și expresii dificile. Setul de jocuri și sarcinile pregătite creeaza o poveste care face ca dobândirea cunoștințelor să se facă într-un mod agreabil pentru copil! 
+            `,
+            "reksioKindergartenDescription": `După atâtea peripeții, Reksio s-a înscris la grădinița și te invită la o plimbare educativă cu opt opriri, adica opt jocuri pentru cei mici.
+                    
+                    Poți deveni campion al memoriei jucând „Descoperă perechile” sau „Jucarii ce dispar”, îți poți demonstra talentul de constructor în atelier unde va trebui să construiești conform schemei, vei fi mecanic de locomotivă și va trebui sa conduci toți pasagerii in Gara Centrală.
+                    
+                    Alte surprize te așteaptă, descoperă-le! 
+            `,
+            "countingWithReksioDescription": `Puștiul tău îți spune că orele de matematică sunt plictisitoare, că adunările și scăderile îi dau bătăi de cap, iar înmulțirile și împărțirile sunt greu de rezolvat?
+                    
+                    Dacă te confrunți cu această problemă, sau doar dacă vrei să-i oferi un motiv de a-și petrece timpul intr-un mod interesant și plăcut, în care să se distreze, dar și să devină captivat de matematică, atunci Reksio și Matematica, te poate ajuta!
+                    
+                    Reksio va fi meditatorul personal! Alături de el, vei învăța să numeri, iar operațiile matematice de bază (adunarea, scăderea, înmulțirea, împărțirea) și figurile geometirce le vei aprofunda. De asemenea, vei rezolva probleme cu mulțimi, de logică matematică si ecuații!
+                    
+                    Nicicând nu a fost mai ușor sa înveți matematică! Alături de colegi haioși, vei reuși să-ți focalizezi atenția asupra problemelor ridicate de joc sau să te orientezi în spațiu, ghidându-te după o hartă! Acumularea cunoștințelor într-o manieră distractivă este doar începutul!
+                    
+                    Poți opta pentru două grade diferite de dificultate: greu și ușor, în funcție de vârstă, care te vor ajuta să-ți exersezi gândirea logică, capacitatea de asociere și de memorare. Poate fi folosit ca o metodă de testare a cunoștințelor dobândite.
+                    
+                    Deci, ajutați copilul să se distreze cu folos! 
+            `
         }
     }
 };
