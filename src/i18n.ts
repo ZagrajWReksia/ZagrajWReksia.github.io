@@ -190,6 +190,7 @@ const resources = {
             "reksioKindergartenDescription": "",
             "countingWithReksioDescription": "",
             "abcWithReksioDescription": "",
+            "reksioPuzzlesDescription": ""
         }
     },
     pl: {
