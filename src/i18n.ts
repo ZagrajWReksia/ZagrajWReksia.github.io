@@ -496,7 +496,7 @@ const resources = {
             "unofficialTranslationDescription": "Traducere neoficială făcută de fani",
             "visitReksioDiscordForHelp": "Ai nevoie de ajutor cu jocul sau instalarea acestuia? Alătură-te comunității Reksio pe <1>Discord</1>!",
             "credits": "Credite",
-            "playerEnterFullscreen": "Fullscreen",
+            "playerEnterFullscreen": "Ecran complet",
             "playerImportSaveFile": "Încarcă salvarea",
             "playerExportSaveFile": "Descarcă salvarea",
             "playerPressHereToStart": "Dă clic aici pentru a începe",
