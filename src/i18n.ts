@@ -608,17 +608,17 @@ const resources = {
                     
                     Cineva... familiar.
             `,
-            "reksioAndCityOfSecretsDescription": `Dzielny pies Reksio schodzi do piwnicy w norze swojego przyjaciela komandora kreta Kretesa i dosłownie "zapada się pod ziemię". Zaniepokojony komandor wyrusza natychmiast jego śladem i wkrótce poprzez labirynt korytarzy i tuneli dociera do ukrytego pod ziemią, tajemniczego miasta kretów. Okazuje się, że Reksio został pojmany, uwięziony i skazany za szpiegostwo na rzecz Szczurów, a to, jak okaże się niebawem, zaledwie czubek przysłowiowej kury lodowej.
+            "reksioAndCityOfSecretsDescription": `Curajosul câine Reksio coboară in vizuina lui Kretes și se evaporă pur și simplu. Îngrijorat, Kretes pleacă in căutarea sa, străbate labirinturi, tuneluri, coridoare, pană ajunge in Oraşul Secretelor: Capturat de şobolanii ce conduc oraşul, Reksio a fost judecat pentru spionaj şi condamnat la închisoare.
+            
+                    Va reuşi Kretes să-l salveze la timp?
                     
-                    Czy Kretesowi uda się w porę uwolnić Reksia?
+                    Cine este misteriosul primar care s-a instalat în fruntea Oraşului imediat după Revoluţie?
                     
-                    Kim jest tajemniczy burmistrz, który rządzi miastem od czasów rewolucji?
+                    Se va lăsa Reksio inghiţit de şarpele uriaş pentru a recupera probele ce-i dovedesc nevinovaţia?
                     
-                    Czy Reksio pozwoli dobrowolnie połknąć się olbrzymiemu wężowi, żeby odzyskać zagubioną puszkę z dowodami rzeczowymi?
+                    Cine se află in spatele şobolanilor care terorizează oraşul?
                     
-                    Co mieści się w sercu krainy Szczurów?
-                    
-                    Przygotuj się na fascynującą, kolorową i trójwymiarową podróż do wnętrza Ziemi. Kierując na zmianę Reksiem i Kretesem, przeżyj najbardziej niesamowitą z dotychczasowych przygód i odkryj wszystkie sekrety Miasta seKretów. 
+                    Pregătiţi-vă pentru excursia 3D frumos colorată, aventuraţi-vă in subteran alături de Reksio şi Kretes şi descoperiţi toate misterele Oraşului Secretelor. 
             `,
             "reksioAndOrthographyDescription": `Va doriți ca puștiul dumneavoastră să vorbească in limba română corect, fără să facă greșeli de vorbire sau de scriere? Dacă sunteți unul dintre părinții cu adevărat preocupați de cunoștințele copilului dumneavoastră, atunci sigur veți aprecia la justa lui valoare acest joc educațional-distractiv.
                     
