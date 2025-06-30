@@ -3,7 +3,7 @@ import {createGamePlayer, FileLoaders, GamePlayerInstance, SaveFileManager} from
 import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
-import {useNavigate, useParams} from "react-router";
+import {Link, useParams} from "react-router";
 import {useTranslation} from "react-i18next";
 import {event} from "../../analytics.ts";
 
@@ -68,7 +68,6 @@ const games: Record<string, Game> = {
 
 function Index() {
     const { t } = useTranslation();
-    const navigate = useNavigate();
     const gameRef = useRef(null)
     const playerRef: RefObject<GamePlayerInstance | null> = useRef(null)
     const [ready, setReady] = useState<boolean>(false)
@@ -181,12 +180,11 @@ function Index() {
     }
 
     return <Container>
-        <Button
-            onClick={() => {navigate(-1)}}
-            style={{marginBottom: '10px'}}
-        >
-            {t('goBack')}
-        </Button>
+        <Link to={`/game/${game.id}`}>
+            <Button style={{'marginBottom': '10px', textDecoration: 'none'}}>
+                {t('goBack')}
+            </Button>
+        </Link>
 
         <GameContainer ref={gameRef} onClick={onReady}>
             {!ready && <div>{t('playerPressHereToStart')}</div>}
