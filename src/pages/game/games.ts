@@ -58,7 +58,7 @@ const games: Record<string, Index> = {
                         name: "playInBrowser",
                         icon: "🌐",
                         description: "withoutGameDownloading",
-                        url: "/play/reksioiskarbpiratow",
+                        url: "/play/risp-pl",
                         source: "zagrajwreksia.pl"
                     },
                     {
@@ -96,6 +96,13 @@ const games: Record<string, Index> = {
                 official: true,
                 langCode: "ro",
                 downloads: [
+                    {
+                        name: "playInBrowser",
+                        icon: "🌐",
+                        description: "withoutGameDownloading",
+                        url: "/play/risp-ro",
+                        source: "zagrajwreksia.pl"
+                    },
                     {
                         name: "improvedVersionName",
                         icon: "🔧",

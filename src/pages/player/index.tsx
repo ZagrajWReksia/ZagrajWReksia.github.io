@@ -3,7 +3,7 @@ import {createGamePlayer, FileLoaders, GamePlayerInstance, SaveFileManager} from
 import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
-import {useNavigate} from "react-router";
+import {useNavigate, useParams} from "react-router";
 import {useTranslation} from "react-i18next";
 import {event} from "../../analytics.ts";
 
@@ -47,6 +47,25 @@ const Footer = styled.footer`
     padding: 20px;
 `
 
+interface Game {
+    id: string;
+    lang: string;
+    listingUrl: string;
+}
+
+const games: Record<string, Game> = {
+    "risp-ro": {
+        id: 'risp',
+        lang: 'ro',
+        listingUrl: "https://iso.zagrajwreksia.pl/game-assets/risp-romanian/listing.json"
+    },
+    "risp-pl": {
+        id: 'risp',
+        lang: 'pl',
+        listingUrl: "https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json"
+    }
+}
+
 function Index() {
     const { t } = useTranslation();
     const navigate = useNavigate();
@@ -54,6 +73,10 @@ function Index() {
     const playerRef: RefObject<GamePlayerInstance | null> = useRef(null)
     const [ready, setReady] = useState<boolean>(false)
     const playthroughId = useMemo(() => crypto.randomUUID(), [])
+
+    const params = useParams() as { gameId: string };
+    const gameId = params.gameId;
+    const game = games[gameId];
 
     const onReady = async () => {
         if (gameRef.current === null || playerRef.current !== null) {
@@ -65,7 +88,7 @@ function Index() {
     const migrateSaveFile = () => {
         const oldSaveFile = localStorage.getItem('saveFile')
         if (oldSaveFile !== null) {
-            localStorage.setItem('risp-savefile', oldSaveFile)
+            localStorage.setItem(`${game.id}-savefile`, oldSaveFile)
             localStorage.removeItem('saveFile')
         }
     }
@@ -77,13 +100,13 @@ function Index() {
 
         migrateSaveFile()
         const instance = createGamePlayer(gameRef.current, {
-            fileLoader: new FileLoaders.ListingJSONUrlFileLoader('https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json'),
-            saveFile: SaveFileManager.fromLocalStorage('risp-savefile'),
+            fileLoader: new FileLoaders.ListingJSONUrlFileLoader(game.listingUrl),
+            saveFile: SaveFileManager.fromLocalStorage(`${game.id}-savefile`),
             onExit: () => document.exitFullscreen(),
             onSceneChange: (next, previous) => {
                 event('player_scene_change', {
                     playthroughId,
-                    game: 'risp',
+                    game: game.id,
                     nextScene: next,
                     previousScene: previous
                 })
@@ -96,7 +119,7 @@ function Index() {
 
             event('player_started', {
                 playthroughId,
-                game: 'risp'
+                game: game.id
             })
         }
 
@@ -125,7 +148,7 @@ function Index() {
         const fileURL = URL.createObjectURL(blob)
         const downloadLink = document.createElement('a')
         downloadLink.href = fileURL
-        downloadLink.download = `${playerRef.current.currentScene || 'SaveFile'}_${new Date().toISOString()}.ini`
+        downloadLink.download = `${playerRef.current.currentScene || 'SaveFile'}_${game.id.toUpperCase()}_${game.lang.toUpperCase()}_${new Date().toISOString()}.ini`
         downloadLink.click()
         URL.revokeObjectURL(fileURL)
     }

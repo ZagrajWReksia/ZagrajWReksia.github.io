@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/" element={<App/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/game/:gameId" element={<GameDetailsPage/>} />
-                <Route path="/play/:game" element={<Index/>}/>
+                <Route path="/play/:gameId" element={<Index/>}/>
             </Routes>
         </BrowserRouter>
     </StrictMode>,
