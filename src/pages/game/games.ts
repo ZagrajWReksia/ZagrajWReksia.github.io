@@ -834,8 +834,8 @@ const games: Record<string, Index> = {
     },
     "rikttw": {
         group: "extra",
-        title: "reksioAndKretesTheSecret",
-        description: "reksioAndKretesTheSecretDescription",
+        title: "reksioAndKretesTheMystery",
+        description: "reksioAndKretesTheMysteryDescription",
         coverImage: "/covers/reksioikretestajemnicatrzeciegowymiaru.jpg",
         year: 2007,
         languages: [
@@ -1084,8 +1084,8 @@ const games: Record<string, Index> = {
     },
     "cos2": {
         group: 'second',
-        title: "reksioAndCityOfSecrets2",
-        description: "reksioAndCityOfSecrets2Description",
+        title: "cityOfSecrets2",
+        description: "cityOfSecrets2Description",
         coverImage: "/covers/cityofsecrets2.jpg",
         year: 2013,
         languages: [
@@ -1336,8 +1336,8 @@ const games: Record<string, Index> = {
     },
     "ortografia": {
         group: 'educational',
-        title: "ortographyWithReksio",
-        description: "ortographyWithReksioDescription",
+        title: "reksioAndOrthography",
+        description: "reksioAndOrthographyDescription",
         coverImage: "/covers/reksioiortografia.jpg",
         year: 2003,
         languages: [
