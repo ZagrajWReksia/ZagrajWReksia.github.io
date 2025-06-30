@@ -652,9 +652,9 @@ const resources = {
                     
                     Descoperă alături de eroul nostru misterele unei insule exotice, rezolvă provocările și reconstituie drumul către comoara piraților!
                     
-                    Te așteaptă o cursă nebună prin labirint, teste de perspicacitate, operații logice și aritmetice, precum și o multime de alte surprize!
+                    Te așteaptă o cursă nebună prin labirint, teste de perspicacitate, operații logice și aritmetice, precum și o mulțime de alte surprize!
                     
-                    Deopotriva educativ și recreativ, jocul este construit pe niveluri de dificultate, fiind accesibil chiar și celor mai micuți admiratori ai personajului.
+                    Deopotrivă educativ și recreativ, jocul este construit pe niveluri de dificultate, fiind accesibil chiar și celor mai micuți admiratori ai personajului.
                     
                     Ideal pentru antrenarea memoriei și a spiritului de observație!
                     
