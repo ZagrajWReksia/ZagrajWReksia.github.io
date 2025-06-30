@@ -632,7 +632,7 @@ const resources = {
             `,
             "reksioKindergartenDescription": `După atâtea peripeții, Reksio s-a înscris la grădinița și te invită la o plimbare educativă cu opt opriri, adica opt jocuri pentru cei mici.
                     
-                    Poți deveni campion al memoriei jucând „Descoperă perechile” sau „Jucarii ce dispar”, îți poți demonstra talentul de constructor în atelier unde va trebui să construiești conform schemei, vei fi mecanic de locomotivă și va trebui sa conduci toți pasagerii in Gara Centrală.
+                    Poți deveni campion al memoriei jucând „Descoperă perechile” sau „Jucării ce dispar”, îți poți demonstra talentul de constructor în atelier unde va trebui să construiești conform schemei, vei fi mecanic de locomotivă și va trebui sa conduci toți pasagerii în Gara Centrală.
                     
                     Alte surprize te așteaptă, descoperă-le! 
             `,
@@ -647,6 +647,20 @@ const resources = {
                     Poți opta pentru două grade diferite de dificultate: greu și ușor, în funcție de vârstă, care te vor ajuta să-ți exersezi gândirea logică, capacitatea de asociere și de memorare. Poate fi folosit ca o metodă de testare a cunoștințelor dobândite.
                     
                     Deci, ajutați copilul să se distreze cu folos! 
+            `,
+            "reksioPuzzlesDescription": `Un nou joc oferit de simpaticul Reksio, cel mai aventurier dintre căței!
+                    
+                    Descoperă alături de eroul nostru misterele unei insule exotice, rezolvă provocările și reconstituie drumul către comoara piraților!
+                    
+                    Te așteaptă o cursă nebună prin labirint, teste de perspicacitate, operații logice și aritmetice, precum și o multime de alte surprize!
+                    
+                    Deopotriva educativ și recreativ, jocul este construit pe niveluri de dificultate, fiind accesibil chiar și celor mai micuți admiratori ai personajului.
+                    
+                    Ideal pentru antrenarea memoriei și a spiritului de observație!
+                    
+                    Folosește-ți priceperea, cunoștințele și intuiția pentru a finaliza cu succes sarcinile indicate de Reksio.
+                    
+                    Răsplata va fi pe măsura eforturilor și istețimii tale!  
             `
         }
     }

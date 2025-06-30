@@ -1467,7 +1467,7 @@ const games: Record<string, Index> = {
     "lamiglowkireksia": {
         group: 'educational',
         title: "reksioPuzzles",
-        description: "",
+        description: "reksioPuzzlesDescription",
         coverImage: "/covers/lamiglowkireksia.jpg",
         year: 2008,
         languages: [
