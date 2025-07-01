@@ -181,7 +181,7 @@ function Index() {
 
     return <Container>
         <Link to={`/game/${game.id}`}>
-            <Button style={{'marginBottom': '10px', textDecoration: 'none'}}>
+            <Button style={{'marginBottom': '10px'}}>
                 {t('goBack')}
             </Button>
         </Link>

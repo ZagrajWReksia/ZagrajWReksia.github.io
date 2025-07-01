@@ -18,6 +18,8 @@ export interface Download {
 export interface Language {
     langCode: string;
     official: boolean;
+    lost?: boolean;
+    lostNotes?: string;
     downloads: Download[];
 }
 
@@ -1075,17 +1077,10 @@ const games: Record<string, Index> = {
             },
             {
                 official: true,
+                lost: true,
+                lostNotes: "lostMedia",
                 langCode: "en",
-                downloads: [
-                    {
-                        name: "originalCDVersionName",
-                        icon: "💿",
-                        description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/CoS/City of Secrets LE.iso",
-                        size: "1.2 GB",
-                        source: "Kreton Podziemny"
-                    }
-                ]
+                downloads: []
             },
         ],
     },

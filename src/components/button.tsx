@@ -6,6 +6,7 @@ export const Button = styled.button`
     border-radius: 5px;
     vertical-align: center;
     line-height: 1em;
+    text-decoration: none;
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.55);

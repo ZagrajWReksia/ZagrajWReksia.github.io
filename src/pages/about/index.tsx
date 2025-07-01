@@ -44,7 +44,7 @@ function About() {
 
                 <div>
                     <Link to="/">
-                        <Button style={{'marginBottom': '10px', textDecoration: 'none'}}>
+                        <Button style={{'marginBottom': '10px'}}>
                             {t('goBack')}
                         </Button>
                     </Link>

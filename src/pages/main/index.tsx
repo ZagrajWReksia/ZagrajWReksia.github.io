@@ -111,7 +111,7 @@ const GameEntry = ({id, game}: { id: string, game: Index }) => {
             <Cover src={game.coverImage} year={game.year}>
                 {t(game.title)}<br/>
                 {game.languages.map((language: Language) => {
-                    return <span><Flag code={language.langCode}/>{!language.official ? '*' : ''} </span>
+                    return <span><Flag code={language.langCode} gray={language.lost ?? false}/>{!language.official ? '*' : ''} </span>
                 })}
                 {playInBrowser && <div>🌐 {t('playInBrowser')}</div>}
             </Cover>

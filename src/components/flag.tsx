@@ -1,10 +1,15 @@
-import '../flags.css'
+import '../flags.css';
 
-const Flag = ({code}: {code: string}) => {
-    if (code.toLowerCase() === 'en') {
-        return <span className="flag:GB"></span>
-    }
-    return <span className={`flag:${code.toUpperCase()}`}></span>
-}
+type FlagProps = {
+    code: string;
+    gray?: boolean;
+};
 
-export default Flag
+const Flag = ({ code, gray }: FlagProps) => {
+    const className = code.toLowerCase() === 'en' ? 'flag:GB' : `flag:${code.toUpperCase()}`;
+    const style = gray ? { opacity: 0.5, filter: 'grayscale(50%)' } : undefined;
+
+    return <span className={className} style={style} />;
+};
+
+export default Flag;

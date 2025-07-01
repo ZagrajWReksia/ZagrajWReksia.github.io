@@ -129,7 +129,7 @@ export function GameDetailsPage() {
         <Wrapper>
             <div>
                 <Link to="/">
-                    <Button style={{'marginBottom': '10px', textDecoration: 'none'}}>
+                    <Button style={{'marginBottom': '10px'}}>
                         {t('goBack')}
                     </Button>
                 </Link>
@@ -179,19 +179,24 @@ export function GameDetailsPage() {
 
                     <FancyHeading size="medium" text={t('chooseLanguageVersion')}/>
                     <LanguageSelector style={{marginTop: '10px'}}>
-                        {game.languages.filter(language => language.downloads.length > 0).map((lang: Language) => (
+                        {game.languages.filter(language => language.downloads.length > 0 || language.lost).map((lang: Language) => (
                             <LanguageOption
                                 key={lang.langCode}
                                 active={selectedLanguage?.langCode === lang.langCode}
                                 onClick={() => setSelectedLanguage(lang)}
                             >
-                                <Flag code={lang.langCode}/> {t(`lang_${lang.langCode}`)}
+                                <Flag code={lang.langCode} gray={lang.lost}/> {t(`lang_${lang.langCode}`)}
                             </LanguageOption>
                         ))}
                     </LanguageSelector>
 
                     {selectedLanguage && (
                         <div>
+                            {selectedLanguage.lost && (
+                                <div style={{whiteSpace: 'preserve-breaks'}}>
+                                    {t('lostMedia')}
+                                </div>
+                            )}
                             {selectedLanguage.downloads.map((download, index) => (
                                 <DownloadOption key={index}>
                                     <div>
