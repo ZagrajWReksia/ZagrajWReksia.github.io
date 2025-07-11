@@ -60,6 +60,10 @@ const resources = {
             "unofficialPCPort": "Unofficial PC port",
             "unofficialPCPortDescription": "This game was ported from Android/iOS to PC by community",
             "unofficialTranslationDescription": "Unofficial fanmade translation",
+            "cncDrawName": "CNC-DDraw - Modern OS compatibility fix",
+            "cncDrawDescription": "Can fix compatibility issues in older 2D games, such as black screen, bad performance, crashes or defective Alt+Tab.\n" +
+                "1. Download cnc-ddraw.zip and extract it into your game folder\n" +
+                "2. Start the game",
             "visitReksioDiscordForHelp": "Need help with the game or installation? Join Reksio community on <1>Discord</1>!",
             "source": "Source",
             "credits": "Credits",
@@ -250,6 +254,10 @@ const resources = {
             "unofficialPCPort": "Nieoficjalny port PC",
             "unofficialPCPortDescription": "Gra przeportowana przez społeczność z Androida/iOS na PC",
             "unofficialTranslationDescription": "Nieoficjalne tłumaczenie fanowskie",
+            "cncDrawName": "CNC-DDraw - Łatka na współczesne systemy operacyjne",
+            "cncDrawDescription": "Może naprawić problemy z kompatybilnością w starszych grach 2D, takie jak czarny ekran, słaba wydajność, awarie lub nieprawidłowe działanie Alt+Tab.\n" +
+                "1. Pobierz plik cnc-ddraw.zip i rozpakuj go do folderu gry.\n" +
+                "2. Uruchom grę.",
             "improvedVersionDescription": "Łatka No-CD + łatki dla współczesnych systemów operacyjnych",
             "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na <1>Discorda</1> społeczności!",
             "source": "Źródło",

@@ -38,6 +38,14 @@ export interface Index {
     languages: Language[];
 }
 
+const ddrawDownload: Download = {
+    name: 'cncDrawName',
+    icon: '🛠',
+    description: 'cncDrawDescription',
+    url: 'https://github.com/FunkyFr3sh/cnc-ddraw/releases/latest/download/cnc-ddraw.zip',
+    source: 'FunkyFr3sh'
+}
+
 const games: Record<string, Index> = {
     "risp": {
         group: "main",
@@ -160,7 +168,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "427 MB",
                         source: "Unknown"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -181,7 +190,8 @@ const games: Record<string, Index> = {
                         size: "543 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesakalozok"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -202,7 +212,8 @@ const games: Record<string, Index> = {
                         size: "543 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesakalozok"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -335,7 +346,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "554 MB",
                         source: "Unknown"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -356,7 +368,8 @@ const games: Record<string, Index> = {
                         size: "707 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesazufo"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -377,7 +390,8 @@ const games: Record<string, Index> = {
                         size: "689 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesazufo"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -511,7 +525,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "704 MB",
                         source: "Unknown"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
         ],
@@ -624,7 +639,8 @@ const games: Record<string, Index> = {
                         size: "645 MB",
                         source: "Unknown",
                         sourceUrl: "https://archive.org/details/reks-i-mashina-vremeni"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
         ],
@@ -730,7 +746,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "554 MB",
                         source: "Unknown"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
         ],
@@ -836,7 +853,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "409 MB",
                         source: "Unknown",
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
         ],
