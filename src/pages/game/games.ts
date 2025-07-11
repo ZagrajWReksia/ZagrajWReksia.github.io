@@ -43,7 +43,8 @@ const ddrawDownload: Download = {
     icon: '🛠',
     description: 'cncDrawDescription',
     url: 'https://github.com/FunkyFr3sh/cnc-ddraw/releases/latest/download/cnc-ddraw.zip',
-    source: 'FunkyFr3sh'
+    source: 'FunkyFr3sh',
+    sourceUrl: 'https://github.com/FunkyFr3sh/cnc-ddraw'
 }
 
 const games: Record<string, Index> = {
