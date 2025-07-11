@@ -99,7 +99,8 @@ const games: Record<string, Index> = {
                         size: "641 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -148,7 +149,8 @@ const games: Record<string, Index> = {
                         size: "381 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-comoara-piratilor"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -284,7 +286,8 @@ const games: Record<string, Index> = {
                         size: "585 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -326,7 +329,8 @@ const games: Record<string, Index> = {
                         size: "561 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-ozn-ul"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -463,7 +467,8 @@ const games: Record<string, Index> = {
                         size: "710 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -505,7 +510,8 @@ const games: Record<string, Index> = {
                         size: "687 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-magicienii"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -576,7 +582,8 @@ const games: Record<string, Index> = {
                         size: "708 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -618,7 +625,8 @@ const games: Record<string, Index> = {
                         size: "722 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-masina-timpului"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -684,7 +692,8 @@ const games: Record<string, Index> = {
                         size: "559 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -726,7 +735,8 @@ const games: Record<string, Index> = {
                         size: "552 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-capitanul-nemo"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -791,7 +801,8 @@ const games: Record<string, Index> = {
                         size: "671 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/pl-aidemmedia"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
@@ -833,7 +844,8 @@ const games: Record<string, Index> = {
                         size: "404 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-kretes-in-actiune"
-                    }
+                    },
+                    ddrawDownload
                 ]
             },
             {
