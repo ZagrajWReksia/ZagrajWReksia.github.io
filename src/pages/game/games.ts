@@ -1082,6 +1082,13 @@ const games: Record<string, Index> = {
                 langCode: "en",
                 downloads: []
             },
+            {
+                official: true,
+                lost: true,
+                lostNotes: "lostMedia",
+                langCode: "de",
+                downloads: []
+            },
         ],
     },
     "cos2": {
