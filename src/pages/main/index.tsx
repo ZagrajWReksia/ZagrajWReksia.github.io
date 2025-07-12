@@ -125,7 +125,7 @@ const Logo = () => (
         style={{
             display: 'block',
             width: '100%',
-            maxWidth: '400px',
+            maxWidth: '350px',
             margin: 'auto',
             marginBottom: '10px'
         }}
