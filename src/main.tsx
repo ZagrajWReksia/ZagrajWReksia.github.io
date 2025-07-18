@@ -7,21 +7,28 @@ import {GameDetailsPage} from "./pages/game";
 import App from "./pages/main";
 import About from "./pages/about";
 import './i18n';
+import {event} from "./analytics.ts";
 
-function ScrollToTop() {
-    const { pathname } = useLocation();
+function Actions() {
+    const { pathname } = useLocation()
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [pathname]);
+    }, [pathname])
 
-    return null;
+    useEffect(() => {
+        fetch('https://cloud.umami.is/script.js').catch(() => {
+            event('adblock')
+        })
+    }, [])
+
+    return null
 }
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
-            <ScrollToTop/>
+            <Actions/>
             <Routes>
                 <Route path="/" element={<App/>}/>
                 <Route path="/about" element={<About/>}/>
