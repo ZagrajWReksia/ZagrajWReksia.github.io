@@ -1006,7 +1006,7 @@ const games: Record<string, Index> = {
     "rimsle": {
         group: 'second',
         title: "reksioAndCityOfSecretsLE",
-        description: "",
+        description: "reksioAndCityOfSecretsLEDescription",
         coverImage: "/covers/reksioimiastosekretowle.jpg",
         year: 2010,
         languages: [

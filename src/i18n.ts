@@ -190,7 +190,8 @@ const resources = {
                     This game was tested on animals. They didn't like it and went away.
                     This game was tested on testers. Nobody asked them if they wanted to do it and they couldn't get away. 
             `,
-            "cityOfSecretsDescription": `Rebrand of Reksio and the City of Secrets LE without Reksio`,
+            "reksioAndCityOfSecretsLEDescription": "",
+            "cityOfSecretsDescription": "",
             "reksioAndOrthographyDescription": "",
             "reksioKindergartenDescription": "",
             "countingWithReksioDescription": "",
@@ -388,11 +389,28 @@ const resources = {
                     Gra była testowana na zwierzętach. Niezbyt im się to spodobało i uciekły.
                     Gra była testowana również na testerach. Ci nie mieli wyboru. 
             `,
-            "reksioAndCityOfSecretsLEDescription": `Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa i oglądając mapy odkrywa położenie Atlantydy i jednej z jakiejś tajemniczych sfer... zaraz to nie było tak! Przecież miał dosłownie " Zapaść się pod ziemię",...
-        
-                    - NO NIE WIERZĘ!!! Teraz Aidem Media przesadziło! Najpierw umieszczają mnie i Reksia w Trzecim Wymiarze, następnie wysyłają do miasta pełnego kretów i sekretów, a jeszcze chcą mnie nauczyć angielskiego. Co ja jestem, Moles the Mole? Wygląda na to, że tak! No to see you later! - wypowiedział te słowa zezłoszczony, niezrehabilitowany Kretes (albo i nie powiedział)
+            "reksioAndCityOfSecretsLEDescription": `Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa. I dosłownie "zapada się pod ziemię". Zaniepokojony komandor wyrusza natychmiast jego śladem i wkrótce dociera do ukrytego pod ziemią, tajemniczego miasta kretów. Okazuje się, że Reksio został pojmany, uwięziony i skazany za szpiegostwo na rzecz szczurów. A to, jak okaże się niebawem, zaledwie czubek przysłowiowej kury lodowej.
+                
+                Czy Kretesowi uda się w porę uwolnić Reksia? 
+                
+                Kim jest tajemniczy burmistrz, który rządzi miastem od czasów rewolucji?
+                
+                Czy Reksio pozwoli dobrowolnie połknąć się olbrzymiemu wężowi, żeby odzyskać zagubioną puszkę z dowodami rzeczowymi? 
+                
+                Co mieści się w sercu krainy szczurów?
             `,
-            "cityOfSecretsDescription": `Rebrand Reksio i Miasto Sekretów LE bez udziału Reksia`,
+            "cityOfSecretsDescription": `(Odmiana "Reksio i Miasto SeKretów: Limited Edition" na rynek międzynarodowy ze zmianami)
+                
+                Dzielny pies Reksio schodzi na moment do piwnicy w norze swojego przyjaciela kreta Kretesa. I dosłownie "zapada się pod ziemię". Zaniepokojony komandor wyrusza natychmiast jego śladem i wkrótce dociera do ukrytego pod ziemią, tajemniczego miasta kretów. Okazuje się, że Reksio został pojmany, uwięziony i skazany za szpiegostwo na rzecz szczurów. A to, jak okaże się niebawem, zaledwie czubek przysłowiowej kury lodowej.
+                
+                Czy Kretesowi uda się w porę uwolnić Reksia? 
+                
+                Kim jest tajemniczy burmistrz, który rządzi miastem od czasów rewolucji?
+                
+                Czy Reksio pozwoli dobrowolnie połknąć się olbrzymiemu wężowi, żeby odzyskać zagubioną puszkę z dowodami rzeczowymi? 
+                
+                Co mieści się w sercu krainy szczurów?
+            `,
             "reksioAndOrthographyDescription": `Program “Reksio i ortografia” adresowany jest do uczniów szkół podstawowych i zawiera kompletną wiedzę ortograficzną, wymaganą przez program nauczania. Jest zbiorem zasad pisowni oraz ciekawych, dynamicznych zabaw sprawdzających znajomość ortografii, w których można wybrać poziom trudności i zagadnienie. Pasjonujące gry z Reksiem umilą naukę i zachęcą do utrwalania zdobytej wiedzy. Sprawią, że nauka stanie się niezapomnianą przygodą!
                     W programie znajdują się ulubione przez dzieci typy gier i zabaw. Są to między innymi wyścigi samochodów, motorówek, slalom skuterem śnieżnym, czy gry zręcznościowe: wyspa bobrów, wyścig po nenufarach, wylęgarnia kurczaków i turniej przy studni. Jeśli dziecko woli gry strategiczne, zapraszamy do zabawy polegającej na zdobywaniu zamków. Gdy jednak pisownia niektórych wyrazów sprawia kłopot, Reksio zaprasza do swojej budy, na krótką lekcjię ortografii. Ale to jeszcze nie wszystko...
                     Całość nasycona jest bogatą grafiką animowaną, wesołą muzyką oraz ciekawymi pomysłami na łatwe przyswojenie zasad poprawnej pisowni. Czego można chcieć więcej! Wystarczy dużo ćwiczyć, aby być najlepszym!
