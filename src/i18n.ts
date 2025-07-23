@@ -64,7 +64,7 @@ const resources = {
             "cncDrawDescription": "(It is already included in \"Improved version with patches\"!)\nCan fix compatibility issues in older 2D games, such as black screen, bad performance, crashes or defective Alt+Tab.\n" +
                 "1. Download cnc-ddraw.zip and extract it into your game folder\n" +
                 "2. Start the game",
-            "visitReksioDiscordForHelp": "Need help with the game or installation? Join Reksio community on <1>Discord</1>!",
+            "visitReksioDiscordForHelp": "Need help with the game or installation? Join Reksio community on <1>Discord</1>!<br/>(Ask for help on #warsztat-koguta channel)",
             "source": "Source",
             "credits": "Credits",
             "createdAndManagedBy": "Created and managed by <1>Adikso</1>",
@@ -260,7 +260,7 @@ const resources = {
                 "1. Pobierz plik cnc-ddraw.zip i rozpakuj go do folderu gry.\n" +
                 "2. Uruchom grę.",
             "improvedVersionDescription": "Łatka No-CD + łatki dla współczesnych systemów operacyjnych",
-            "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na <1>Discorda</1> społeczności!",
+            "visitReksioDiscordForHelp": "Potrzebujesz pomocy z grą lub instalacją? Wejdź na <1>Discorda</1> społeczności!<br/>(Poproś o pomoc na kanale #warsztat-koguta)",
             "source": "Źródło",
             "credits": "Autorzy",
             "createdAndManagedBy": "Stworzone i zarządzane przez <1>Adikso</1>",
