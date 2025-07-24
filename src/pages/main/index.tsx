@@ -6,7 +6,7 @@ import {FancyHeading, SubTitle} from "../../components/text.tsx";
 import {Box} from "../../components/box.tsx";
 import {LanguageSelector} from "../../components/language-selector.tsx";
 import {Footer} from "../../components/footer.tsx";
-import {useTranslation} from "react-i18next";
+import {Trans, useTranslation} from "react-i18next";
 import {gamesByGroup, Index, Language} from "../game/games.ts"
 import Flag from "../../components/flag.tsx";
 import {event} from "../../analytics.ts";
@@ -219,13 +219,17 @@ function App() {
                             icon="/hub-icon.png"
                             href="https://www.przygody-reksia.pl/"
                         >
-                            {t('reksiohubLink')}
+                            <Trans i18nKey="reksiohubLink">
+                                Przygody Reksia HUB <span className="flag:PL"></span> <span className="flag:GB"></span>
+                            </Trans>
                         </Pill>
                         <Pill
                             icon="/reksiopedia-logo.png"
                             href="https://reksio.fandom.com/wiki/Reksio_Wiki"
                         >
-                            {t('reksiopediaLink')}
+                            <Trans i18nKey="reksiopediaLink">
+                                Reksiopedia <span className="flag:PL"></span>
+                            </Trans>
                         </Pill>
                         <Pill
                             icon="/discord-logo.svg"
