@@ -9,6 +9,7 @@ import {Footer} from "../../components/footer.tsx";
 import {useTranslation} from "react-i18next";
 import {gamesByGroup, Index, Language} from "../game/games.ts"
 import Flag from "../../components/flag.tsx";
+import {event} from "../../analytics.ts";
 
 const CoverContainer = styled.div`
     display: flex;
@@ -232,6 +233,7 @@ function App() {
                             bgcolor="rgba(88, 101, 242, 0.5)"
                             icon="/discord-logo.svg"
                             href="https://discord.gg/przygody-reksia"
+                            onClick={() => event('join_discord')}
                         >
                             Discord
                         </Pill>
