@@ -160,7 +160,7 @@ const PillRow = styled.div`
     gap: 5px;
 `
 
-const Pill = styled.a<{bgcolor?: string, icon?: string}>`
+const Pill = styled.a<{icon?: string}>`
     padding: 10px;
     border-radius: 10px;
     
@@ -186,12 +186,12 @@ const Pill = styled.a<{bgcolor?: string, icon?: string}>`
           background-size: contain;
         }
     `}
-    
-    ${props => props.bgcolor ? `
-        background: ${props.bgcolor};
-    ` : `
-        background: rgba(150, 150, 150, 0.2);
-    `}
+
+    background: rgba(150, 150, 150, 0.15);
+    transition: background 0.2s;
+    &:hover {
+        background: rgba(150, 150, 150, 0.35);
+    }
 `
 
 function App() {
@@ -216,21 +216,18 @@ function App() {
                     <br/>
                     <PillRow>
                         <Pill
-                            bgcolor="rgb(139, 30, 63, 0.5)"
                             icon="/hub-icon.png"
                             href="https://www.przygody-reksia.pl/"
                         >
                             {t('reksiohubLink')}
                         </Pill>
                         <Pill
-                            bgcolor="rgb(207, 160, 21, 0.5)"
                             icon="/reksiopedia-logo.png"
                             href="https://reksio.fandom.com/wiki/Reksio_Wiki"
                         >
                             {t('reksiopediaLink')}
                         </Pill>
                         <Pill
-                            bgcolor="rgba(88, 101, 242, 0.5)"
                             icon="/discord-logo.svg"
                             href="https://discord.gg/przygody-reksia"
                             onClick={() => event('join_discord')}
