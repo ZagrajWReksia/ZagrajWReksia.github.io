@@ -6,7 +6,7 @@ import {FancyHeading, SubTitle} from "../../components/text.tsx";
 import {Box} from "../../components/box.tsx";
 import {LanguageSelector} from "../../components/language-selector.tsx";
 import {Footer} from "../../components/footer.tsx";
-import {Trans, useTranslation} from "react-i18next";
+import {useTranslation} from "react-i18next";
 import {gamesByGroup, Index, Language} from "../game/games.ts"
 import Flag from "../../components/flag.tsx";
 
@@ -152,6 +152,47 @@ const GameSection = ({title, subtitle, children, note, style}: GameSectionProps)
     </GameSectionContainer>
 );
 
+const PillRow = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap: 5px;
+`
+
+const Pill = styled.a<{bgcolor?: string, icon?: string}>`
+    padding: 10px;
+    border-radius: 10px;
+    
+    display: block;
+    text-decoration: none;
+    color: white;
+    
+    img {
+        vertical-align: middle;
+    }
+    
+    ${props => props.icon && `
+        &::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+        
+          width: 16px;
+          height: 16px;
+          margin-right: 4px;
+        
+          background: url("${props.icon}") no-repeat center center;
+          background-size: contain;
+        }
+    `}
+    
+    ${props => props.bgcolor ? `
+        background: ${props.bgcolor};
+    ` : `
+        background: rgba(150, 150, 150, 0.2);
+    `}
+`
+
 function App() {
     const {t} = useTranslation();
 
@@ -172,9 +213,29 @@ function App() {
                     <br/>
                     {t('mainAboutMoreAboutGames')}
                     <br/>
-                    <Trans i18nKey="mainAboutLinkAndLink">
-                        <a href="https://www.przygody-reksia.pl/">Przygody Reksia HUB</a> oraz na <a href="https://reksio.fandom.com/wiki/Reksio_Wiki">Reksiopedii</a>
-                    </Trans>
+                    <PillRow>
+                        <Pill
+                            bgcolor="rgb(139, 30, 63, 0.5)"
+                            icon="/hub-icon.png"
+                            href="https://www.przygody-reksia.pl/"
+                        >
+                            {t('reksiohubLink')}
+                        </Pill>
+                        <Pill
+                            bgcolor="rgb(207, 160, 21, 0.5)"
+                            icon="/reksiopedia-logo.png"
+                            href="https://reksio.fandom.com/wiki/Reksio_Wiki"
+                        >
+                            {t('reksiopediaLink')}
+                        </Pill>
+                        <Pill
+                            bgcolor="rgba(88, 101, 242, 0.5)"
+                            icon="/discord-logo.svg"
+                            href="https://discord.gg/przygody-reksia"
+                        >
+                            Discord
+                        </Pill>
+                    </PillRow>
                 </Box>
             </Message>
 

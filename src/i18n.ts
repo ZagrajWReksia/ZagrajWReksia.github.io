@@ -29,7 +29,8 @@ const resources = {
             "mainAboutReadMore": "Read more about the project",
             "mainAboutBoombit": "The studio BoomBit (Aidem Media) has had its license to use the character Reksio expire, making them unable to sell their games featuring it anymore, and do not have issues with people downloading the games.",
             "mainAboutMoreAboutGames": "You can find more information about the games from the the Adventures of Reksio series at:",
-            "mainAboutLinkAndLink": "<0>Przygody Reksia HUB</0> (🇵🇱/🇬🇧) and <2>Reksiopedia</2> (🇵🇱)",
+            "reksiohubLink": "Przygody Reksia HUB",
+            "reksiopediaLink": "Reksiopedia (PL)",
             "chooseLanguageVersion": "Select a language version",
             "releaseDate": "Release date",
             "goBack": "Go back",
@@ -221,7 +222,8 @@ const resources = {
             "mainAboutReadMore": "Przeczytaj więcej o projekcie",
             "mainAboutBoombit": "Firmie BoomBit (AidemMedia) wygasła licencja na wykorzystywanie postaci Reksia przez co nie są w stanie jej już sprzedawać i nie mają nic przeciwko pobieraniu gier.",
             "mainAboutMoreAboutGames": "Więcej informacji o grach z serii Przygody Reksia możesz znaleźć na:",
-            "mainAboutLinkAndLink": "<0>Przygody Reksia HUB</0> oraz na <2>Reksiopedii</2>",
+            "reksiopediaLink": "Reksiopedia",
+            "comeToDiscord": "Zapraszamy również na bardzo aktywny serwer Discord fandomu.",
             "chooseLanguageVersion": "Wybierz wersję językową",
             "releaseDate": "Data wydania",
             "goBack": "Powrót",
@@ -407,7 +409,7 @@ const resources = {
                     W programie znajdują się ulubione przez dzieci typy gier i zabaw. Są to między innymi wyścigi samochodów, motorówek, slalom skuterem śnieżnym, czy gry zręcznościowe: wyspa bobrów, wyścig po nenufarach, wylęgarnia kurczaków i turniej przy studni. Jeśli dziecko woli gry strategiczne, zapraszamy do zabawy polegającej na zdobywaniu zamków. Gdy jednak pisownia niektórych wyrazów sprawia kłopot, Reksio zaprasza do swojej budy, na krótką lekcjię ortografii. Ale to jeszcze nie wszystko...
                     Całość nasycona jest bogatą grafiką animowaną, wesołą muzyką oraz ciekawymi pomysłami na łatwe przyswojenie zasad poprawnej pisowni. Czego można chcieć więcej! Wystarczy dużo ćwiczyć, aby być najlepszym!
             `,
-            "reksioKindergartenDescription": `„Wesołe Przedszkole Reksia” to kolejny tytuł z serii edukacji przedszkolnej dla najmłodszych dzieci. Program opracowany został według założeń dydaktycznych wychowania przedszkolnego. Zawiera siedem interesujących zabaw, które wspomagają tok edukacji przedszkolnej, stymulują rozwój umysłowy oraz twórcze myślenie.
+            "reksioKindergartenDescription": `Wesołe Przedszkole Reksia” to kolejny tytuł z serii edukacji przedszkolnej dla najmłodszych dzieci. Program opracowany został według założeń dydaktycznych wychowania przedszkolnego. Zawiera siedem interesujących zabaw, które wspomagają tok edukacji przedszkolnej, stymulują rozwój umysłowy oraz twórcze myślenie.
                     
                     Kolejka - ulubiona zabawa wszystkich przedszkolaków. W tej grze należy pomóc maszyniście zabrać wszystkich pasażerów i dojechać z nimi na stację końcową. To wiele godzin zabawy dla każdego malucha i jego taty!
                     
@@ -479,7 +481,6 @@ const resources = {
             "mainAboutReadMore": "Citește mai multe despre acest proiect",
             "mainAboutBoombit": "Studioului BoomBit (Aidem Media) i-a expirat licența de utilizat personajul Reksio, astfel că aceștia nu își mai pot vinde jocurile cu el, și nu au probleme cu ideea ca lumea să le descarce.",
             "mainAboutMoreAboutGames": "Puteți afla mai multe informații despre jocurile din seria Aventurile lui Reksio pe:",
-            "mainAboutLinkAndLink": "<0>Przygody Reksia HUB</0> (🇵🇱/🇬🇧) și <2>Reksiopedia</2> (🇵🇱)",
             "chooseLanguageVersion": "Alege limba versiunii",
             "releaseDate": "Data lansării",
             "goBack": "Înapoi",
