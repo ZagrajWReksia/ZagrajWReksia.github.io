@@ -101,15 +101,7 @@ function Index() {
         const instance = createGamePlayer(gameRef.current, {
             fileLoader: new FileLoaders.ListingJSONUrlFileLoader(game.listingUrl),
             saveFile: SaveFileManager.fromLocalStorage(`${game.id}-savefile`),
-            onExit: () => document.exitFullscreen(),
-            onSceneChange: (next, previous) => {
-                event('player_scene_change', {
-                    playthroughId,
-                    game: game.id,
-                    nextScene: next,
-                    previousScene: previous
-                })
-            }
+            onExit: () => document.exitFullscreen()
         })
 
         if (instance !== null) {

@@ -7,7 +7,6 @@ import {GameDetailsPage} from "./pages/game";
 import App from "./pages/main";
 import About from "./pages/about";
 import './i18n';
-import {event} from "./analytics.ts";
 
 function Actions() {
     const { pathname } = useLocation()
@@ -15,12 +14,6 @@ function Actions() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname])
-
-    useEffect(() => {
-        fetch('https://cloud.umami.is/script.js').catch(() => {
-            event('adblock')
-        })
-    }, [])
 
     return null
 }
