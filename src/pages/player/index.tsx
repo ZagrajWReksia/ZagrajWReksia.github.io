@@ -57,12 +57,12 @@ const games: Record<string, Game> = {
     "risp-ro": {
         id: 'risp',
         lang: 'ro',
-        listingUrl: "https://iso.zagrajwreksia.pl/game-assets/risp-romanian/listing.json"
+        listingUrl: "https://iso.zagrajwreksia.pl/game-assets/risp/ro/listing.json"
     },
     "risp-pl": {
         id: 'risp',
         lang: 'pl',
-        listingUrl: "https://iso.zagrajwreksia.pl/game-assets/reksioiskarbpiratow/listing.json"
+        listingUrl: "https://iso.zagrajwreksia.pl/game-assets/risp/pl/listing.json"
     }
 }
 
