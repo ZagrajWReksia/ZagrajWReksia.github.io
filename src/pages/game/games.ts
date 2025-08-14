@@ -6,6 +6,7 @@ export interface Mirror {
 export interface Download {
     name: string;
     icon?: string;
+    recommended?: boolean;
     description: string;
     instructions?: string | { key: string; args: Record<string, unknown> };
     url: string;
@@ -251,6 +252,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -286,6 +288,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -429,6 +432,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "Łatka No-CD + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
                         instructions: {
                             key: "instructionsRunExe",
@@ -465,6 +469,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -543,6 +548,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -578,6 +584,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -651,6 +658,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -686,6 +694,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -758,6 +767,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",
@@ -793,6 +803,7 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
                         instructions: {
                             key: "instructionsRunExe",

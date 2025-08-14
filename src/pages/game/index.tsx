@@ -89,14 +89,16 @@ const LanguageOption = styled.button<{ active: boolean }>`
     }
 `;
 
-const DownloadOption = styled.div`
+const DownloadOption = styled.div<{recommended?: boolean}>`
     margin-top: 20px;
     padding: 15px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    
+    ${({recommended}) => recommended && 'border-left: 8px solid #fee34d'}
 `
 
-const Source = styled.small`
+const SmallDimmed = styled.small`
     color: rgb(186, 186, 186);
     
     a {
@@ -198,7 +200,7 @@ export function GameDetailsPage() {
                                 </div>
                             )}
                             {selectedLanguage.downloads.map((download, index) => (
-                                <DownloadOption key={index}>
+                                <DownloadOption key={index} recommended={download.recommended}>
                                     <div>
                                         {download.icon}&nbsp;
                                         <Link
@@ -208,7 +210,7 @@ export function GameDetailsPage() {
                                             <span>{t(download.name)}</span>
                                         </Link>
                                         {download.size && (
-                                            <span>&nbsp;({download.size})</span>
+                                            <small>&nbsp;({download.size})</small>
                                         )}
                                     </div>
                                     <div>
@@ -225,26 +227,25 @@ export function GameDetailsPage() {
                                     ) : <></>}
 
                                     {download.mirrors && (
-                                        <small>
+                                        <SmallDimmed>
                                             {t('mirrors')}:&nbsp;
                                             {download.mirrors.map((mirror, idx) => (
                                                 <span>
                                                     <a
                                                         href={mirror.url}
-                                                        style={{color: '#fff'}}
                                                         onClick={() => onDownload(download, mirror)}
                                                     >{mirror.name}</a>{idx != download!.mirrors!.length - 1 && ', '}
                                                 </span>
                                             ))}
-                                        </small>
+                                        </SmallDimmed>
                                     )}
                                     {download.source && (
                                         <div>
-                                            <Source>
+                                            <SmallDimmed>
                                                 {t('source')}: {download.sourceUrl ? (
                                                     <a href={download.sourceUrl}>{download.source}</a>
                                                 ) : download.source}
-                                            </Source>
+                                            </SmallDimmed>
                                         </div>
                                     )}
                                 </DownloadOption>
