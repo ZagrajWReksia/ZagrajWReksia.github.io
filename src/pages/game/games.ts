@@ -159,7 +159,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "427 MB",
-                        source: "Unknown"
+                        source: "Unknown",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -180,7 +181,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "543 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesakalozok"
+                        sourceUrl: "https://archive.org/details/rexiesakalozok",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -201,7 +203,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "543 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesakalozok"
+                        sourceUrl: "https://archive.org/details/rexiesakalozok",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -334,7 +337,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "554 MB",
-                        source: "Unknown"
+                        source: "Unknown",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -355,7 +359,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "707 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesazufo"
+                        sourceUrl: "https://archive.org/details/rexiesazufo",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -376,7 +381,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "689 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesazufo"
+                        sourceUrl: "https://archive.org/details/rexiesazufo",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -510,7 +516,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "704 MB",
-                        source: "Unknown"
+                        source: "Unknown",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -623,7 +630,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "645 MB",
                         source: "Unknown",
-                        sourceUrl: "https://archive.org/details/reks-i-mashina-vremeni"
+                        sourceUrl: "https://archive.org/details/reks-i-mashina-vremeni",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -729,7 +737,8 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "554 MB",
-                        source: "Unknown"
+                        source: "Unknown",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -836,6 +845,7 @@ const games: Record<string, Index> = {
                         ],
                         size: "409 MB",
                         source: "Unknown",
+                        instructions: "cncDdrawInstruction"
                     },
                 ]
             },
@@ -1164,7 +1174,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "609 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/abc-z-reksiem"
+                        sourceUrl: "https://archive.org/details/abc-z-reksiem",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1194,7 +1205,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "347 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-przyjaciele"
+                        sourceUrl: "https://archive.org/details/reksio-i-przyjaciele",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1224,7 +1236,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "253 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-zwierzaki"
+                        sourceUrl: "https://archive.org/details/reksio-i-zwierzaki",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1245,7 +1258,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "438 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
+                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1266,7 +1280,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "438 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak"
+                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1296,7 +1311,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "700 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/licze-z-reksiem"
+                        sourceUrl: "https://archive.org/details/licze-z-reksiem",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1317,7 +1333,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "635 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/matematica-cu-reksio"
+                        sourceUrl: "https://archive.org/details/matematica-cu-reksio",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1338,6 +1355,7 @@ const games: Record<string, Index> = {
                         ],
                         size: "644 MB",
                         source: "Reksioblog",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1367,7 +1385,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "640 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-ortografia"
+                        sourceUrl: "https://archive.org/details/reksio-i-ortografia",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1388,7 +1407,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "374 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-ortografia"
+                        sourceUrl: "https://archive.org/details/reksio-si-ortografia",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1418,7 +1438,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "538 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/przedszkole-reksia"
+                        sourceUrl: "https://archive.org/details/przedszkole-reksia",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1439,7 +1460,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "421 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-la-gradinita-vesela"
+                        sourceUrl: "https://archive.org/details/reksio-la-gradinita-vesela",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1460,7 +1482,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "346 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reks-v-detskom-sadu"
+                        sourceUrl: "https://archive.org/details/reks-v-detskom-sadu",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1490,7 +1513,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "433 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/lamiglowki-reksia-wielki-odkrywca"
+                        sourceUrl: "https://archive.org/details/lamiglowki-reksia-wielki-odkrywca",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1511,7 +1535,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "238 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-micul-intelept"
+                        sourceUrl: "https://archive.org/details/reksio-micul-intelept",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },
@@ -1532,7 +1557,8 @@ const games: Record<string, Index> = {
                         ],
                         size: "302 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reks-na-ostrove-chudes"
+                        sourceUrl: "https://archive.org/details/reks-na-ostrove-chudes",
+                        instructions: "cncDdrawInstruction"
                     }
                 ]
             },

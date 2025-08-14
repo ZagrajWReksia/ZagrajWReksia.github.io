@@ -7,7 +7,7 @@ import {Footer} from "../../components/footer.tsx";
 import {Trans, useTranslation} from "react-i18next";
 import games, {Download, Language, Mirror} from "./games.ts"
 import i18next from "i18next";
-import {Alert} from "../../components/box.tsx";
+import {Alert, HighlightBox} from "../../components/box.tsx";
 import {event, trackUrl} from "../../analytics.ts";
 import Flag from "../../components/flag.tsx";
 
@@ -218,9 +218,9 @@ export function GameDetailsPage() {
                                     </div>
                                     {download.instructions ? (
                                         <div>
-                                            <small style={{whiteSpace: 'preserve-breaks'}}>
-                                                {typeof download.instructions === 'string' ? t(download.instructions) : t(download.instructions.key, download.instructions.args)}
-                                            </small>
+                                            <HighlightBox style={{whiteSpace: 'preserve-breaks'}}>
+                                                <div dangerouslySetInnerHTML={{ __html: typeof download.instructions === 'string' ? t(download.instructions) : t(download.instructions.key, download.instructions.args) }}/>
+                                            </HighlightBox>
                                         </div>
                                     ) : <></>}
 
