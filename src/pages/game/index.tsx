@@ -218,13 +218,13 @@ export function GameDetailsPage() {
                                             {t(download.description)}
                                         </small>
                                     </div>
-                                    {download.instructions ? (
+                                    {download.instructions ? download.instructions.map(instruction => (
                                         <div>
                                             <HighlightBox style={{whiteSpace: 'preserve-breaks'}}>
-                                                <div dangerouslySetInnerHTML={{ __html: typeof download.instructions === 'string' ? t(download.instructions) : t(download.instructions.key, download.instructions.args) }}/>
+                                                <div dangerouslySetInnerHTML={{ __html: typeof instruction === 'string' ? t(instruction) : t(instruction.key, instruction.args ? Object.fromEntries(Object.entries(instruction.args).map(([key, value]) => [key, t(value)])) : {}) }}/>
                                             </HighlightBox>
                                         </div>
-                                    ) : <></>}
+                                    )) : <></>}
 
                                     {download.mirrors && (
                                         <SmallDimmed>

@@ -8,7 +8,7 @@ export interface Download {
     icon?: string;
     recommended?: boolean;
     description: string;
-    instructions?: string | { key: string; args: Record<string, unknown> };
+    instructions?: (string | { key: string; color?: string; args?: Record<string, string>})[];
     url: string;
     mirrors?: Mirror[];
     size?: string;
@@ -60,6 +60,7 @@ const games: Record<string, Index> = {
                     {
                         name: "playInBrowser",
                         icon: "🌐",
+                        recommended: true,
                         description: "withoutGameDownloading",
                         url: "/play/risp-pl",
                         source: "zagrajwreksia.pl"
@@ -67,13 +68,19 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'ReksioPiraci.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'ReksioPiraci.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiSP/RISP-Patched.zip",
                         size: "273 MiB",
                         source: "zagrajwreksia.pl"
@@ -91,7 +98,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "641 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -102,6 +117,7 @@ const games: Record<string, Index> = {
                     {
                         name: "playInBrowser",
                         icon: "🌐",
+                        recommended: true,
                         description: "withoutGameDownloading",
                         url: "/play/risp-ro",
                         source: "zagrajwreksia.pl"
@@ -109,13 +125,19 @@ const games: Record<string, Index> = {
                     {
                         name: "improvedVersionName",
                         icon: "🔧",
+                        recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'ReksioPiraci.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'ReksioPiraci.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -140,7 +162,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "381 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-comoara-piratilor"
+                        sourceUrl: "https://archive.org/details/reksio-si-comoara-piratilor",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -161,7 +191,12 @@ const games: Record<string, Index> = {
                         ],
                         size: "427 MB",
                         source: "Unknown",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -183,7 +218,12 @@ const games: Record<string, Index> = {
                         size: "543 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesakalozok",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -205,7 +245,12 @@ const games: Record<string, Index> = {
                         size: "543 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesakalozok",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -254,12 +299,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'ReksioUfo.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'ReksioUfo.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
                         size: "330 MB",
                         source: "zagrajwreksia.pl"
@@ -277,7 +327,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "585 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -290,12 +348,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'ReksioUfo.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'ReksioUfo.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -320,7 +383,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "561 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-ozn-ul"
+                        sourceUrl: "https://archive.org/details/reksio-si-ozn-ul",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -341,7 +412,12 @@ const games: Record<string, Index> = {
                         ],
                         size: "554 MB",
                         source: "Unknown",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -363,7 +439,12 @@ const games: Record<string, Index> = {
                         size: "707 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesazufo",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -385,7 +466,12 @@ const games: Record<string, Index> = {
                         size: "689 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/rexiesazufo",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -434,12 +520,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "Łatka No-CD + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Czarodzieje.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Czarodzieje.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Patched.zip",
                         size: "583 MB",
                         source: "zagrajwreksia.pl i ric-workshop",
@@ -458,7 +549,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "710 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -471,12 +570,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Czarodzieje.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Czarodzieje.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -501,7 +605,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "687 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-magicienii"
+                        sourceUrl: "https://archive.org/details/reksio-si-magicienii",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -522,7 +634,12 @@ const games: Record<string, Index> = {
                         ],
                         size: "704 MB",
                         source: "Unknown",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -550,12 +667,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Wehikul.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Wehikul.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Patched.zip",
                         size: "588 MB",
                         source: "zagrajwreksia.pl"
@@ -573,7 +695,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "708 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -586,12 +716,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Wehikul.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Wehikul.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -616,7 +751,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "722 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-masina-timpului"
+                        sourceUrl: "https://archive.org/details/reksio-si-masina-timpului",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -638,7 +781,12 @@ const games: Record<string, Index> = {
                         size: "645 MB",
                         source: "Unknown",
                         sourceUrl: "https://archive.org/details/reks-i-mashina-vremeni",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -660,12 +808,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Nemo.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Nemo.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Patched.zip",
                         size: "824 MB",
                         source: "zagrajwreksia.pl"
@@ -683,7 +836,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "559 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -696,12 +857,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Nemo.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Nemo.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -726,7 +892,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "552 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-capitanul-nemo"
+                        sourceUrl: "https://archive.org/details/reksio-si-capitanul-nemo",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -747,7 +921,12 @@ const games: Record<string, Index> = {
                         ],
                         size: "554 MB",
                         source: "Unknown",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -769,12 +948,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Rex5.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Rex5.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Patched.zip",
                         size: "325 MB",
                         source: "zagrajwreksia.pl"
@@ -792,7 +976,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "671 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
+                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -805,12 +997,17 @@ const games: Record<string, Index> = {
                         icon: "🔧",
                         recommended: true,
                         description: "improvedVersionDescription",
-                        instructions: {
-                            key: "instructionsRunExe",
-                            args: {
-                                file: 'Rex5.exe'
+                        instructions: [
+                            {
+                                key: "instructionsRunExe",
+                                args: {
+                                    file: 'Rex5.exe'
+                                }
+                            },
+                            {
+                                key: "instructionsLinux"
                             }
-                        },
+                        ],
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Romanian-Patched.zip",
                         mirrors: [
                             {
@@ -835,7 +1032,15 @@ const games: Record<string, Index> = {
                         ],
                         size: "404 MB",
                         source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-kretes-in-actiune"
+                        sourceUrl: "https://archive.org/details/reksio-si-kretes-in-actiune",
+                        instructions: [
+                            {
+                                key: "betterInstallOther",
+                                args: {
+                                    name: "improvedVersionName"
+                                }
+                            }
+                        ]
                     },
                 ]
             },
@@ -856,7 +1061,12 @@ const games: Record<string, Index> = {
                         ],
                         size: "409 MB",
                         source: "Unknown",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     },
                 ]
             },
@@ -1186,7 +1396,12 @@ const games: Record<string, Index> = {
                         size: "609 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/abc-z-reksiem",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1217,7 +1432,12 @@ const games: Record<string, Index> = {
                         size: "347 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-i-przyjaciele",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1248,7 +1468,12 @@ const games: Record<string, Index> = {
                         size: "253 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-i-zwierzaki",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1270,7 +1495,12 @@ const games: Record<string, Index> = {
                         size: "438 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-es-az-allatkak",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1292,7 +1522,12 @@ const games: Record<string, Index> = {
                         size: "438 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-es-az-allatkak",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1323,7 +1558,12 @@ const games: Record<string, Index> = {
                         size: "700 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/licze-z-reksiem",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1345,7 +1585,12 @@ const games: Record<string, Index> = {
                         size: "635 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/matematica-cu-reksio",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1366,7 +1611,12 @@ const games: Record<string, Index> = {
                         ],
                         size: "644 MB",
                         source: "Reksioblog",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1397,7 +1647,12 @@ const games: Record<string, Index> = {
                         size: "640 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-i-ortografia",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1419,7 +1674,12 @@ const games: Record<string, Index> = {
                         size: "374 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-si-ortografia",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1450,7 +1710,12 @@ const games: Record<string, Index> = {
                         size: "538 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/przedszkole-reksia",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1472,7 +1737,12 @@ const games: Record<string, Index> = {
                         size: "421 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-la-gradinita-vesela",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1494,7 +1764,12 @@ const games: Record<string, Index> = {
                         size: "346 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reks-v-detskom-sadu",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1525,7 +1800,12 @@ const games: Record<string, Index> = {
                         size: "433 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/lamiglowki-reksia-wielki-odkrywca",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1547,7 +1827,12 @@ const games: Record<string, Index> = {
                         size: "238 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reksio-micul-intelept",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
@@ -1569,7 +1854,12 @@ const games: Record<string, Index> = {
                         size: "302 MB",
                         source: "archive.org",
                         sourceUrl: "https://archive.org/details/reks-na-ostrove-chudes",
-                        instructions: "cncDdrawInstruction"
+                        instructions: [
+                            "cncDdrawInstruction",
+                            {
+                                key: "instructionsLinux"
+                            }
+                        ]
                     }
                 ]
             },
