@@ -202,7 +202,7 @@ export function GameDetailsPage() {
                             {selectedLanguage.downloads.map((download, index) => (
                                 <DownloadOption key={index} recommended={download.recommended}>
                                     <div>
-                                        {download.icon}&nbsp;
+                                        {download.icon && <>{download.icon}&nbsp;</>}
                                         <Link
                                             to={download.url}
                                             onClick={() => onDownload(download)}
