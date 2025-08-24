@@ -12,6 +12,9 @@ const resources = {
             "lang_hu": "Hungarian",
             "lang_en": "English",
             "lang_de": "German",
+            "lang_nl": "Dutch",
+            "lang_fr": "French",
+            "lang_es": "Spanish",
             "creditsTranslations": "Translations",
             "creditsBackground": "Background extended by Paweł Wierzbicki",
             "viewInOtherLanguages": "View this website in other languages:",
@@ -74,7 +77,7 @@ const resources = {
             "playerPressHereToStart": "Press here to start",
             "specialInstructions": "Special instructions",
             "codeFromBooklet": "If the game asks you for the code from the booklet, enter the following:",
-            "lostMedia": "This version of the game exists, but is currently lost.\nContact me at burektor@zagrajwreksia.pl, if you have it.",
+            "workingOnThisVersion": "We are working on making this version available.",
             "cncDdrawInstruction": "It is recommended to install <a href=\"https://iso.zagrajwreksia.pl/cnc-ddraw-reksio.zip\">cnc-ddraw</a> which fixes graphical bugs on modern operating systems. Extract the archive to the game's folder (somewhere in C:/Program Files/AidemMedia/...).",
             "reksioAndPiratesDescription": `Somewhere in the Non-Pacific Ocean, under mysterious circumstances, the pirate Captain O'Verboard disappears. Along with him vanishes the only map leading to the legendary treasure...
 
@@ -208,6 +211,9 @@ const resources = {
             "lang_hu": "Węgierski",
             "lang_en": "Angielski",
             "lang_de": "Niemiecki",
+            "lang_nl": "Niderlandzki",
+            "lang_fr": "Francuski",
+            "lang_es": "Hiszpański",
             "creditsTranslations": "Tłumaczenia",
             "creditsBackground": "Tło rozszerzone przez Pawła Wierzbickiego",
             "viewInOtherLanguages": "Zobacz tę stronę w innym języku:",
@@ -270,7 +276,7 @@ const resources = {
             "playerPressHereToStart": "Kliknij tutaj aby uruchomić grę",
             "specialInstructions": "Dodatkowe instrukcje",
             "codeFromBooklet": "W przypadku, gdy gra poprosi Cię o podanie kodu z książeczki, wpisz poniższy kod:",
-            "lostMedia": "Ta wersja gry istnieje, ale obecnie jest zaginiona.\nSkontaktuj się ze mną pod adresem burektor@zagrajwreksia.pl, jeśli ją posiadasz.",
+            "workingOnThisVersion": "Pracujemy nad udostępnieniem tej wersji.",
             "cncDdrawInstruction": "Zalecana instalacja <a href=\"https://iso.zagrajwreksia.pl/cnc-ddraw-reksio.zip\">cnc-ddraw</a> naprawiającego bugi graficzne na współczesnych systemach operacyjnych. Archiwum wypakuj do folderu z zainstalowaną grą (gdzieś w C:/Program Files/AidemMedia/...).",
             "reksioAndPiratesDescription": `Gdzieś na Oceanie Niespokojnym w tajemniczych okolicznościach znika dowódca piratów Kapitan O'Gryzek. Razem z nim ginie jedyna mapa prowadząca do legendarnego skarbu...
                     

@@ -196,7 +196,7 @@ export function GameDetailsPage() {
                         <div>
                             {selectedLanguage.lost && (
                                 <div style={{whiteSpace: 'preserve-breaks'}}>
-                                    {t('lostMedia')}
+                                    {t('workingOnThisVersion')}
                                 </div>
                             )}
                             {selectedLanguage.downloads.map((download, index) => (

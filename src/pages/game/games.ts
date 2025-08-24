@@ -20,7 +20,6 @@ export interface Language {
     langCode: string;
     official: boolean;
     lost?: boolean;
-    lostNotes?: string;
     downloads: Download[];
 }
 
@@ -1309,15 +1308,31 @@ const games: Record<string, Index> = {
             {
                 official: true,
                 lost: true,
-                lostNotes: "lostMedia",
                 langCode: "en",
                 downloads: []
             },
             {
                 official: true,
                 lost: true,
-                lostNotes: "lostMedia",
+                langCode: "nl",
+                downloads: []
+            },
+            {
+                official: true,
+                lost: true,
+                langCode: "fr",
+                downloads: []
+            },
+            {
+                official: true,
+                lost: true,
                 langCode: "de",
+                downloads: []
+            },
+            {
+                official: true,
+                lost: true,
+                langCode: "es",
                 downloads: []
             },
         ],
