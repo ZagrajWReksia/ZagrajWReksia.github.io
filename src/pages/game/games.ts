@@ -1211,26 +1211,6 @@ const games: Record<string, Index> = {
                     }
                 ]
             },
-            {
-                official: true,
-                langCode: "de",
-                downloads: [
-                    {
-                        name: "originalCDVersionName",
-                        icon: "💿",
-                        description: "originalCDVersionDescription",
-                        url: "https://iso.zagrajwreksia.pl/CoS/City%20of%20Secrets%20%28DE%29.iso",
-                        mirrors: [
-                            {
-                                name: "archive.org",
-                                url: "https://archive.org/download/city-of-secrets-de/City%20of%20Secrets%20%28DE%29.iso"
-                            }
-                        ],
-                        size: "789 MB",
-                        source: "Reksioblog",
-                    }
-                ]
-            },
         ],
     },
     "rimsle": {
@@ -1307,6 +1287,26 @@ const games: Record<string, Index> = {
             },
             {
                 official: true,
+                langCode: "de",
+                downloads: [
+                    {
+                        name: "originalCDVersionName",
+                        icon: "💿",
+                        description: "originalCDVersionDescription",
+                        url: "https://iso.zagrajwreksia.pl/CoS/City%20of%20Secrets%20%28DE%29.iso",
+                        mirrors: [
+                            {
+                                name: "archive.org",
+                                url: "https://archive.org/download/city-of-secrets-de/City%20of%20Secrets%20%28DE%29.iso"
+                            }
+                        ],
+                        size: "789 MB",
+                        source: "Reksioblog",
+                    }
+                ]
+            },
+            {
+                official: true,
                 lost: true,
                 langCode: "en",
                 downloads: []
@@ -1321,12 +1321,6 @@ const games: Record<string, Index> = {
                 official: true,
                 lost: true,
                 langCode: "fr",
-                downloads: []
-            },
-            {
-                official: true,
-                lost: true,
-                langCode: "de",
                 downloads: []
             },
             {
