@@ -171,7 +171,7 @@ export function GameDetailsPage() {
                         <Trans i18nKey="visitReksioDiscordForHelp">
                             Need help with the game or installation? Join Reksio community on
                             <a
-                                href="https://discord.gg/przygody-reksia"
+                                href="https://discord.gg/sc5psH2cvR"
                                 onClick={() => event('join_discord')}
                             >
                                 Discord

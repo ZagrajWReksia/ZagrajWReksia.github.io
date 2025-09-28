@@ -233,7 +233,7 @@ function App() {
                         </Pill>
                         <Pill
                             icon="/discord-logo.svg"
-                            href="https://discord.gg/przygody-reksia"
+                            href="https://discord.gg/sc5psH2cvR"
                             onClick={() => event('join_discord')}
                         >
                             Discord
