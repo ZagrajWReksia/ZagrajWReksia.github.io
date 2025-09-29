@@ -10,6 +10,7 @@ import {Trans, useTranslation} from "react-i18next";
 import {gamesByGroup, Index, Language} from "../game/games.ts"
 import Flag from "../../components/flag.tsx";
 import {event} from "../../analytics.ts";
+import {discordInviteLink} from "../../constants.ts";
 
 const CoverContainer = styled.div`
     display: flex;
@@ -233,7 +234,7 @@ function App() {
                         </Pill>
                         <Pill
                             icon="/discord-logo.svg"
-                            href="https://discord.gg/sc5psH2cvR"
+                            href={discordInviteLink}
                             onClick={() => event('join_discord')}
                         >
                             Discord

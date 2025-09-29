@@ -10,6 +10,7 @@ import i18next from "i18next";
 import {Alert, HighlightBox} from "../../components/box.tsx";
 import {event, trackUrl} from "../../analytics.ts";
 import Flag from "../../components/flag.tsx";
+import {discordInviteLink} from "../../constants.ts";
 
 const Wrapper = styled.div`
     @media (max-width: 767px) {
@@ -171,7 +172,7 @@ export function GameDetailsPage() {
                         <Trans i18nKey="visitReksioDiscordForHelp">
                             Need help with the game or installation? Join Reksio community on
                             <a
-                                href="https://discord.gg/sc5psH2cvR"
+                                href={discordInviteLink}
                                 onClick={() => event('join_discord')}
                             >
                                 Discord
