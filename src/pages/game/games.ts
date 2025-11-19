@@ -518,7 +518,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnnych systemów operacyjnych",
+                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnych systemów operacyjnych",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
