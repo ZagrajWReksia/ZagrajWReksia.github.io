@@ -239,6 +239,14 @@ function App() {
                         >
                             Discord
                         </Pill>
+                        <Pill
+                            icon="/original-website-logo.png"
+                            href="https://www.przygodyreksia.aidemmedia.pl/"
+                        >
+                            <Trans i18nKey="reksiowebsiteLink">
+                                Oryginalna strona <span className="flag:PL"></span>
+                            </Trans>
+                        </Pill>
                     </PillRow>
                 </Box>
             </Message>
