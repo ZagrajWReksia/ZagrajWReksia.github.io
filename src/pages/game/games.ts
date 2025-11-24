@@ -81,7 +81,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiSP/RISP-Patched.zip",
-                        size: "273 MiB",
+                        size: "259 MiB",
                         source: "zagrajwreksia.pl"
                     },
                     {
@@ -310,7 +310,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
-                        size: "330 MB",
+                        size: "314 MB",
                         source: "zagrajwreksia.pl"
                     },
                     {
@@ -531,7 +531,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Patched.zip",
-                        size: "583 MB",
+                        size: "555 MB",
                         source: "zagrajwreksia.pl i ric-workshop",
                         sourceUrl: "https://github.com/roostarreksio/ric-workshop"
                     },
@@ -678,7 +678,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Patched.zip",
-                        size: "588 MB",
+                        size: "560 MB",
                         source: "zagrajwreksia.pl"
                     },
                     {
@@ -819,7 +819,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Patched.zip",
-                        size: "824 MB",
+                        size: "785 MB",
                         source: "zagrajwreksia.pl"
                     },
                     {
@@ -959,7 +959,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Patched.zip",
-                        size: "325 MB",
+                        size: "309 MB",
                         source: "zagrajwreksia.pl"
                     },
                     {
