@@ -163,6 +163,11 @@ export function GameDetailsPage() {
                                             <div dangerouslySetInnerHTML={{ __html: instruction.content }}/>
                                         </>
                                     )}
+                                    {instruction.type === 'alert' && (
+                                        <Alert color="rgba(40, 119, 221, 0.54)" style={{marginBottom: '20px'}}>
+                                            <div dangerouslySetInnerHTML={{ __html: t(instruction.content) }}/>
+                                        </Alert>
+                                    )}
                                 </div>
                             ))}
                         </div>

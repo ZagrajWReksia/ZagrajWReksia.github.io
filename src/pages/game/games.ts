@@ -797,6 +797,12 @@ const games: Record<string, Index> = {
         description: "reksioAndCaptainNemoDescription",
         coverImage: "/covers/reksioikapitannemo.jpg",
         year: 2006,
+        instructions: [
+            {
+                type: "alert",
+                content: "noteRiKNError"
+            }
+        ],
         languages: [
             {
                 official: true,

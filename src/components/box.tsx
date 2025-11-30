@@ -7,8 +7,12 @@ export const Box = styled.div`
     backdrop-filter: blur(10px);
 `;
 
+export type AlertProps = {
+    color?: string;
+}
+
 export const Alert = styled(Box)`
-    --container-background: rgba(221, 40, 40, 0.2);
+    --container-background: ${({color}) => color ?? "rgba(221, 40, 40, 0.2)"};
 `
 
 export const HighlightBox = styled.div`
