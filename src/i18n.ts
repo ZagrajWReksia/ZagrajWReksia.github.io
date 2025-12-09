@@ -38,7 +38,7 @@ const resources = {
             "chooseLanguageVersion": "Select a language version",
             "releaseDate": "Release date",
             "goBack": "Go back",
-            "noteRiKNError": `Recently, an error has crept into the shared files.
+            "noteRiKNError": `<small>23.11.2025</small><br/>Recently, an error has crept into the shared files.
                 If you have downloaded the "Improved version with patches" in recent weeks, <u><b>you may need to download an additional patch to add the missing files</b></u> (or download the game again).
                 <br/><br/>
                 Link to download the patch: <a href="https://iso.zagrajwreksia.pl/RiKN/RiKN_missing_install.zip">Poprawka</a><br/>
@@ -251,7 +251,7 @@ const resources = {
             "chooseLanguageVersion": "Wybierz wersję językową",
             "releaseDate": "Data wydania",
             "goBack": "Powrót",
-            "noteRiKNError": `Ostatnio wkradł się błąd w udostępnionych plikach.
+            "noteRiKNError": `<small>23.11.2025</small><br/>Ostatnio wkradł się błąd w udostępnionych plikach.
                 Jeżeli pobierałeś w ostatnich tygodniach "Wersja poprawiona z łatkami" <u><b>to może być konieczne zainstalowanie dodatkowej poprawki dodającej brakujące pliki</b></u> (lub pobranie gry od nowa).
                 <br><br>
                 Link do pobrania poprawki: <a href="https://iso.zagrajwreksia.pl/RiKN/RiKN_missing_install.zip">Poprawka</a><br/>
