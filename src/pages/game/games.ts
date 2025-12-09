@@ -28,6 +28,11 @@ export interface Instruction {
     content: string;
 }
 
+export interface ModEntry {
+    languages?: string[];
+    download: Download;
+}
+
 export interface Index {
     group: string;
     title: string;
@@ -36,6 +41,7 @@ export interface Index {
     coverImage: string;
     year: number;
     languages: Language[];
+    mods?: ModEntry[];
 }
 
 const games: Record<string, Index> = {
@@ -275,6 +281,25 @@ const games: Record<string, Index> = {
                 ]
             }
         ],
+        mods: [
+            {
+                languages: ["pl"],
+                download: {
+                    name: "Alternatywny soundtrack",
+                    icon: "📦",
+                    description: "Dodaje alternatywny soundtrack stworzony przez Bartka Brosza - twórcy oryginalnego soundtracku do kolejnych części Przygód Reksia. Więcej informacji w źródle.",
+                    instructions: [
+                        {
+                            key: "Wypakuj zawartość katalogu \"Reksio Piraci\" do głównego katalogu gry."
+                        }
+                    ],
+                    url: "https://drive.google.com/file/d/12_mSEvClA6ENZG1s5yirOrLPiT7q1p3y/view",
+                    size: "210 MB",
+                    source: "Bartek Brosz",
+                    sourceUrl: "https://www.facebook.com/100036782177490/posts/pfbid0r2viQVcC9TMTH6bo4gsUoJq5MeJceo6pgRovZBD2PKEAivMpz8LwEb3PLrUrR3pfl/"
+                }
+            }
+        ]
     },
     "riu": {
         group: "main",
@@ -496,6 +521,25 @@ const games: Record<string, Index> = {
                 ]
             }
         ],
+        mods: [
+            {
+                languages: ["pl", "ro", "ru", "cz", "hu"],
+                download: {
+                    name: "unusedContent",
+                    icon: "📦",
+                    description: "unusedContentDescription",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://github.com/papiliotroilus/Reksio-UFO-Patches/archive/refs/heads/main.zip",
+                    size: "44 KB",
+                    source: "Serena Pancu",
+                    sourceUrl: "https://github.com/papiliotroilus/Reksio-UFO-Patches",
+                }
+            }
+        ]
     },
     "ric": {
         group: "main",
@@ -518,7 +562,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnych systemów operacyjnych",
+                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnych systemów operacyjnych.",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
@@ -643,6 +687,76 @@ const games: Record<string, Index> = {
                 ]
             },
         ],
+        mods: [
+            {
+                languages: ["pl"],
+                download: {
+                    name: 'Ułatw sobie "Reksio i Czarodzieje"!',
+                    icon: "📦",
+                    description: "(Oficjalna modyfikacja od Aidem Media)\nObniża poziom trudności w minigrach: \"Lot na Smoku\" i \"Obrona murów\"..",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://iso.zagrajwreksia.pl/RiC/czaro_easy.zip",
+                    size: "9 KB",
+                    source: "przygodyreksia.aidemmedia.pl",
+                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html",
+                }
+            },
+            {
+                languages: ["pl"],
+                download: {
+                    name: 'Ułatw sobie bardziej "Reksio i Czarodzieje"!',
+                    icon: "📦",
+                    description: "(Oficjalna modyfikacja od Aidem Media)\nObniża jeszcze bardziej poziom trudności w minigrach \"Obrona murów\"",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://iso.zagrajwreksia.pl/RiC/czaro_easy2.zip",
+                    size: "9 KB",
+                    source: "przygodyreksia.aidemmedia.pl",
+                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html",
+                }
+            },
+            {
+                languages: ["pl"],
+                download: {
+                    name: "DrobLoader",
+                    icon: "📦",
+                    description: "drobLoaderDescription",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://github.com/roostarreksio/ric-drobloader/releases/download/1.0.0/ric-drobloader-1.0.0-default.zip",
+                    size: "424 KB",
+                    source: "ric-drobloader",
+                    sourceUrl: "https://github.com/roostarreksio/ric-drobloader",
+                }
+            },
+            {
+                languages: ["ru"],
+                download: {
+                    name: "DrobLoader",
+                    icon: "📦",
+                    description: "drobLoaderDescription",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://github.com/roostarreksio/ric-drobloader/releases/download/1.0.0/ric-drobloader-1.0.0-rus.zip",
+                    size: "1.04 MB",
+                    source: "ric-drobloader",
+                    sourceUrl: "https://github.com/roostarreksio/ric-drobloader",
+                }
+            },
+        ]
     },
     "riwc": {
         group: "main",
@@ -1147,6 +1261,25 @@ const games: Record<string, Index> = {
                 ]
             },
         ],
+        mods: [
+            {
+                languages: ["pl"],
+                download: {
+                    name: "Odblokowanie edytora",
+                    icon: "📦",
+                    description: "Odblokowuje dostęp do wbudowanego edytora poziomów.",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://drive.google.com/open?id=1lCQLkQunoi-hOXLLtb2Y34boifAxL8Qm",
+                    size: "24 MB",
+                    source: "mysliwy112",
+                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=10607"
+                }
+            },
+        ]
     },
     "rims": {
         group: 'second',
@@ -1218,6 +1351,25 @@ const games: Record<string, Index> = {
                 ]
             },
         ],
+        mods: [
+            {
+                languages: ["pl"],
+                download: {
+                    name: "LowerLabs",
+                    icon: "📦",
+                    description: "Umożliwia (naprawia) przejście trzeciego i czwartego labiryntu.",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://drive.google.com/file/d/1GdlHYni6DM1wkaMgJHGLLAVYif3E50JD/view",
+                    size: "24 MB",
+                    source: "Dove6",
+                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=11314"
+                }
+            },
+        ]
     },
     "rimsle": {
         group: 'second',

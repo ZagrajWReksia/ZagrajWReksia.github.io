@@ -25,7 +25,7 @@ const Wrapper = styled.div`
 const GameDetailsContainer = styled.div`
     max-width: 1200px;
     margin: 0 auto;
-    
+
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -83,50 +83,123 @@ const LanguageSelector = styled.div`
 
 const LanguageOption = styled.button<{ active: boolean }>`
     border: 2px solid ${props => props.active ? 'rgb(254,227,77)' : 'rgba(0,0,0,0)'};
-    
+
     &:disabled {
         opacity: 0.8;
         filter: grayscale(1);
     }
 `;
 
-const DownloadOption = styled.div<{recommended?: boolean}>`
-    margin-top: 20px;
+const DownloadOption = styled.div<{ recommended?: boolean }>`
     padding: 15px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    
-    ${({recommended}) => recommended && 'border-left: 8px solid #fee34d'}
+
+    ${({recommended}) => recommended && 'border-left: 8px solid #fee34d;'}
+    & + & {
+        margin-top: 20px;
+    }
 `
 
 const SmallDimmed = styled.small`
     color: rgb(186, 186, 186);
-    
+
     a {
         color: rgb(186, 186, 186);
     }
 `
 
+function DownloadsList({downloads, gameId, selectedLanguage, type} : {downloads: Download[], gameId: string, selectedLanguage: Language, type: string}) {
+    const {t} = useTranslation();
+
+    const onDownload = async (download: Download, mirror?: Mirror) => {
+        if (type === "game") {
+            trackUrl("download", mirror?.url ?? download.url, {
+                gameId: gameId,
+                language: selectedLanguage?.langCode,
+                downloadName: download.name,
+                mirrorName: mirror?.name,
+            });
+        } else if (type === "mod") {
+            trackUrl("downloadMod", mirror?.url ?? download.url, {
+                gameId: gameId,
+                language: selectedLanguage?.langCode,
+                downloadName: download.name,
+                mirrorName: mirror?.name,
+            });
+        }
+    }
+
+    return downloads
+        .map((download, index) => (
+            <DownloadOption key={index} recommended={download.recommended}>
+                <div>
+                    {download.icon && <>{download.icon}&nbsp;</>}
+                    <Link
+                        to={download.url}
+                        onClick={() => onDownload(download)}
+                    >
+                        <span>{t(download.name)}</span>
+                    </Link>
+                    {download.size && (
+                        <small>&nbsp;({download.size})</small>
+                    )}
+                </div>
+                <div>
+                    <small style={{whiteSpace: 'preserve-breaks'}}>
+                        {t(download.description)}
+                    </small>
+                </div>
+                {download.instructions ? download.instructions.map(instruction => (
+                    <div>
+                        <HighlightBox style={{whiteSpace: 'preserve-breaks'}}>
+                            <div
+                                dangerouslySetInnerHTML={{__html: typeof instruction === 'string' ? t(instruction) : t(instruction.key, instruction.args ? Object.fromEntries(Object.entries(instruction.args).map(([key, value]) => [key, t(value)])) : {})}}/>
+                        </HighlightBox>
+                    </div>
+                )) : <></>}
+
+                {download.mirrors && (
+                    <SmallDimmed>
+                        {t('mirrors')}:&nbsp;
+                        {download.mirrors.map((mirror, idx) => (
+                            <span>
+                                    <a
+                                        href={mirror.url}
+                                        onClick={() => onDownload(download, mirror)}
+                                    >
+                                        {mirror.name}
+                                    </a>{idx != download!.mirrors!.length - 1 && ', '}
+                            </span>
+                        ))}
+                    </SmallDimmed>
+                )}
+                {download.source && (
+                    <div>
+                        <SmallDimmed>
+                            {t('source')}: {download.sourceUrl ? (
+                            <a href={download.sourceUrl}>{download.source}</a>
+                        ) : download.source}
+                        </SmallDimmed>
+                    </div>
+                )}
+            </DownloadOption>
+        ))
+}
+
 export function GameDetailsPage() {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
     const params = useParams() as { gameId: string };
     const gameId = params.gameId;
 
     const game = games[gameId];
     const [selectedLanguage, setSelectedLanguage] = useState<Language | null>(game?.languages?.find(lang => lang.langCode === i18next.resolvedLanguage) ?? null);
 
-    const onDownload = async (download: Download, mirror?: Mirror) => {
-        trackUrl(mirror?.url ?? download.url, {
-            gameId: gameId,
-            language: selectedLanguage?.langCode,
-            downloadName: download.name,
-            mirrorName: mirror?.name,
-        });
-    }
-
     if (!game) {
         return <div>Game not found</div>;
     }
+
+    const mods = game.mods && selectedLanguage ? game.mods.filter(mod => !mod.languages || mod.languages?.includes(selectedLanguage.langCode)).map(mod => mod.download) : [];
 
     return (
         <Wrapper>
@@ -142,123 +215,93 @@ export function GameDetailsPage() {
                     <GameCover src={game.coverImage} alt={`${game.title} cover`}/>
                 </CoverSection>
 
-                <DetailsSection>
-                    <FancyHeading text={t(game.title)}/>
+                <div>
+                    <DetailsSection>
+                        <FancyHeading text={t(game.title)}/>
 
-                    <DetailsSectionDescription>
-                        <div style={{marginBottom: '20px'}}>
-                            {t(game.description)}
-                        </div>
-                        <strong>{t('releaseDate')}:</strong> {game.year}<br/>
-                    </DetailsSectionDescription>
+                        <DetailsSectionDescription>
+                            <div style={{marginBottom: '20px'}}>
+                                {t(game.description)}
+                            </div>
+                            <strong>{t('releaseDate')}:</strong> {game.year}<br/>
+                        </DetailsSectionDescription>
 
-                    {game.instructions && (
-                        <div style={{marginTop: '20px'}}>
-                            <FancyHeading size="medium" text={t('specialInstructions')}/>
-                            {game.instructions.map(instruction => (
-                                <div>
-                                    {instruction.type === 'password' && (
-                                        <>
-                                            <div>{t('codeFromBooklet')}</div>
-                                            <div dangerouslySetInnerHTML={{ __html: instruction.content }}/>
-                                        </>
-                                    )}
-                                    {instruction.type === 'alert' && (
-                                        <Alert color="rgba(40, 119, 221, 0.54)" style={{marginBottom: '20px'}}>
-                                            <div dangerouslySetInnerHTML={{ __html: t(instruction.content) }}/>
-                                        </Alert>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    )}
-
-                    <Alert style={{marginBottom: '20px'}}>
-                        <Trans i18nKey="visitReksioDiscordForHelp">
-                            Need help with the game or installation? Join Reksio community on
-                            <a
-                                href={discordInviteLink}
-                                onClick={() => event('join_discord')}
-                            >
-                                Discord
-                            </a>
-                        </Trans>
-                    </Alert>
-
-                    <FancyHeading size="medium" text={t('chooseLanguageVersion')}/>
-                    <LanguageSelector style={{marginTop: '10px'}}>
-                        {game.languages.filter(language => language.downloads.length > 0 || language.lost).map((lang: Language) => (
-                            <LanguageOption
-                                key={lang.langCode}
-                                active={selectedLanguage?.langCode === lang.langCode}
-                                onClick={() => setSelectedLanguage(lang)}
-                            >
-                                <Flag code={lang.langCode} gray={lang.lost}/> {t(`lang_${lang.langCode}`)}
-                            </LanguageOption>
-                        ))}
-                    </LanguageSelector>
-
-                    {selectedLanguage && (
-                        <div>
-                            {selectedLanguage.lost && (
-                                <div style={{whiteSpace: 'preserve-breaks'}}>
-                                    {t('workingOnThisVersion')}
-                                </div>
-                            )}
-                            {selectedLanguage.downloads.map((download, index) => (
-                                <DownloadOption key={index} recommended={download.recommended}>
+                        {game.instructions && (
+                            <div style={{marginTop: '20px'}}>
+                                <FancyHeading size="medium" text={t('specialInstructions')}/>
+                                {game.instructions.map(instruction => (
                                     <div>
-                                        {download.icon && <>{download.icon}&nbsp;</>}
-                                        <Link
-                                            to={download.url}
-                                            onClick={() => onDownload(download)}
-                                        >
-                                            <span>{t(download.name)}</span>
-                                        </Link>
-                                        {download.size && (
-                                            <small>&nbsp;({download.size})</small>
+                                        {instruction.type === 'password' && (
+                                            <>
+                                                <div>{t('codeFromBooklet')}</div>
+                                                <div dangerouslySetInnerHTML={{__html: instruction.content}}/>
+                                            </>
+                                        )}
+                                        {instruction.type === 'alert' && (
+                                            <Alert color="rgba(40, 119, 221, 0.54)" style={{marginBottom: '20px'}}>
+                                                <div dangerouslySetInnerHTML={{__html: t(instruction.content)}}/>
+                                            </Alert>
                                         )}
                                     </div>
-                                    <div>
-                                        <small style={{whiteSpace: 'preserve-breaks'}}>
-                                            {t(download.description)}
-                                        </small>
-                                    </div>
-                                    {download.instructions ? download.instructions.map(instruction => (
-                                        <div>
-                                            <HighlightBox style={{whiteSpace: 'preserve-breaks'}}>
-                                                <div dangerouslySetInnerHTML={{ __html: typeof instruction === 'string' ? t(instruction) : t(instruction.key, instruction.args ? Object.fromEntries(Object.entries(instruction.args).map(([key, value]) => [key, t(value)])) : {}) }}/>
-                                            </HighlightBox>
-                                        </div>
-                                    )) : <></>}
+                                ))}
+                            </div>
+                        )}
 
-                                    {download.mirrors && (
-                                        <SmallDimmed>
-                                            {t('mirrors')}:&nbsp;
-                                            {download.mirrors.map((mirror, idx) => (
-                                                <span>
-                                                    <a
-                                                        href={mirror.url}
-                                                        onClick={() => onDownload(download, mirror)}
-                                                    >{mirror.name}</a>{idx != download!.mirrors!.length - 1 && ', '}
-                                                </span>
-                                            ))}
-                                        </SmallDimmed>
-                                    )}
-                                    {download.source && (
-                                        <div>
-                                            <SmallDimmed>
-                                                {t('source')}: {download.sourceUrl ? (
-                                                    <a href={download.sourceUrl}>{download.source}</a>
-                                                ) : download.source}
-                                            </SmallDimmed>
-                                        </div>
-                                    )}
-                                </DownloadOption>
+                        <Alert style={{marginBottom: '20px'}}>
+                            <Trans i18nKey="visitReksioDiscordForHelp">
+                                Need help with the game or installation? Join Reksio community on
+                                <a
+                                    href={discordInviteLink}
+                                    onClick={() => event('join_discord')}
+                                >
+                                    Discord
+                                </a>
+                            </Trans>
+                        </Alert>
+
+                        <FancyHeading size="medium" text={t('chooseLanguageVersion')}/>
+                        <LanguageSelector style={{marginTop: '10px'}}>
+                            {game.languages.filter(language => language.downloads.length > 0 || language.lost).map((lang: Language) => (
+                                <LanguageOption
+                                    key={lang.langCode}
+                                    active={selectedLanguage?.langCode === lang.langCode}
+                                    onClick={() => setSelectedLanguage(lang)}
+                                >
+                                    <Flag code={lang.langCode} gray={lang.lost}/> {t(`lang_${lang.langCode}`)}
+                                </LanguageOption>
                             ))}
-                        </div>
+                        </LanguageSelector>
+
+                        {selectedLanguage && (
+                            <div>
+                                {selectedLanguage.lost && (
+                                    <div style={{whiteSpace: 'preserve-breaks'}}>
+                                        {t('workingOnThisVersion')}
+                                    </div>
+                                )}
+                                <DownloadsList type="game" downloads={selectedLanguage.downloads} selectedLanguage={selectedLanguage} gameId={gameId}/>
+                            </div>
+                        )}
+                    </DetailsSection>
+
+                    {selectedLanguage && mods.length > 0 && (
+                        <DetailsSection style={{marginTop: '20px'}}>
+                            <FancyHeading size="medium" text={t('mods')}/>
+                            <div style={{marginBottom: '5px'}}>
+                                <small>
+                                    {t('modsNotice')}
+                                </small>
+                            </div>
+
+                            <DownloadsList
+                                type="mod"
+                                downloads={mods}
+                                selectedLanguage={selectedLanguage}
+                                gameId={gameId}
+                            />
+                        </DetailsSection>
                     )}
-                </DetailsSection>
+                </div>
             </GameDetailsContainer>
             <Footer/>
         </Wrapper>

@@ -9,14 +9,14 @@ export const event = (event: string, metadata?: any) => {
     }
 }
 
-export const trackUrl = (url: string, metadata?: any) => {
+export const trackUrl = (action: string, url: string, metadata?: any) => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error
     if (window.umami) {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         window.umami.track({
-            "name": "download",
+            "name": action,
             "data": metadata,
             "website": "884a9f2d-33cc-4afc-89aa-2996306a2248",
             "title": "Download",
