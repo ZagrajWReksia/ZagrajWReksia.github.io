@@ -779,7 +779,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "improvedVersionDescription",
+                        description: "improvedVersionOfficialPatchesDescription",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
