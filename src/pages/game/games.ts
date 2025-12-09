@@ -86,7 +86,7 @@ const games: Record<string, Index> = {
                                 key: "instructionsLinux"
                             }
                         ],
-                        url: "https://iso.zagrajwreksia.pl/RiSP/RISP-Patched.zip",
+                        url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Patched.zip",
                         size: "259 MiB",
                         source: "zagrajwreksia.pl"
                     },
