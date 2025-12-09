@@ -15,10 +15,10 @@ export const Alert = styled(Box)`
     --container-background: ${({color}) => color ?? "rgba(221, 40, 40, 0.2)"};
 `
 
-export const HighlightBox = styled.div`
+export const HighlightBox = styled.div<{size?: string}>`
     padding: 4px;
     padding-left: 5px;
-    font-size: 0.8em;
+    font-size: ${({size}) => size ? size : '0.8em'};
     border-radius: 0;
     border: 1px solid rgba(196, 196, 196, 0.16);
     border-left: 8px solid rgba(196, 196, 196, 0.16);

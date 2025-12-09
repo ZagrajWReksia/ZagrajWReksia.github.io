@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Link} from "react-router";
 import {ReactNode} from "react";
 import {FancyHeading, SubTitle} from "../../components/text.tsx";
-import {Box} from "../../components/box.tsx";
+import {Box, HighlightBox} from "../../components/box.tsx";
 import {LanguageSelector} from "../../components/language-selector.tsx";
 import {Footer} from "../../components/footer.tsx";
 import {Trans, useTranslation} from "react-i18next";
@@ -204,14 +204,19 @@ function App() {
                 <Logo/>
                 <LanguageSelector/>
 
-                <br/><br/>
+                <br/>
+
+                <HighlightBox style={{borderRadius: "5px", marginBottom: "10px"}}>
+                    {t('mainAboutNotOfficial')}
+                </HighlightBox>
+
+                <br/>
 
                 <Box>
                     {t('mainAboutHello')}<br/>
                     <Link to="/about">{t('mainAboutReadMore')}</Link><br/>
                     <br/>
-                    {t('mainAboutBoombit')}
-                    <br/>
+                    {t('mainAboutBoombit')}<br/>
                     <br/>
                     {t('mainAboutMoreAboutGames')}
                     <br/>

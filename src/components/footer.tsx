@@ -12,8 +12,13 @@ export const Footer = () => {
     return (
         <FooterWrapper>
             <Trans i18nKey="createdAndManagedBy">
-                Created and managed by <a href="https://adikso.net/about">Adikso</a>
+                Website created and managed by <a href="https://adikso.net/about">Adikso</a>
             </Trans>
+            <div>
+                <Trans i18nKey="gamesCreatedBy">
+                    Games created by <a href="https://boombit.com/" rel="noreferrer">Boombit (Aidem Media)</a><br/>
+                </Trans>
+            </div>
             <div>
                 <a href="mailto:burektor@zagrajwreksia.pl">burektor@zagrajwreksia.pl</a>
             </div>
