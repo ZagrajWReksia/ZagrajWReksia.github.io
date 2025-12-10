@@ -1566,7 +1566,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1602,7 +1602,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1638,7 +1638,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1665,7 +1665,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1692,7 +1692,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1728,7 +1728,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1755,7 +1755,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1781,7 +1781,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1817,7 +1817,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1844,7 +1844,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1880,7 +1880,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1907,7 +1907,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1934,7 +1934,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1970,7 +1970,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -1997,7 +1997,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
@@ -2024,7 +2024,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     }
