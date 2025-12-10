@@ -298,6 +298,29 @@ const games: Record<string, Index> = {
                     source: "Bartek Brosz",
                     sourceUrl: "https://www.facebook.com/100036782177490/posts/pfbid0r2viQVcC9TMTH6bo4gsUoJq5MeJceo6pgRovZBD2PKEAivMpz8LwEb3PLrUrR3pfl/"
                 }
+            },
+            {
+                languages: ["en", "ro", "ru", "cz", "hu"],
+                download: {
+                    name: "Alternative soundtrack",
+                    icon: "📦",
+                    description: "Adds an alternative soundtrack created by Bartek Brosz, the creator of the original soundtrack for subsequent games. More information in the source.",
+                    instructions: [
+                        {
+                            key: "Extract the contents of the \"Reksio Piraci\" folder to the main game folder."
+                        },
+                        {
+                            key: "If you want an English version of the vocals (instead of Polish), then you must delete the \"muzamenu.wav\" file, and remove the fragment \"-eng\" from the filename of \"muzamenu-eng.wav\"."
+                        },
+                        {
+                            key: "If you want an instrumental version of the song with vocals, then you must delete the \"muzamenu.wav\" file, and remove the fragment \"-inst\" from the filename of \"muzamenu-inst.wav\"."
+                        }
+                    ],
+                    url: "https://drive.google.com/file/d/12_mSEvClA6ENZG1s5yirOrLPiT7q1p3y/view",
+                    size: "210 MB",
+                    source: "Bartek Brosz",
+                    sourceUrl: "https://www.facebook.com/100036782177490/posts/pfbid0r2viQVcC9TMTH6bo4gsUoJq5MeJceo6pgRovZBD2PKEAivMpz8LwEb3PLrUrR3pfl/"
+                }
             }
         ]
     },
