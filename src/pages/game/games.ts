@@ -285,9 +285,9 @@ const games: Record<string, Index> = {
             {
                 languages: ["pl"],
                 download: {
-                    name: "Alternatywny soundtrack",
+                    name: "alternativeSoundtrack",
                     icon: "📦",
-                    description: "Dodaje alternatywny soundtrack stworzony przez Bartka Brosza - twórcy oryginalnego soundtracku do kolejnych części Przygód Reksia. Więcej informacji w źródle.",
+                    description: "alternativeSoundtrackDescription",
                     instructions: [
                         {
                             key: "Wypakuj zawartość katalogu \"Reksio Piraci\" do głównego katalogu gry."
@@ -302,9 +302,9 @@ const games: Record<string, Index> = {
             {
                 languages: ["en", "ro", "ru", "cz", "hu"],
                 download: {
-                    name: "Alternative soundtrack",
+                    name: "alternativeSoundtrack",
                     icon: "📦",
-                    description: "Adds an alternative soundtrack created by Bartek Brosz, the creator of the original soundtrack for subsequent games. More information in the source.",
+                    description: "alternativeSoundtrackDescription.",
                     instructions: [
                         {
                             key: "Extract the contents of the \"Reksio Piraci\" folder to the main game folder."
