@@ -1,5 +1,5 @@
 import {RefObject, useEffect, useMemo, useRef, useState, useCallback} from 'react'
-import {createGamePlayer, FileLoaders, GamePlayerInstance, SaveFileManager} from "reksioengine";
+import {createGamePlayer, FileLoaders, GamePlayerInstance, IndexedDBStorage, SaveFileManager} from "reksioengine";
 import styled from "styled-components";
 import {FileDown, FileUp, Fullscreen} from "lucide-react";
 import {Button} from "../../components/button.tsx";
@@ -101,6 +101,7 @@ function Index() {
         const instance = createGamePlayer(gameRef.current, {
             fileLoader: new FileLoaders.ListingJSONUrlFileLoader(game.listingUrl),
             saveFile: SaveFileManager.fromLocalStorage(`${game.id}-savefile`),
+            storage: new IndexedDBStorage(game.id),
             onExit: () => document.exitFullscreen()
         })
 

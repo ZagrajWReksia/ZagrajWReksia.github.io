@@ -1858,10 +1858,10 @@ react@^19.0.0:
   resolved "https://registry.npmjs.org/react/-/react-19.1.0.tgz"
   integrity sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==
 
-reksioengine@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/reksioengine/-/reksioengine-1.0.4.tgz#737d4eac355d59d9655cca8a33160d35ba9c0eda"
-  integrity sha512-om15tcqNEH24e0WuHPeuPD2JCFynlbROs/Y+WXgjUJbEsa5oUiPYxvGx+fzL5A0CO5Cn9uGAWEXv6YFeHkLswQ==
+reksioengine@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/reksioengine/-/reksioengine-1.0.5.tgz#416751be1c6a1f1b65cd9e182ee252f2166d3f12"
+  integrity sha512-o2vtU1TC3f69gEqDoHh+H3rOtlDR9Q1/DUxaNnSxv4YNMVFNlHJSNvYya6evj0yDGilW0lRdwW4RGWpa+gCung==
   dependencies:
     "@pixi/devtools" "^2.0.1"
     antlr4 "^4.13.1-patch-1"
