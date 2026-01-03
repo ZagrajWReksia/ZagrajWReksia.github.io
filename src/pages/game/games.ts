@@ -599,8 +599,8 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Patched.zip",
                         size: "555 MB",
-                        source: "zagrajwreksia.pl i ric-workshop",
-                        sourceUrl: "https://github.com/roostarreksio/ric-workshop"
+                        source: "zagrajwreksia.pl + ric-workshop fork",
+                        sourceUrl: "https://github.com/ZagrajWReksia/ric-workshop"
                     },
                     {
                         name: "originalCDVersionName",
