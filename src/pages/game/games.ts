@@ -140,7 +140,7 @@ const games: Record<string, Index> = {
                                 }
                             },
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Romanian-Patched.zip",
@@ -199,7 +199,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -226,7 +226,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -253,7 +253,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -403,7 +403,7 @@ const games: Record<string, Index> = {
                                 }
                             },
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Romanian-Patched.zip",
@@ -462,7 +462,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -489,7 +489,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -516,7 +516,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -644,7 +644,7 @@ const games: Record<string, Index> = {
                                 }
                             },
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Romanian-Patched.zip",
@@ -703,7 +703,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -860,7 +860,7 @@ const games: Record<string, Index> = {
                                 }
                             },
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Romanian-Patched.zip",
@@ -920,7 +920,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -1007,7 +1007,7 @@ const games: Record<string, Index> = {
                                 }
                             },
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Romanian-Patched.zip",
@@ -1066,7 +1066,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
@@ -1147,7 +1147,7 @@ const games: Record<string, Index> = {
                                 }
                             },
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Romanian-Patched.zip",
@@ -1206,7 +1206,7 @@ const games: Record<string, Index> = {
                         instructions: [
                             "cncDdrawInstruction",
                             {
-                                key: "instructionsLinux"
+                                key: "instructionsLinuxNoRunner"
                             }
                         ]
                     },
