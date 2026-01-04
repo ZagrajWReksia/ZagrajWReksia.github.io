@@ -109,6 +109,11 @@ const SmallDimmed = styled.small`
     }
 `
 
+const DescriptionWrapper = styled.div`
+    margin-bottom: 5px;
+    line-height: 1.2;
+`
+
 function DownloadsList({downloads, gameId, selectedLanguage, type} : {downloads: Download[], gameId: string, selectedLanguage: Language, type: string}) {
     const {t} = useTranslation();
 
@@ -145,11 +150,11 @@ function DownloadsList({downloads, gameId, selectedLanguage, type} : {downloads:
                         <small>&nbsp;({download.size})</small>
                     )}
                 </div>
-                <div>
+                <DescriptionWrapper>
                     <small style={{whiteSpace: 'preserve-breaks'}}>
                         {t(download.description)}
                     </small>
-                </div>
+                </DescriptionWrapper>
                 {download.instructions ? download.instructions.map(instruction => (
                     <div>
                         <HighlightBox style={{whiteSpace: 'preserve-breaks'}}>
