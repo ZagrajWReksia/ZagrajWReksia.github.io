@@ -585,7 +585,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnych systemów operacyjnych.",
+                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnych systemów operacyjnych. Usuwa znane crashe, błędy uniemożliwiające dalszą rozgrywkę, eliminuje błędy graficzne i poprawia wydajność gry.",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
