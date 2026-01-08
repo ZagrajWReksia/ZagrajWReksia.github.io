@@ -39,13 +39,6 @@ const resources = {
             "chooseLanguageVersion": "Select a language version",
             "releaseDate": "Release date",
             "goBack": "Go back",
-            "noteRiKNError": `<small>23.11.2025</small><br/>Recently, an error has crept into the shared files.
-                If you have downloaded the "Improved version with patches" in recent weeks, <u><b>you may need to download an additional patch to add the missing files</b></u> (or download the game again).
-                <br/><br/>
-                Link to download the patch: <a href="https://iso.zagrajwreksia.pl/RiKN/RiKN_missing_install.zip">Poprawka</a><br/>
-                Extract the files from this ZIP file into the game folder. Adding just this patch alone guarantees that you will keep your save files.
-                <br/><br/>
-                If you haven't started the game yet, you can simply download the entire game again.`,
             "reksioAndPirates": "Reksio and the Pirate Treasure",
             "reksioAndUFO": "Reksio and the UFO",
             "reksioAndWizards": "Reksio and the Wizards",
@@ -258,13 +251,6 @@ const resources = {
             "chooseLanguageVersion": "Wybierz wersję językową",
             "releaseDate": "Data wydania",
             "goBack": "Powrót",
-            "noteRiKNError": `<small>23.11.2025</small><br/>Ostatnio wkradł się błąd w udostępnionych plikach.
-                Jeżeli pobierałeś w ostatnich tygodniach "Wersja poprawiona z łatkami" <u><b>to może być konieczne zainstalowanie dodatkowej poprawki dodającej brakujące pliki</b></u> (lub pobranie gry od nowa).
-                <br><br>
-                Link do pobrania poprawki: <a href="https://iso.zagrajwreksia.pl/RiKN/RiKN_missing_install.zip">Poprawka</a><br/>
-                Wypakuj pliki z tego ZIPa do folderu z grą. Dodanie samej poprawki gwarantuje, że zachowasz swoje zapisy.
-                <br/><br/>
-                Jeżeli nie rozpocząłeś jeszcze gry, to możesz po prostu pobrać całą grę od nowa.`,
             "reksioAndPirates": "Reksio i Skarb Piratów",
             "reksioAndUFO": "Reksio i UFO",
             "reksioAndWizards": "Reksio i Czarodzieje",
