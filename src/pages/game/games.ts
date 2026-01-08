@@ -74,7 +74,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "improvedVersionDescription",
+                        description: "improvedVersionWithCommunityPatchesDescription",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
@@ -290,7 +290,7 @@ const games: Record<string, Index> = {
                     description: "alternativeSoundtrackDescription",
                     instructions: [
                         {
-                            key: "Wypakuj zawartość katalogu \"Reksio Piraci\" do głównego katalogu gry."
+                            key: "instructionsUnpackSoundtrackReksioPiraci"
                         }
                     ],
                     url: "https://drive.google.com/file/d/12_mSEvClA6ENZG1s5yirOrLPiT7q1p3y/view",
@@ -307,7 +307,7 @@ const games: Record<string, Index> = {
                     description: "alternativeSoundtrackDescription.",
                     instructions: [
                         {
-                            key: "Extract the contents of the \"Reksio Piraci\" folder to the main game folder."
+                            key: "instructionsUnpackSoundtrackReksioPiraci"
                         },
                         {
                             key: "If you want an English version of the vocals (instead of Polish), then you must delete the \"muzamenu.wav\" file, and remove the fragment \"-eng\" from the filename of \"muzamenu-eng.wav\"."
@@ -345,7 +345,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "improvedVersionDescription",
+                        description: "improvedVersionWithCommunityPatchesDescription",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
@@ -585,7 +585,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "Łatka No-CD + łatki społeczności + łatki dla współczesnych systemów operacyjnych. Usuwa znane crashe, błędy uniemożliwiające dalszą rozgrywkę, eliminuje błędy graficzne i poprawia wydajność gry.",
+                        description: "improvedVersionWithCommunityPatchesDescription",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
@@ -802,7 +802,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "improvedVersionOfficialPatchesDescription",
+                        description: "improvedVersionWithOfficialAndCommunityPatchesDescription",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
@@ -943,7 +943,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "improvedVersionDescription",
+                        description: "improvedVersionWithCommunityPatchesDescription",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
@@ -1083,7 +1083,7 @@ const games: Record<string, Index> = {
                         name: "improvedVersionName",
                         icon: "🔧",
                         recommended: true,
-                        description: "improvedVersionDescription",
+                        description: "improvedVersionWithCommunityPatchesDescription",
                         instructions: [
                             {
                                 key: "instructionsRunExe",
