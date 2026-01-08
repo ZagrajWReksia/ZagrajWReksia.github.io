@@ -88,7 +88,8 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Patched.zip",
                         size: "259 MiB",
-                        source: "zagrajwreksia.pl"
+                        source: "zagrajwreksia.pl",
+                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
                     },
                     {
                         name: "originalCDVersionName",
@@ -359,7 +360,8 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
                         size: "314 MB",
-                        source: "zagrajwreksia.pl"
+                        source: "zagrajwreksia.pl",
+                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
                     },
                     {
                         name: "originalCDVersionName",
@@ -816,7 +818,8 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Patched.zip",
                         size: "560 MB",
-                        source: "zagrajwreksia.pl"
+                        source: "zagrajwreksia.pl",
+                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
                     },
                     {
                         name: "originalCDVersionName",
@@ -957,7 +960,8 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Patched.zip",
                         size: "785 MB",
-                        source: "zagrajwreksia.pl"
+                        source: "zagrajwreksia.pl",
+                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
                     },
                     {
                         name: "originalCDVersionName",
@@ -1097,7 +1101,8 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Patched.zip",
                         size: "309 MB",
-                        source: "zagrajwreksia.pl"
+                        source: "zagrajwreksia.pl",
+                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
                     },
                     {
                         name: "originalCDVersionName",
