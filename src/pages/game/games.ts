@@ -305,7 +305,7 @@ const games: Record<string, Index> = {
                 download: {
                     name: "alternativeSoundtrack",
                     icon: "📦",
-                    description: "alternativeSoundtrackDescription.",
+                    description: "alternativeSoundtrackDescription",
                     instructions: [
                         {
                             key: "instructionsUnpackSoundtrackReksioPiraci"
