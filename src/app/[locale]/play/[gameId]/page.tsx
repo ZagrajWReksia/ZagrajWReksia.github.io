@@ -1,3 +1,4 @@
+import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import games from '@/data/games';
 import PlayerWrapper from './player-wrapper';
@@ -20,6 +21,7 @@ export default async function Page({
 }: {
   params: Promise<{ locale: string; gameId: string }>;
 }) {
-  const { gameId } = await params;
+  const { locale, gameId } = await params;
+  setRequestLocale(locale);
   return <PlayerWrapper gameId={gameId} />;
 }

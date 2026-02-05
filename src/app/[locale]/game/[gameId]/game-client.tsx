@@ -157,6 +157,7 @@ function DownloadsList({
   type: string;
 }) {
   const t = useTranslations();
+  const locale = useLocale();
 
   const onDownload = async (download: Download, mirror?: Mirror) => {
     if (type === 'game') {
@@ -176,11 +177,18 @@ function DownloadsList({
     }
   };
 
+  const getUrl = (url: string) => {
+    if (url.startsWith('/play/')) {
+      return `/${locale}${url}`;
+    }
+    return url;
+  };
+
   return downloads.map((download, index) => (
     <DownloadOption key={index} $recommended={download.recommended}>
       <div>
         {download.icon && <>{download.icon}&nbsp;</>}
-        <a href={download.url} onClick={() => onDownload(download)}>
+        <a href={getUrl(download.url)} onClick={() => onDownload(download)}>
           <span>{t(download.name as string)}</span>
         </a>
         {download.size && <small>&nbsp;({download.size})</small>}
