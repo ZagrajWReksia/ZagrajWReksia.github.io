@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, Locale } from '@/i18n/routing';
 import StyledComponentsRegistry from '@/lib/registry';
@@ -24,6 +24,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale });
 
   const languages: Record<string, string> = {};
   for (const loc of routing.locales) {
@@ -32,11 +33,13 @@ export async function generateMetadata({
   languages['x-default'] = 'https://zagrajwreksia.pl/en';
 
   return {
+    description: t('siteDescription'),
     alternates: {
       canonical: `https://zagrajwreksia.pl/${locale}`,
       languages,
     },
     openGraph: {
+      description: t('siteDescription'),
       locale: locale === 'pl' ? 'pl_PL' : locale === 'ro' ? 'ro_RO' : 'en_GB',
       alternateLocale: routing.locales
         .filter((l) => l !== locale)
