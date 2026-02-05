@@ -1,24 +1,45 @@
-import styled from "styled-components";
-import {useTranslation} from "react-i18next";
-import Flag from "./flag.tsx";
+'use client';
 
-const FlagLink = styled.a`
-    text-decoration: none;
-`
+import styled from 'styled-components';
+import { useTranslations, useLocale } from 'next-intl';
+import { usePathname, useRouter } from 'next/navigation';
+import Flag from './flag';
+import { locales } from '@/i18n/routing';
+
+const FlagLink = styled.button`
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+`;
 
 export const LanguageSelector = () => {
-    const { t, i18n } = useTranslation();
+  const t = useTranslations();
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
-    return (
-        <div style={{textAlign: 'center'}}>
-            <b>{t('viewInOtherLanguages')}</b>
-            <br/>
+  const switchLocale = (newLocale: string) => {
+    const segments = pathname.split('/');
+    segments[1] = newLocale;
+    router.push(segments.join('/'));
+  };
 
-            {Object.keys(i18n.options.resources!).map(code => (
-                <FlagLink key={code} href="#" onClick={() => i18n.changeLanguage(code)}>
-                    <Flag code={code}/>&nbsp;
-                </FlagLink>
-            ))}
-        </div>
-    );
-}
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <b>{t('viewInOtherLanguages')}</b>
+      <br />
+      {locales.map((code) => (
+        <FlagLink
+          key={code}
+          onClick={() => switchLocale(code)}
+          style={{ opacity: code === locale ? 1 : 0.7 }}
+        >
+          <Flag code={code} />
+          &nbsp;
+        </FlagLink>
+      ))}
+    </div>
+  );
+};
