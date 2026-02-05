@@ -1,6 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import AboutPage from './about-client';
-import { routing } from '@/i18n/routing';
+import { getAlternateLanguages } from '@/lib/metadata';
 import type { Metadata } from 'next';
 
 export async function generateMetadata({
@@ -10,16 +10,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  const languages: Record<string, string> = {};
-  for (const loc of routing.locales) {
-    languages[loc] = `https://zagrajwreksia.pl/${loc}/about/`;
-  }
-  languages['x-default'] = `https://zagrajwreksia.pl/en/about/`;
-
   return {
     alternates: {
       canonical: `https://zagrajwreksia.pl/${locale}/about/`,
-      languages,
+      languages: getAlternateLanguages('/about/'),
     },
   };
 }

@@ -2,17 +2,12 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, Locale } from '@/i18n/routing';
+import { getAlternateLanguages } from '@/lib/metadata';
 import StyledComponentsRegistry from '@/lib/registry';
 import Script from 'next/script';
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import '@/styles/flags.css';
-
-const localeToHreflang: Record<string, string> = {
-  en: 'en',
-  pl: 'pl',
-  ro: 'ro',
-};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -26,17 +21,11 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale });
 
-  const languages: Record<string, string> = {};
-  for (const loc of routing.locales) {
-    languages[localeToHreflang[loc]] = `https://zagrajwreksia.pl/${loc}`;
-  }
-  languages['x-default'] = 'https://zagrajwreksia.pl/en';
-
   return {
     description: t('siteDescription'),
     alternates: {
       canonical: `https://zagrajwreksia.pl/${locale}`,
-      languages,
+      languages: getAlternateLanguages(),
     },
     openGraph: {
       description: t('siteDescription'),

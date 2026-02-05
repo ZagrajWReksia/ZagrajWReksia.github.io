@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server';
 import GameDetailsPage from './game-client';
 import games from '@/data/games';
 import { routing } from '@/i18n/routing';
+import { getAlternateLanguages } from '@/lib/metadata';
 import type { Metadata } from 'next';
 
 export function generateStaticParams() {
@@ -21,16 +22,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, gameId } = await params;
 
-  const languages: Record<string, string> = {};
-  for (const loc of routing.locales) {
-    languages[loc] = `https://zagrajwreksia.pl/${loc}/game/${gameId}/`;
-  }
-  languages['x-default'] = `https://zagrajwreksia.pl/en/game/${gameId}/`;
-
   return {
     alternates: {
       canonical: `https://zagrajwreksia.pl/${locale}/game/${gameId}/`,
-      languages,
+      languages: getAlternateLanguages(`/game/${gameId}/`),
     },
   };
 }
