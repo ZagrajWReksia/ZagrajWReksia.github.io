@@ -65,9 +65,29 @@ export default async function LocaleLayout({
           </NextIntlClientProvider>
         </StyledComponentsRegistry>
         <Script
+          id="process-before-send"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.processBeforeSend = function(type, payload) {
+                var locales = ${JSON.stringify(routing.locales)};
+                var url = new URL(payload.url);
+                var parts = url.pathname.split('/').filter(Boolean);
+                if (parts.length > 0 && locales.includes(parts[0])) {
+                  parts.shift();
+                  url.pathname = '/' + parts.join('/');
+                  payload.url = url.toString();
+                }
+                return payload;
+              };
+            `,
+          }}
+        />
+        <Script
           defer
           src="/a.js"
           data-website-id="884a9f2d-33cc-4afc-89aa-2996306a2248"
+          data-before-send="processBeforeSend"
         />
       </body>
     </html>
