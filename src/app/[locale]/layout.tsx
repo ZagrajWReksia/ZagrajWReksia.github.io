@@ -21,6 +21,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale });
 
+  const baseUrl = 'https://zagrajwreksia.pl';
+
   return {
     title: {
       default: 'Zagraj w Reksia',
@@ -28,16 +30,24 @@ export async function generateMetadata({
     },
     description: t('siteDescription'),
     alternates: {
-      canonical: `https://zagrajwreksia.pl/${locale}`,
+      canonical: `${baseUrl}/${locale}`,
       languages: getAlternateLanguages(),
     },
     openGraph: {
       title: 'Zagraj w Reksia',
       description: t('siteDescription'),
+      images: [`${baseUrl}/logo.png`],
+      type: 'website',
       locale: locale === 'pl' ? 'pl_PL' : locale === 'ro' ? 'ro_RO' : 'en_GB',
       alternateLocale: routing.locales
         .filter((l) => l !== locale)
         .map((l) => (l === 'pl' ? 'pl_PL' : l === 'ro' ? 'ro_RO' : 'en_GB')),
+    },
+    twitter: {
+      card: 'summary',
+      title: 'Zagraj w Reksia',
+      description: t('siteDescription'),
+      images: [`${baseUrl}/logo.png`],
     },
   };
 }
