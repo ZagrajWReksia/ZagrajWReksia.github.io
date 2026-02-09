@@ -28,15 +28,25 @@ export async function generateMetadata({
   const rawDescription = game ? t(game.description as string) : '';
   const description = rawDescription || t('gameMetaFallback', { title });
 
+  const baseUrl = 'https://zagrajwreksia.pl';
+
   return {
     title,
     description,
     openGraph: {
       title,
       description,
+      images: game ? [`${baseUrl}${game.coverImage}`] : [],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: game ? [`${baseUrl}${game.coverImage}`] : [],
     },
     alternates: {
-      canonical: `https://zagrajwreksia.pl/${locale}/game/${gameId}/`,
+      canonical: `${baseUrl}/${locale}/game/${gameId}/`,
       languages: getAlternateLanguages(`/game/${gameId}/`),
     },
   };
