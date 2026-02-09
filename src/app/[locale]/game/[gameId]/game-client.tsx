@@ -9,6 +9,7 @@ import { Footer } from '@/components/footer';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import games, { Download, Language, Mirror } from '@/data/games';
+import downloadSizes from '@/data/download-sizes.json';
 import { Alert, HighlightBox } from '@/components/box';
 import { event, trackUrl } from '@/lib/analytics';
 import Flag from '@/components/flag';
@@ -191,7 +192,7 @@ function DownloadsList({
         <a href={getUrl(download.url)} onClick={() => onDownload(download)}>
           <span>{t(download.name as string)}</span>
         </a>
-        {download.size && <small>&nbsp;({download.size})</small>}
+        {(downloadSizes as Record<string, string>)[download.url] && <small>&nbsp;({(downloadSizes as Record<string, string>)[download.url]})</small>}
       </div>
       <DescriptionWrapper>
         <small style={{ whiteSpace: 'preserve-breaks' }}>
