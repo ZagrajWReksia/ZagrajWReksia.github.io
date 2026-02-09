@@ -22,12 +22,17 @@ export async function generateMetadata({
   const t = await getTranslations({ locale });
 
   return {
+    title: {
+      default: 'Zagraj w Reksia',
+      template: '%s | Zagraj w Reksia',
+    },
     description: t('siteDescription'),
     alternates: {
       canonical: `https://zagrajwreksia.pl/${locale}`,
       languages: getAlternateLanguages(),
     },
     openGraph: {
+      title: 'Zagraj w Reksia',
       description: t('siteDescription'),
       locale: locale === 'pl' ? 'pl_PL' : locale === 'ro' ? 'ro_RO' : 'en_GB',
       alternateLocale: routing.locales

@@ -1,5 +1,6 @@
 {
   "siteDescription": "Zagraj w gry z oryginalnej serii Przygody Reksia",
+  "gameMetaFallback": "Pobierz i zagraj w {title}",
   "lang_pl": "Polski",
   "lang_ro": "Rumuński",
   "lang_ru": "Rosyjski",

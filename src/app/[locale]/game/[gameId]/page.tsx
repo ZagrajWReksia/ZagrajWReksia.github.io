@@ -1,4 +1,4 @@
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import GameDetailsPage from './game-client';
 import games from '@/data/games';
 import { routing } from '@/i18n/routing';
@@ -21,8 +21,20 @@ export async function generateMetadata({
   params: Promise<{ locale: string; gameId: string }>;
 }): Promise<Metadata> {
   const { locale, gameId } = await params;
+  const t = await getTranslations({ locale });
+  const game = games[gameId];
+
+  const title = game ? t(game.title as string) : gameId;
+  const rawDescription = game ? t(game.description as string) : '';
+  const description = rawDescription || t('gameMetaFallback', { title });
 
   return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+    },
     alternates: {
       canonical: `https://zagrajwreksia.pl/${locale}/game/${gameId}/`,
       languages: getAlternateLanguages(`/game/${gameId}/`),

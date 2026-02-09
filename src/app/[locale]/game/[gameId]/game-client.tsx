@@ -279,7 +279,7 @@ export default function GameDetailsPage({ gameId }: { gameId: string }) {
 
   return (
     <Wrapper>
-      <TopBar>
+      <TopBar as="nav" aria-label="Navigation">
         <Link href={`/${locale}/`}>
           <Button>{t('goBack')}</Button>
         </Link>
