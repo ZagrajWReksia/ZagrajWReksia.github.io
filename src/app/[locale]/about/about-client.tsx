@@ -133,7 +133,7 @@ export default function AboutPage() {
           </div>
           <div>City of Secrets 2 PC port: Dove6, Mysliwy112</div>
           <div>English translations: Serena</div>
-          <div>Patched Polish games: Adikso, Dove6, Serena</div>
+          <div>Patched Polish games: Adikso, Dove6, Serena, Roostar</div>
           <div>Patched Romanian games: Serena</div>
           <br />
           <div>
