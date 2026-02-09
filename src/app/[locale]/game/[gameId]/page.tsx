@@ -25,6 +25,7 @@ export async function generateMetadata({
   const game = games[gameId];
 
   const title = game ? t(game.title as string) : gameId;
+  const embedTitle = t('gameEmbedTitle', { title });
   const rawDescription = game ? t(game.description as string) : '';
   const description = rawDescription || t('gameMetaFallback', { title });
 
@@ -34,14 +35,14 @@ export async function generateMetadata({
     title,
     description,
     openGraph: {
-      title,
+      title: embedTitle,
       description,
       images: game ? [`${baseUrl}${game.coverImage}`] : [],
       type: 'website',
     },
     twitter: {
       card: 'summary',
-      title,
+      title: embedTitle,
       description,
       images: game ? [`${baseUrl}${game.coverImage}`] : [],
     },

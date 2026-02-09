@@ -1,6 +1,7 @@
 {
   "siteDescription": "Download and play games from the original Reksio's Adventures (Przygody Reksia) series",
   "gameMetaFallback": "Download and play {title}",
+  "gameEmbedTitle": "Download {title}",
   "lang_pl": "Polish",
   "lang_ro": "Romanian",
   "lang_ru": "Russian",
