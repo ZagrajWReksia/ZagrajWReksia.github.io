@@ -241,12 +241,12 @@ export default function HomePage() {
           {t('mainAboutMoreAboutGames')}
           <br />
           <PillRow>
-            <Pill $icon="/hub-icon.png" href="https://www.przygody-reksia.pl/">
-              {t.rich('reksiohubLink', {
-                pl: () => <span className="flag:PL"></span>,
-                gb: () => <span className="flag:GB"></span>,
-              })}
-            </Pill>
+            {/*<Pill $icon="/hub-icon.png" href="https://www.przygody-reksia.pl/">*/}
+            {/*  {t.rich('reksiohubLink', {*/}
+            {/*    pl: () => <span className="flag:PL"></span>,*/}
+            {/*    gb: () => <span className="flag:GB"></span>,*/}
+            {/*  })}*/}
+            {/*</Pill>*/}
             <Pill
               $icon="/reksiopedia-logo.png"
               href="https://reksio.fandom.com/wiki/Reksio_Wiki"
