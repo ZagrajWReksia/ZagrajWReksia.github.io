@@ -21,6 +21,7 @@ import { Button } from '@/components/button';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { event } from '@/lib/analytics';
+import {gamesData} from "@/data/games-players";
 
 const Container = styled.div`
   display: flex;
@@ -61,25 +62,6 @@ const FooterStyled = styled.footer`
   text-align: center;
   padding: 20px;
 `;
-
-interface Game {
-  id: string;
-  lang: string;
-  listingUrl: string;
-}
-
-const gamesData: Record<string, Game> = {
-  'risp-ro': {
-    id: 'risp',
-    lang: 'ro',
-    listingUrl: 'https://iso.zagrajwreksia.pl/game-assets/risp/ro/listing.json',
-  },
-  'risp-pl': {
-    id: 'risp',
-    lang: 'pl',
-    listingUrl: 'https://iso.zagrajwreksia.pl/game-assets/risp/pl/listing.json',
-  },
-};
 
 export default function PlayerClient({ gameId }: { gameId: string }) {
   const t = useTranslations();
