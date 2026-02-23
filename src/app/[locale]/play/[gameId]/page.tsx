@@ -9,11 +9,8 @@ import {gamesData} from "@/data/games-players";
 export function generateStaticParams() {
   const params = [];
   for (const locale of routing.locales) {
-    for (const gameId of Object.keys(games)) {
-      const game = games[gameId as keyof typeof games];
-      for (const lang of game.languages) {
-        params.push({ locale, gameId: `${gameId}-${lang.langCode}` });
-      }
+    for (const gameId of Object.keys(gamesData)) {
+      params.push({ locale, gameId });
     }
   }
   return params;
