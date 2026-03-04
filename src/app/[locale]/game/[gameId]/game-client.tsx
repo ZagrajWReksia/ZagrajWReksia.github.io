@@ -279,9 +279,11 @@ export default function GameDetailsPage({gameId}: { gameId: string }) {
     return (
         <Wrapper>
             <TopBar as="nav" aria-label="Navigation">
-                <Link href={`/${locale}/`}>
-                    <Button>{t('goBack')}</Button>
-                </Link>
+                <div no-snippet>
+                    <Link href={`/${locale}/`}>
+                        <Button>{t('goBack')}</Button>
+                    </Link>
+                </div>
                 <CompactLanguageSelector>
                     {locales.map((code) => (
                         <FlagButton

@@ -27,7 +27,7 @@ export const LanguageSelector = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' }} data-nosnippet>
       <b>{t('viewInOtherLanguages')}</b>
       <br />
       {locales.map((code) => (

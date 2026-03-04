@@ -43,7 +43,7 @@ export default function AboutPage() {
       <Message>
         <Logo />
 
-        <div>
+        <div data-nosnippet>
           <Link href={`/${locale}/`}>
             <Button style={{ marginBottom: '10px' }}>{t('goBack')}</Button>
           </Link>

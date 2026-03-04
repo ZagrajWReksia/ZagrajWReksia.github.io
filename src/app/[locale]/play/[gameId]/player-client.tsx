@@ -177,9 +177,11 @@ export default function PlayerClient({ gameId }: { gameId: string }) {
 
   return (
     <Container>
-      <Link href={`/${locale}/game/${game.id}`}>
-        <Button style={{ marginBottom: '10px' }}>{t('goBack')}</Button>
-      </Link>
+      <div no-snippet>
+          <Link href={`/${locale}/game/${game.id}`}>
+              <Button style={{ marginBottom: '10px' }}>{t('goBack')}</Button>
+          </Link>
+      </div>
 
       <GameContainer ref={gameRef} onClick={onReady}>
         {!ready && <div>{t('playerPressHereToStart')}</div>}

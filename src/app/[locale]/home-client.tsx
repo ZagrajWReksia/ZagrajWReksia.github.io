@@ -223,7 +223,7 @@ export default function HomePage() {
 
         <br />
 
-        <HighlightBox style={{ borderRadius: '5px', marginBottom: '10px' }}>
+        <HighlightBox style={{ borderRadius: '5px', marginBottom: '10px' }} data-nosnippet>
           {t('mainAboutNotOfficial')}
         </HighlightBox>
 
