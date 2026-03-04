@@ -67,6 +67,8 @@
   "alternativeSoundtrackDescription": "Adds an alternative soundtrack created by Bartek Brosz, the creator of the original soundtrack for subsequent games. More information in the source.",
   "unusedContent": "Unused content",
   "unusedContentDescription": "A collection of patches that enables unused content (e.g., dialogues that are in the game files but are not used) and fix bugs. More details in the source.",
+  "ttwLevelsFix": "Levels fixes",
+  "ttwLevelsFixDescription": "Repairs the level with a ball (2nd floor, Reksio, 3 generators, red graphics) and replaces the non-functional ice level from the 4th floor with an unused equivalent found in the game files.",
   "instructionsUnpackZip": "Extract the contents of the archive to the main game folder.",
   "zipArchive": "Arhivă ZIP",
   "instructionsRunExe": "Extrage arhiva ZIP, apoi rulează jocul dând clic pe <b>{file}</b>",

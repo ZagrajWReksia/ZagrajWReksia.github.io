@@ -68,6 +68,8 @@
   "alternativeSoundtrackDescription": "Dodaje alternatywny soundtrack stworzony przez Bartka Brosza - twórcy oryginalnego soundtracku do kolejnych części Przygód Reksia. Więcej informacji w źródle.",
   "unusedContent": "Niewykorzystana zawartość",
   "unusedContentDescription": "Zbiór łatek przywracających niewykorzystaną zawartość (np. dialogi które są w plikach gry, ale nie są użyte) i naprawiających bugi. Więcej szczegółów w źródle.",
+  "ttwLevelsFix": "Poprawki poziomów",
+  "ttwLevelsFixDescription": "Naprawia poziom z kulą (2 piętro, Reksio, 3 generatory, czerwona szata graficzna) oraz podmienia niedziałający lodowy poziom z 4 piętra na znaleziony w plikach gry nieużywany odpowiednik.",
   "instructionsUnpackZip": "Wypakuj zawartość archiwum do głównego folderu gry.",
   "zipArchive": "Archiwum ZIP",
   "instructionsRunExe": "<b><u>Wypakuj archiwum ZIP</u></b> i uruchom grę klikając na plik {file}.",

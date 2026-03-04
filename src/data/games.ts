@@ -3,17 +3,21 @@ export interface Mirror {
     url: string;
 }
 
+export interface Source {
+    name: string;
+    url?: string;
+}
+
 export interface Download {
     name: string;
     icon?: string;
     recommended?: boolean;
     description: string;
-    instructions?: (string | { key: string; color?: string; args?: Record<string, string>})[];
+    instructions?: (string | { key: string; color?: string; args?: Record<string, string> })[];
     url: string;
     mirrors?: Mirror[];
     size?: string;
-    source: string;
-    sourceUrl?: string;
+    sources?: Source[]
 }
 
 export interface Language {
@@ -68,7 +72,7 @@ const games: Record<string, Index> = {
                         recommended: true,
                         description: "withoutGameDownloading",
                         url: "/play/risp-pl",
-                        source: "zagrajwreksia.pl"
+                        sources: [{name: "zagrajwreksia.pl"}]
                     },
                     {
                         name: "improvedVersionName",
@@ -88,8 +92,7 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiSP/RiSP-Patched.zip",
                         size: "259 MiB",
-                        source: "zagrajwreksia.pl",
-                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
+                        sources: [{name: "zagrajwreksia.pl", url: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -103,8 +106,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "641 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/pl-aidemmedia"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -126,7 +128,7 @@ const games: Record<string, Index> = {
                         recommended: true,
                         description: "withoutGameDownloading",
                         url: "/play/risp-ro",
-                        source: "zagrajwreksia.pl"
+                        sources: [{name: "zagrajwreksia.pl"}],
                     },
                     {
                         name: "improvedVersionName",
@@ -152,8 +154,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "350 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -167,8 +168,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "381 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-comoara-piratilor",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-comoara-piratilor"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -196,7 +196,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "427 MB",
-                        source: "Unknown",
+                        sources: [{name: "Unknown"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -222,8 +222,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "543 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesakalozok",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/rexiesakalozok"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -249,8 +248,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "543 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesakalozok",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/rexiesakalozok"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -276,8 +274,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "421 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     }
                 ]
             }
@@ -296,8 +293,10 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://drive.google.com/file/d/12_mSEvClA6ENZG1s5yirOrLPiT7q1p3y/view",
                     size: "210 MB",
-                    source: "Bartek Brosz",
-                    sourceUrl: "https://www.facebook.com/100036782177490/posts/pfbid0r2viQVcC9TMTH6bo4gsUoJq5MeJceo6pgRovZBD2PKEAivMpz8LwEb3PLrUrR3pfl/"
+                    sources: [{
+                        name: "Bartek Brosz",
+                        url: "https://www.facebook.com/100036782177490/posts/pfbid0r2viQVcC9TMTH6bo4gsUoJq5MeJceo6pgRovZBD2PKEAivMpz8LwEb3PLrUrR3pfl/"
+                    }]
                 }
             },
             {
@@ -319,8 +318,10 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://drive.google.com/file/d/12_mSEvClA6ENZG1s5yirOrLPiT7q1p3y/view",
                     size: "210 MB",
-                    source: "Bartek Brosz",
-                    sourceUrl: "https://www.facebook.com/100036782177490/posts/pfbid0r2viQVcC9TMTH6bo4gsUoJq5MeJceo6pgRovZBD2PKEAivMpz8LwEb3PLrUrR3pfl/"
+                    sources: [{
+                        name: "Bartek Brosz",
+                        url: "https://www.facebook.com/100036782177490/posts/pfbid0r2viQVcC9TMTH6bo4gsUoJq5MeJceo6pgRovZBD2PKEAivMpz8LwEb3PLrUrR3pfl/"
+                    }]
                 }
             }
         ]
@@ -360,8 +361,7 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiU/RiU-Patched.zip",
                         size: "314 MB",
-                        source: "zagrajwreksia.pl",
-                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
+                        sources: [{name: "zagrajwreksia.pl", url: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -375,8 +375,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "585 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/pl-aidemmedia"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -416,8 +415,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "340 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -431,8 +429,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "561 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-ozn-ul",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-ozn-ul"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -460,7 +457,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "554 MB",
-                        source: "Unknown",
+                        sources: [{name: "Unknown"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -486,8 +483,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "707 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesazufo",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/rexiesazufo"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -513,8 +509,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "689 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/rexiesazufo",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/rexiesazufo"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -540,8 +535,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "468 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     }
                 ]
             }
@@ -560,8 +554,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://github.com/papiliotroilus/Reksio-UFO-Patches/archive/refs/heads/main.zip",
                     size: "44 KB",
-                    source: "Serena Pancu",
-                    sourceUrl: "https://github.com/papiliotroilus/Reksio-UFO-Patches",
+                    sources: [{name: "Serena Pancu", url: "https://github.com/papiliotroilus/Reksio-UFO-Patches"}],
                 }
             }
         ]
@@ -601,8 +594,7 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiC/RiC-Patched.zip",
                         size: "555 MB",
-                        source: "zagrajwreksia.pl + ric-workshop fork",
-                        sourceUrl: "https://github.com/ZagrajWReksia/ric-workshop"
+                        sources: [{name: "zagrajwreksia.pl + ric-workshop fork", url: "https://github.com/ZagrajWReksia/ric-workshop"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -616,8 +608,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "710 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/pl-aidemmedia"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -657,8 +648,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "549 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -672,8 +662,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "687 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-magicienii",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-magicienii"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -701,7 +690,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "704 MB",
-                        source: "Unknown",
+                        sources: [{name: "Unknown"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -726,8 +715,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://iso.zagrajwreksia.pl/RiC/czaro_easy.zip",
                     size: "9 KB",
-                    source: "przygodyreksia.aidemmedia.pl",
-                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html",
+                    sources: [{name: "przygodyreksia.aidemmedia.pl", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html"}],
                 }
             },
             {
@@ -743,8 +731,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://iso.zagrajwreksia.pl/RiC/czaro_easy2.zip",
                     size: "9 KB",
-                    source: "przygodyreksia.aidemmedia.pl",
-                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html",
+                    sources: [{name: "przygodyreksia.aidemmedia.pl", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html"}],
                 }
             },
             {
@@ -760,8 +747,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://github.com/roostarreksio/ric-drobloader/releases/download/1.0.0/ric-drobloader-1.0.0-default.zip",
                     size: "424 KB",
-                    source: "ric-drobloader",
-                    sourceUrl: "https://github.com/roostarreksio/ric-drobloader",
+                    sources: [{name: "ric-drobloader", url: "https://github.com/roostarreksio/ric-drobloader"}],
                 }
             },
             {
@@ -777,8 +763,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://github.com/roostarreksio/ric-drobloader/releases/download/1.0.0/ric-drobloader-1.0.0-rus.zip",
                     size: "1.04 MB",
-                    source: "ric-drobloader",
-                    sourceUrl: "https://github.com/roostarreksio/ric-drobloader",
+                    sources: [{name: "ric-drobloader", url: "https://github.com/roostarreksio/ric-drobloader"}],
                 }
             },
         ]
@@ -818,8 +803,7 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiWC/RiWC-Patched.zip",
                         size: "560 MB",
-                        source: "zagrajwreksia.pl",
-                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
+                        sources: [{name: "zagrajwreksia.pl", url: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -833,8 +817,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "708 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/pl-aidemmedia"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -874,8 +857,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "588 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -889,8 +871,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "722 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-masina-timpului",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-masina-timpului"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -918,8 +899,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "645 MB",
-                        source: "Unknown",
-                        sourceUrl: "https://archive.org/details/reks-i-mashina-vremeni",
+                        sources: [{name: "Unknown", url: "https://archive.org/details/reks-i-mashina-vremeni"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -960,8 +940,7 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKN/RiKN-Patched.zip",
                         size: "785 MB",
-                        source: "zagrajwreksia.pl",
-                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
+                        sources: [{name: "zagrajwreksia.pl", url: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -975,8 +954,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "559 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/pl-aidemmedia"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -1016,8 +994,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "835 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -1031,8 +1008,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "552 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-capitanul-nemo",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-capitanul-nemo"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -1060,7 +1036,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "554 MB",
-                        source: "Unknown",
+                        sources: [{name: "Unknown"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1101,8 +1077,7 @@ const games: Record<string, Index> = {
                         ],
                         url: "https://iso.zagrajwreksia.pl/RiKwA/RiKwA-Patched.zip",
                         size: "309 MB",
-                        source: "zagrajwreksia.pl",
-                        sourceUrl: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"
+                        sources: [{name: "zagrajwreksia.pl", url: "https://github.com/ZagrajWReksia/PatchedVersionBuilder"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -1116,8 +1091,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "671 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/pl-aidemmedia"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -1157,8 +1131,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "322 MB",
-                        source: "Serena Pancu",
-                        sourceUrl: "https://linktr.ee/serena.pancu"
+                        sources: [{name: "Serena Pancu", url: "https://linktr.ee/serena.pancu"}],
                     },
                     {
                         name: "originalCDVersionName",
@@ -1172,8 +1145,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "404 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-kretes-in-actiune",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-kretes-in-actiune"}],
                         instructions: [
                             {
                                 key: "betterInstallOther",
@@ -1201,7 +1173,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "409 MB",
-                        source: "Unknown",
+                        sources: [{name: "Unknown"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1236,8 +1208,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "383 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/pl-aidemmedia"
+                        sources: [{name: "archive.org", url: "https://archive.org/details/pl-aidemmedia"}],
                     }
                 ]
             },
@@ -1257,8 +1228,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "280 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-kretes-misterul-celei-de-a-treia-dimensiuni"
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-kretes-misterul-celei-de-a-treia-dimensiuni"}],
                     }
                 ]
             },
@@ -1278,12 +1248,37 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "277 MB",
-                        source: "Unknown"
+                        sources: [{name: "Unknown"}],
                     }
                 ]
             },
         ],
         mods: [
+            {
+                languages: ["pl", "ro", "ru"],
+                download: {
+                    name: "ttwLevelsFix",
+                    icon: "📦",
+                    description: "ttwLevelsFixDescription",
+                    instructions: [
+                        {
+                            key: "instructionsUnpackZip"
+                        }
+                    ],
+                    url: "https://iso.zagrajwreksia.pl/RiKTTW/rikttw-levels-fixes.zip",
+                    size: "1.3 KiB",
+                    sources: [
+                        {
+                            name: "mysliwy112",
+                            url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?p=257617"
+                        },
+                        {
+                            name: "kretonpodziemny",
+                            url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?p=261720"
+                        }
+                    ]
+                }
+            },
             {
                 languages: ["pl"],
                 download: {
@@ -1297,8 +1292,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://drive.google.com/open?id=1lCQLkQunoi-hOXLLtb2Y34boifAxL8Qm",
                     size: "24 MB",
-                    source: "mysliwy112",
-                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=10607"
+                    sources: [{name: "mysliwy112", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=10607"}]
                 }
             },
         ]
@@ -1326,8 +1320,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "280 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-miasto-sekretow"
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-i-miasto-sekretow"}],
                     }
                 ]
             },
@@ -1347,8 +1340,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "719 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-kretes-in-orasul-secretelor"
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-kretes-in-orasul-secretelor"}],
                     }
                 ]
             },
@@ -1368,7 +1360,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "511 MB",
-                        source: "Reksioblog",
+                        sources: [{name: "Reksioblog"}],
                     }
                 ]
             },
@@ -1387,8 +1379,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://drive.google.com/file/d/1GdlHYni6DM1wkaMgJHGLLAVYif3E50JD/view",
                     size: "24 MB",
-                    source: "Dove6",
-                    sourceUrl: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=11314"
+                    sources: [{name: "Dove6", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=11314"}]
                 }
             },
         ]
@@ -1416,8 +1407,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "1.2 GB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/6.-reksio-i-miasto-sekretow-city-of-secrets-le"
+                        sources: [{name: "archive.org", url: "https://archive.org/details/6.-reksio-i-miasto-sekretow-city-of-secrets-le"}],
                     }
                 ]
             },
@@ -1437,8 +1427,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "1.2 GB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/6.-reksio-i-miasto-sekretow-city-of-secrets-le"
+                        sources: [{name: "archive.org", url: "https://archive.org/details/6.-reksio-i-miasto-sekretow-city-of-secrets-le"}],
                     }
                 ]
             },
@@ -1461,7 +1450,7 @@ const games: Record<string, Index> = {
                         description: "originalCDVersionDescription",
                         url: "https://iso.zagrajwreksia.pl/CoS/City of Secrets LE.iso",
                         size: "1.2 GB",
-                        source: "Kreton Podziemny"
+                        sources: [{name: "Kreton Podziemny"}],
                     }
                 ]
             },
@@ -1481,7 +1470,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "789 MB",
-                        source: "Reksioblog",
+                        sources: [{name: "Reksioblog"}],
                     }
                 ]
             },
@@ -1533,8 +1522,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "359 MB",
-                        source: "Dove6, Mysliwy",
-                        sourceUrl: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"
+                        sources: [{name: "Dove6, Mysliwy", url: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"}],
                     }
                 ]
             },
@@ -1553,8 +1541,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "359 MB",
-                        source: "Dove6, Mysliwy",
-                        sourceUrl: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"
+                        sources: [{name: "Dove6, Mysliwy", url: "https://discord.com/channels/822931925618524240/909046389227536426/913841737225633813"}],
                     }
                 ]
             },
@@ -1583,8 +1570,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "609 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/abc-z-reksiem",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/abc-z-reksiem"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1619,8 +1605,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "347 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-przyjaciele",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-i-przyjaciele"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1655,8 +1640,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "253 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-zwierzaki",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-i-zwierzaki"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1682,8 +1666,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "438 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-es-az-allatkak"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1709,8 +1692,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "438 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-es-az-allatkak",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-es-az-allatkak"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1745,8 +1727,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "700 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/licze-z-reksiem",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/licze-z-reksiem"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1772,8 +1753,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "635 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/matematica-cu-reksio",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/matematica-cu-reksio"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1799,7 +1779,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "644 MB",
-                        source: "Reksioblog",
+                        sources: [{name: "Reksioblog"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1834,8 +1814,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "640 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-i-ortografia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-i-ortografia"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1861,8 +1840,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "374 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-si-ortografia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-si-ortografia"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1897,8 +1875,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "538 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/przedszkole-reksia",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/przedszkole-reksia"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1924,8 +1901,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "421 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-la-gradinita-vesela",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-la-gradinita-vesela"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1951,8 +1927,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "346 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reks-v-detskom-sadu",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reks-v-detskom-sadu"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -1987,8 +1962,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "433 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/lamiglowki-reksia-wielki-odkrywca",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/lamiglowki-reksia-wielki-odkrywca"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -2014,8 +1988,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "238 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reksio-micul-intelept",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reksio-micul-intelept"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
@@ -2041,8 +2014,7 @@ const games: Record<string, Index> = {
                             }
                         ],
                         size: "302 MB",
-                        source: "archive.org",
-                        sourceUrl: "https://archive.org/details/reks-na-ostrove-chudes",
+                        sources: [{name: "archive.org", url: "https://archive.org/details/reks-na-ostrove-chudes"}],
                         instructions: [
                             "cncDdrawInstruction",
                             {
