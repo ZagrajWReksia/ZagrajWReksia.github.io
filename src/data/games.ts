@@ -1290,8 +1290,8 @@ const games: Record<string, Index> = {
                             key: "instructionsUnpackZip"
                         }
                     ],
-                    url: "https://drive.google.com/open?id=1lCQLkQunoi-hOXLLtb2Y34boifAxL8Qm",
-                    size: "24 MB",
+                    url: "https://iso.zagrajwreksia.pl/RiKTTW/rikttw-editor-unlock.zip",
+                    size: "48 KiB",
                     sources: [{name: "mysliwy112", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=10607"}]
                 }
             },
