@@ -265,7 +265,7 @@ export default function HomePage() {
             </Pill>
             <Pill
               $icon="/original-website-logo.png"
-              href="https://www.przygodyreksia.aidemmedia.pl/"
+              href="https://przygodyreksia.zagrajwreksia.pl/"
             >
               {t.rich('reksiowebsiteLink', {
                 pl: () => <span className="flag:PL"></span>,
