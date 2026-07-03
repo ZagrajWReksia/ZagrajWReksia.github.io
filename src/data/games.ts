@@ -715,7 +715,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://iso.zagrajwreksia.pl/RiC/czaro_easy.zip",
                     size: "9 KB",
-                    sources: [{name: "przygodyreksia.aidemmedia.pl", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html"}],
+                    sources: [{name: "przygodyreksia.pl", url: "https://przygodyreksia.zagrajwreksia.pl/pliki/kogut/kogut.html"}],
                 }
             },
             {
@@ -731,7 +731,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://iso.zagrajwreksia.pl/RiC/czaro_easy2.zip",
                     size: "9 KB",
-                    sources: [{name: "przygodyreksia.aidemmedia.pl", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kogut/kogut.html"}],
+                    sources: [{name: "przygodyreksia.pl", url: "https://przygodyreksia.zagrajwreksia.pl/pliki/kogut/kogut.html"}],
                 }
             },
             {
@@ -1270,11 +1270,11 @@ const games: Record<string, Index> = {
                     sources: [
                         {
                             name: "mysliwy112",
-                            url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?p=257617"
+                            url: "https://przygodyreksia.zagrajwreksia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?p=257617"
                         },
                         {
                             name: "kretonpodziemny",
-                            url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?p=261720"
+                            url: "https://przygodyreksia.zagrajwreksia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?p=261720"
                         }
                     ]
                 }
@@ -1292,7 +1292,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://iso.zagrajwreksia.pl/RiKTTW/rikttw-editor-unlock.zip",
                     size: "48 KiB",
-                    sources: [{name: "mysliwy112", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=10607"}]
+                    sources: [{name: "mysliwy112", url: "https://przygodyreksia.zagrajwreksia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=10607"}]
                 }
             },
         ]
@@ -1379,7 +1379,7 @@ const games: Record<string, Index> = {
                     ],
                     url: "https://drive.google.com/file/d/1GdlHYni6DM1wkaMgJHGLLAVYif3E50JD/view",
                     size: "24 MB",
-                    sources: [{name: "Dove6", url: "https://www.przygodyreksia.aidemmedia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=11314"}]
+                    sources: [{name: "Dove6", url: "https://przygodyreksia.zagrajwreksia.pl/pliki/kretes/forum/reksioforum/viewtopic.php?t=11314"}]
                 }
             },
         ]
